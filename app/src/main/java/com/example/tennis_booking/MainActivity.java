@@ -1,4 +1,4 @@
-package com.example.tennis;
+package com.example.tennis_booking;
 
 import androidx.appcompat.app.AppCompatActivity;
 
