@@ -5,18 +5,20 @@ import androidx.core.content.res.ResourcesCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
+import android.content.Intent;
 import android.content.res.Resources;
 import android.graphics.drawable.Drawable;
 import android.os.Bundle;
-import android.util.Log;
+import android.view.View;
+import android.widget.EditText;
 
 import java.util.ArrayList;
-import java.util.List;
 
 public class HomeActivity extends AppCompatActivity {
 
     RecyclerView rv;
     RecyclerView rv1;
+    EditText edt;
     private ArrayList<CourtItem> courtData = new ArrayList<>();
     private ArrayList<CourtItem> courtData1 = new ArrayList<>();
     LinearLayoutManager linearLayoutManager;
@@ -28,7 +30,9 @@ public class HomeActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_home);
-        rv = findViewById(R.id.rvCourt);
+
+        //Thêm dữ liệu vào trong recycle view
+        rv = findViewById(R.id.rvSearch);
         rv1 = findViewById(R.id.rvNearMe);
 
         Resources res = getResources();
@@ -88,6 +92,19 @@ public class HomeActivity extends AppCompatActivity {
 
         rv1.setLayoutManager(linearLayoutManager1);
         rv1.setAdapter(homeAdapter1);
+
+        //Xử lí nút search
+
+        edt = (EditText) findViewById(R.id.edtSearch);
+        edt.setShowSoftInputOnFocus(false);
+        edt.setFocusableInTouchMode(false);
+        edt.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(HomeActivity.this, SearchActivity.class);
+                startActivity(intent);
+            }
+        });
     }
 
 }
