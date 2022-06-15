@@ -43,6 +43,18 @@
             android:name=".HomeActivity"
             android:exported="false" />
         <activity
+            android:name=".NavigatorActivity"
+            android:exported="false" />
+        <activity
+            android:name=".DateBookingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".TimePickingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".CourtSelectActivity"
+            android:exported="false" />
+        <activity
             android:name=".LoginActivity"
             android:exported="true">
             <intent-filter>
