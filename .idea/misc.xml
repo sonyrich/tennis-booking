@@ -14,11 +14,15 @@
         <entry key="..\:/tennis-booking/app/src/main/res/layout/activity_date_booking.xml" value="0.18645833333333334" />
         <entry key="..\:/tennis-booking/app/src/main/res/layout/activity_home.xml" value="0.33" />
         <entry key="..\:/tennis-booking/app/src/main/res/layout/activity_login.xml" value="0.25" />
+        <entry key="..\:/tennis-booking/app/src/main/res/layout/activity_nav_bottom.xml" value="0.1" />
         <entry key="..\:/tennis-booking/app/src/main/res/layout/activity_search.xml" value="0.3009833262077811" />
         <entry key="..\:/tennis-booking/app/src/main/res/layout/activity_signup.xml" value="0.25" />
         <entry key="..\:/tennis-booking/app/src/main/res/layout/activity_time_picking.xml" value="0.18645833333333334" />
         <entry key="..\:/tennis-booking/app/src/main/res/layout/card1.xml" value="0.5" />
+        <entry key="..\:/tennis-booking/app/src/main/res/layout/fragment_home.xml" value="0.1875" />
+        <entry key="..\:/tennis-booking/app/src/main/res/layout/fragment_home2.xml" value="0.1875" />
         <entry key="..\:/tennis-booking/app/src/main/res/layout/trend_search.xml" value="0.33" />
+        <entry key="..\:/tennis-booking/app/src/main/res/menu/nav_menu.xml" value="0.3095703125" />
         <entry key="..\:/tennis-booking/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.251" />
       </map>
     </option>
