@@ -19,6 +19,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tennisbooking"
         tools:targetApi="31">
+        <activity
+            android:name=".MessagesActivity"
+            android:exported="false" />
         <!--
              TODO: Before you run your application, you need a Google Maps API key.
 
@@ -37,7 +40,6 @@
         <activity
             android:name=".SearchActivity"
             android:exported="false" />
-
         <activity
             android:name=".HomeActivity"
             android:exported="false" />
