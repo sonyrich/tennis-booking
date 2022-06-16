@@ -13,7 +13,9 @@ public class NavigatorActivity extends AppCompatActivity {
 
     BottomNavigationView bottomNavigationView;
 
-    MapFragment mapFragment = new MapFragment();
+    HomeFragment homeFragment = new HomeFragment();
+    MapsFragment mapsFragment = new MapsFragment();
+    NotificationFragment notificationFragment = new NotificationFragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -22,7 +24,7 @@ public class NavigatorActivity extends AppCompatActivity {
 
         bottomNavigationView  = findViewById(R.id.bottom_navigation);
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.container,mapFragment).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.container,homeFragment).commit();
 
         BadgeDrawable badgeDrawable = bottomNavigationView.getOrCreateBadge(R.id.ic_notifications);
         badgeDrawable.setVisible(true);
@@ -32,8 +34,23 @@ public class NavigatorActivity extends AppCompatActivity {
             @Override
             public boolean onNavigationItemSelected(MenuItem item) {
                 switch (item.getItemId()){
+                    case R.id.ic_home:
+                        getSupportFragmentManager()
+                                .beginTransaction()
+                                .replace(R.id.container,homeFragment)
+                                .commit();
+                        return true;
                     case R.id.ic_map:
-                        getSupportFragmentManager().beginTransaction().replace(R.id.container,mapFragment).commit();
+                        getSupportFragmentManager()
+                                .beginTransaction()
+                                .replace(R.id.container, mapsFragment)
+                                .commit();
+                        return true;
+                    case R.id.ic_notifications:
+                        getSupportFragmentManager()
+                                .beginTransaction()
+                                .replace(R.id.container,notificationFragment)
+                                .commit();
                         return true;
                 }
                 return false;
