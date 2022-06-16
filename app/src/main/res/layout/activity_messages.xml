@@ -19,32 +19,7 @@
         android:paddingLeft="20dp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.516"
         app:layout_constraintStart_toStartOf="parent" />
-
-    <TextView
-        android:id="@+id/txtMessage3"
-        android:layout_width="220dp"
-        android:layout_height="60dp"
-        android:layout_marginTop="44dp"
-        android:layout_marginEnd="20dp"
-        android:background="@color/colorPrimary"
-        android:text="Và bên mình đang có chương trình sale off 90% cho người chơi mới, bạn có muôn tham gia không ạ?"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtMessage2" />
-
-    <TextView
-        android:id="@+id/txtMessage2"
-        android:layout_width="220dp"
-        android:layout_height="20dp"
-        android:layout_marginTop="52dp"
-        android:layout_marginEnd="20dp"
-        android:background="@color/colorPrimary"
-        android:text="Bên mình vẫn còn sân nhé bạn!"
-        android:textColor="@color/black"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtMessage1" />
 
     <TextView
         android:id="@+id/txtAccount"
@@ -72,17 +47,22 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
-    <TextView
-        android:id="@+id/txtMessage1"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="16dp"
-        android:layout_marginTop="40dp"
-        android:background="#DDFFFFFF"
-        android:text="Chào bạn, hôm nay có sân không ạ?"
-        android:textColor="@color/black"
+    <ScrollView
+        android:layout_width="380dp"
+        android:layout_height="560dp"
+        android:layout_marginTop="100dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.483"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtAccount" />
+        app:layout_constraintTop_toTopOf="parent">
+
+        <TextView
+            android:id="@+id/txtMessageBubble1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Chào bạn, hôm nay có sân không ạ?"
+            android:textColor="@color/black" />
+    </ScrollView>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
