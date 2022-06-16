@@ -36,32 +36,14 @@
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
 
-        <EditText
-            android:id="@+id/editSearch"
-            android:layout_width="380dp"
-            android:layout_height="55dp"
-            android:layout_alignParentStart="true"
-            android:layout_alignParentTop="true"
-            android:layout_marginTop="4dp"
-            android:background="@drawable/transparent_search"
-            android:ems="10"
-            android:hint="Search"
-            android:inputType="textPersonName"
-            android:paddingLeft="20dp"
-            app:layout_constraintEnd_toEndOf="parent"
-            app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/txtNotification" />
-
         <ScrollView
             android:id="@+id/scrvNotification"
             android:layout_width="380dp"
-            android:layout_height="470dp"
-            android:layout_marginTop="10dp"
+            android:layout_height="620dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/editSearch"
-            app:layout_constraintVertical_bias="0.0">
+            >
 
             <LinearLayout
                 android:layout_width="match_parent"
@@ -305,12 +287,88 @@
                     android:text="Nguyen Dien Hoang Son has reply on your comment Tennis LakeView Villa"
                     android:textColor="@color/black" />
 
+                <View
+                    android:id="@+id/divider6"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <TextView
+
+                        android:layout_width="321dp"
+                        android:layout_height="30dp"
+                        android:text="Future plan!"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Just now" />
+
+                </LinearLayout>
+
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Seem like you have no appointment in future. You can book a course in calender to take a course first!"
+                    android:textColor="@color/black" />
+
                 <Space
                     android:layout_width="match_parent"
                     android:layout_height="20dp" />
 
                 <View
-                    android:id="@+id/divider6"
+
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="30dp">
+
+                    <TextView
+                        android:id="@+id/txtNotiHeader1"
+                        android:layout_width="321dp"
+                        android:layout_height="30dp"
+                        android:text="Future plan!"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtNotiStatus1"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:text="Just now" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtNotiContent1"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:text="Seem like you have no appointment in future. You can book a course in calender to take a course first!"
+                    android:textColor="@color/black" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <View
+                    android:id="@+id/divider1"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:background="?android:attr/listDivider" />
