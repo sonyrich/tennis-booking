@@ -1,14 +1,214 @@
 <?xml version="1.0" encoding="utf-8"?>
 <FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".NotificationFragment">
 
-    <!-- TODO: Update blank fragment layout -->
-    <TextView
+    <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="@string/hello_blank_fragment" />
+        android:layout_height="match_parent">
 
+        <TextView
+            android:id="@+id/txtNotiContent4"
+            android:layout_width="380dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="336dp"
+            android:text="Tennis Vina on the hot time, book now to get up to 40% off."
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.483"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNotiHeader" />
+
+        <View
+            android:id="@+id/divider4"
+            android:layout_width="406dp"
+            android:layout_height="4dp"
+            android:layout_marginTop="40dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNotiContent4" />
+
+        <TextView
+            android:id="@+id/txtNotiHeader4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="1dp"
+            android:text="Sale off!"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/txtNotiContent4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.051"
+            app:layout_constraintStart_toStartOf="parent" />
+
+        <TextView
+            android:id="@+id/txtNotiStatus4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="259dp"
+            android:text="2h ago"
+            app:layout_constraintBottom_toTopOf="@+id/txtNotiContent4"
+            app:layout_constraintStart_toEndOf="@+id/txtNotiHeader4" />
+
+        <TextView
+            android:id="@+id/txtNotiContent3"
+            android:layout_width="380dp"
+            android:layout_height="20dp"
+            android:layout_marginTop="224dp"
+            android:text="Let's get some action going, we have some offers for you!"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNotiHeader" />
+
+        <TextView
+            android:id="@+id/txtNotiHeader3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="It's weekend!"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.054"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="434dp" />
+
+        <View
+            android:id="@+id/divider3"
+            android:layout_width="421dp"
+            android:layout_height="2dp"
+            android:layout_marginTop="40dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNotiContent3" />
+
+        <TextView
+            android:id="@+id/txtNotiStatus3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="219dp"
+            android:text="1h ago"
+            app:layout_constraintBottom_toTopOf="@+id/txtNotiContent3"
+            app:layout_constraintStart_toEndOf="@+id/txtNotiHeader3" />
+
+        <View
+            android:id="@+id/divider2"
+            android:layout_width="409dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNotiContent2" />
+
+        <TextView
+            android:id="@+id/txtNotiHeader2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Booking Approve!"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.064"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="318dp" />
+
+        <TextView
+            android:id="@+id/txtNotiStatus2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="172dp"
+            android:text="8m ago"
+            app:layout_constraintBottom_toTopOf="@+id/txtNotiContent2"
+            app:layout_constraintStart_toEndOf="@+id/txtNotiHeader2" />
+
+        <TextView
+            android:id="@+id/txtNotiContent2"
+            android:layout_width="380dp"
+            android:layout_height="40dp"
+            android:layout_marginTop="108dp"
+            android:text="Your booking has been approve! Let's go to the course and have some fun!"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.516"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNotiHeader" />
+
+        <TextView
+            android:id="@+id/txtNotification"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:text="Notification"
+            android:textColor="@color/black"
+            android:textSize="40sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtBackMesage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:text="Back"
+            android:textColor="@color/colorPrimary"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toStartOf="@+id/txtNotification"
+            app:layout_constraintHorizontal_bias="0.508"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtNotiHeader"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Future plan!"
+            android:textColor="@color/black"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.052"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="210dp" />
+
+        <TextView
+            android:id="@+id/txtNotiContent"
+            android:layout_width="380dp"
+            android:layout_height="40dp"
+            android:text="Seem like you have no appointment in future. You can book a course in calender to take a course first!"
+            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNotiHeader" />
+
+        <TextView
+            android:id="@+id/txtNotiStatus"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="215dp"
+            android:text="Just now"
+            app:layout_constraintBottom_toTopOf="@+id/txtNotiContent"
+            app:layout_constraintStart_toEndOf="@+id/txtNotiHeader" />
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="409dp"
+            android:layout_height="1dp"
+            android:layout_marginTop="20dp"
+            android:background="?android:attr/listDivider"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtNotiContent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
