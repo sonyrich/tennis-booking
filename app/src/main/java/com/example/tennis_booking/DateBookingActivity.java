@@ -9,17 +9,30 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.TextView;
 
 import androidx.annotation.RequiresApi;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.DialogFragment;
+import androidx.viewpager.widget.ViewPager;
 
 import java.text.DateFormat;
 
 public class DateBookingActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener {
 
     Button booking_btn;
-    EditText ed_calendar;
+    TextView ed_calendar;
+
+    // creating object of ViewPager
+    ViewPager mViewPager;
+
+    // images array
+    int[] images = {R.drawable.tennis_courts, R.drawable.tennis_courts_2, R.drawable.tennis_courts_3, R.drawable.tennis_courts_4,
+            R.drawable.tennis_courts_5, R.drawable.tennis_courts_6, R.drawable.tennis_courts_7, R.drawable.tennis_courts_8};
+
+    // Creating Object of ViewPagerAdapter
+    ViewPagerAdapter mViewPagerAdapter;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -34,7 +47,7 @@ public class DateBookingActivity extends AppCompatActivity implements DatePicker
             }
         });
 
-        ed_calendar = (EditText) findViewById(R.id.ed_calendar);
+        ed_calendar = (TextView) findViewById(R.id.ed_calendar);
         ed_calendar.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
@@ -42,6 +55,15 @@ public class DateBookingActivity extends AppCompatActivity implements DatePicker
                 datePicker.show(getSupportFragmentManager(), "date picker");
             }
         });
+
+        // Initializing the ViewPager Object
+        mViewPager = (ViewPager)findViewById(R.id.viewPagerMain);
+
+        // Initializing the ViewPagerAdapter
+        mViewPagerAdapter = new ViewPagerAdapter(DateBookingActivity.this, images);
+
+        // Adding the Adapter to the ViewPager
+        mViewPager.setAdapter(mViewPagerAdapter);
     }
 
     @RequiresApi(api = Build.VERSION_CODES.N)
