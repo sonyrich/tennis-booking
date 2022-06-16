@@ -14,6 +14,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.EditText;
+import android.widget.ImageView;
 
 import java.util.ArrayList;
 
@@ -22,6 +23,7 @@ public class HomeFragment extends Fragment implements HomeAdapter.itemClickListe
     private RecyclerView rv;
     private RecyclerView rv1;
     private EditText edt;
+    private ImageView img;
 
     private ArrayList<CourtItem> courtData = new ArrayList<>();
     private ArrayList<CourtItem> courtData1 = new ArrayList<>();
@@ -105,6 +107,16 @@ public class HomeFragment extends Fragment implements HomeAdapter.itemClickListe
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getContext(), SearchActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        //Xử lí nhấn message
+        img = (ImageView) rootView.findViewById(R.id.imgMessage);
+        img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), MessagesActivity.class);
                 startActivity(intent);
             }
         });
