@@ -24,7 +24,7 @@ public class NavigatorActivity extends AppCompatActivity {
 
         bottomNavigationView  = findViewById(R.id.bottom_navigation);
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.container,homeFragment).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.container, homeFragment).commit();
 
         BadgeDrawable badgeDrawable = bottomNavigationView.getOrCreateBadge(R.id.ic_notifications);
         badgeDrawable.setVisible(true);

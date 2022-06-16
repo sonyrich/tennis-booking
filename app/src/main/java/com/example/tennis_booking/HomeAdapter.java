@@ -1,8 +1,11 @@
 package com.example.tennis_booking;
 
+import android.content.Context;
+import android.content.Intent;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.AdapterView;
 import android.widget.ImageView;
 import android.widget.TextView;
 
@@ -11,12 +14,13 @@ import androidx.recyclerview.widget.RecyclerView;
 
 import java.util.ArrayList;
 
-public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.MyHolder> {
+public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.MyHolder>{
     ArrayList<CourtItem> CourtModelList;
 
     public HomeAdapter(ArrayList<CourtItem> courtModelList) {
         this.CourtModelList = courtModelList;
     }
+
     @NonNull
     @Override
     public HomeAdapter.MyHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {

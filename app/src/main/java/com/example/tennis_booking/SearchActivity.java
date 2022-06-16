@@ -82,12 +82,14 @@ public class SearchActivity extends AppCompatActivity {
         rv.setLayoutManager(linearLayoutManager);
         rv.setAdapter(searchAdapter);
 
+        //////////////////////////////////////////////////////////////////
         tv = (TextView) findViewById(R.id.tvBack);
         tv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(SearchActivity.this, HomeActivity.class);
-                startActivity(intent);
+                Intent intent = new Intent(SearchActivity.this, HomeFragment.class);
+                //startActivity(intent);
+                finish();
             }
         });
     }
