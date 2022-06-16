@@ -17,7 +17,7 @@ import android.widget.EditText;
 
 import java.util.ArrayList;
 
-public class HomeFragment extends Fragment{
+public class HomeFragment extends Fragment implements HomeAdapter.itemClickListener{
 
     private RecyclerView rv;
     private RecyclerView rv1;
@@ -37,6 +37,8 @@ public class HomeFragment extends Fragment{
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_home, container, false);
+
+        ArrayList<CourtItem> CourtModelList = new ArrayList<>();
 
         rv = (RecyclerView) rootView.findViewById(R.id.rvOnDiscount);
         rv1 = (RecyclerView) rootView.findViewById(R.id.rvNearMe);
@@ -86,8 +88,8 @@ public class HomeFragment extends Fragment{
         linearLayoutManager = new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false);
         linearLayoutManager1 = new LinearLayoutManager(getContext(), LinearLayoutManager.HORIZONTAL, false);
 
-        homeAdapter = new HomeAdapter(courtData);
-        homeAdapter1 = new HomeAdapter(courtData1);
+        homeAdapter = new HomeAdapter(courtData, this);
+        homeAdapter1 = new HomeAdapter(courtData1, this);
 
         rv.setLayoutManager(linearLayoutManager);
         rv.setAdapter(homeAdapter);
@@ -108,5 +110,11 @@ public class HomeFragment extends Fragment{
         });
 
         return rootView;
+    }
+
+    @Override
+    public void onItemClick(int position) {
+        Intent intent = new Intent(getContext(), DateBookingActivity.class);
+        startActivity(intent);
     }
 }

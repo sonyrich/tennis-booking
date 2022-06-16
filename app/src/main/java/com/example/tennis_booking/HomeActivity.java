@@ -17,7 +17,7 @@ import com.google.android.gms.maps.SupportMapFragment;
 
 import java.util.ArrayList;
 
-public class HomeActivity extends AppCompatActivity{
+public class HomeActivity extends AppCompatActivity implements HomeAdapter.itemClickListener{
 
     ArrayList<CourtItem> CourtModelList = new ArrayList<>();
 
@@ -90,8 +90,8 @@ public class HomeActivity extends AppCompatActivity{
         linearLayoutManager = new LinearLayoutManager(HomeActivity.this, LinearLayoutManager.HORIZONTAL, false);
         linearLayoutManager1 = new LinearLayoutManager(HomeActivity.this, LinearLayoutManager.HORIZONTAL, false);
 
-        homeAdapter = new HomeAdapter(courtData);
-        homeAdapter1 = new HomeAdapter(courtData1);
+        homeAdapter = new HomeAdapter(courtData, this);
+        homeAdapter1 = new HomeAdapter(courtData1, this);
 
         rv.setLayoutManager(linearLayoutManager);
         rv.setAdapter(homeAdapter);
@@ -114,5 +114,11 @@ public class HomeActivity extends AppCompatActivity{
 
         //xử lí click adapter item
 
+    }
+
+    @Override
+    public void onItemClick(int position) {
+        CourtModelList.get(position);
+        Intent intent = new Intent(this, DateBookingActivity.class);
     }
 }
