@@ -16,6 +16,7 @@ public class NavigatorActivity extends AppCompatActivity {
     HomeFragment homeFragment = new HomeFragment();
     MapsFragment mapsFragment = new MapsFragment();
     NotificationFragment notificationFragment = new NotificationFragment();
+    ProfileFragment profileFragment = new ProfileFragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -50,6 +51,12 @@ public class NavigatorActivity extends AppCompatActivity {
                         getSupportFragmentManager()
                                 .beginTransaction()
                                 .replace(R.id.container,notificationFragment)
+                                .commit();
+                        return true;
+                    case R.id.ic_person:
+                        getSupportFragmentManager()
+                                .beginTransaction()
+                                .replace(R.id.container,profileFragment)
                                 .commit();
                         return true;
                 }
