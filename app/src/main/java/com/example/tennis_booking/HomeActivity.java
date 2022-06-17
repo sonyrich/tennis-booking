@@ -1,6 +1,7 @@
 package com.example.tennis_booking;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
 import androidx.core.content.res.ResourcesCompat;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
@@ -12,13 +13,18 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.EditText;
 
+import com.google.android.gms.maps.SupportMapFragment;
+
 import java.util.ArrayList;
 
-public class HomeActivity extends AppCompatActivity {
+public class HomeActivity extends AppCompatActivity implements HomeAdapter.itemClickListener{
+
+    ArrayList<CourtItem> CourtModelList = new ArrayList<>();
 
     RecyclerView rv;
     RecyclerView rv1;
     EditText edt;
+
     private ArrayList<CourtItem> courtData = new ArrayList<>();
     private ArrayList<CourtItem> courtData1 = new ArrayList<>();
     LinearLayoutManager linearLayoutManager;
@@ -29,10 +35,10 @@ public class HomeActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_home);
+        setContentView(R.layout.fragment_home);
 
         //Thêm dữ liệu vào trong recycle view
-        rv = findViewById(R.id.rvSearch);
+        rv = findViewById(R.id.rvOnDiscount);
         rv1 = findViewById(R.id.rvNearMe);
 
         Resources res = getResources();
@@ -84,8 +90,8 @@ public class HomeActivity extends AppCompatActivity {
         linearLayoutManager = new LinearLayoutManager(HomeActivity.this, LinearLayoutManager.HORIZONTAL, false);
         linearLayoutManager1 = new LinearLayoutManager(HomeActivity.this, LinearLayoutManager.HORIZONTAL, false);
 
-        homeAdapter = new HomeAdapter(courtData);
-        homeAdapter1 = new HomeAdapter(courtData1);
+        homeAdapter = new HomeAdapter(courtData, this);
+        homeAdapter1 = new HomeAdapter(courtData1, this);
 
         rv.setLayoutManager(linearLayoutManager);
         rv.setAdapter(homeAdapter);
@@ -105,6 +111,14 @@ public class HomeActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        //xử lí click adapter item
+
     }
 
+    @Override
+    public void onItemClick(int position) {
+        CourtModelList.get(position);
+        Intent intent = new Intent(this, DateBookingActivity.class);
+    }
 }

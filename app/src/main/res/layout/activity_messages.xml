@@ -9,7 +9,7 @@
         android:id="@+id/txtMessageBubble"
         android:layout_width="230dp"
         android:layout_height="40dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:background="@drawable/incoming_message"
         android:gravity="center"
         android:paddingTop="10dp"
@@ -39,28 +39,32 @@
         app:layout_constraintStart_toStartOf="parent" />
 
     <TextView
-        android:id="@+id/txtAccount"
-        android:layout_width="wrap_content"
+        android:id="@+id/tvLogin"
+        android:layout_width="240dp"
         android:layout_height="wrap_content"
-        android:layout_marginTop="50dp"
-        android:text="Tennis Lakeview Villa"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="20dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center"
+        android:text="Message"
+        android:textAlignment="center"
         android:textColor="@color/black"
-        android:textSize="20sp"
+        android:textFontWeight="500"
+        android:textSize="50sp"
         android:textStyle="bold"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.279"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txtBackMesage"
+        android:id="@+id/txtBackMessage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="56dp"
+        android:layout_marginStart="25dp"
+        android:layout_marginTop="40dp"
         android:text="Back"
         android:textColor="@color/colorPrimary"
-        app:layout_constraintEnd_toStartOf="@+id/txtAccount"
-        app:layout_constraintHorizontal_bias="0.551"
+        android:textSize="20dp"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
@@ -68,7 +72,7 @@
         android:id="@+id/txtMessageBubble1"
         android:layout_width="260dp"
         android:layout_height="40dp"
-        android:layout_marginTop="28dp"
+        android:layout_marginTop="30dp"
         android:background="@drawable/transparent_search"
         android:gravity="center"
         android:paddingTop="10dp"
@@ -79,7 +83,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.105"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/txtAccount" />
+        app:layout_constraintTop_toBottomOf="@+id/tvLogin" />
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>

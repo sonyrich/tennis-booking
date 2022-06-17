@@ -16,6 +16,7 @@ public class NavigatorActivity extends AppCompatActivity {
     HomeFragment homeFragment = new HomeFragment();
     MapsFragment mapsFragment = new MapsFragment();
     NotificationFragment notificationFragment = new NotificationFragment();
+    ProfileFragment profileFragment = new ProfileFragment();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,7 +25,7 @@ public class NavigatorActivity extends AppCompatActivity {
 
         bottomNavigationView  = findViewById(R.id.bottom_navigation);
 
-        getSupportFragmentManager().beginTransaction().replace(R.id.container,homeFragment).commit();
+        getSupportFragmentManager().beginTransaction().replace(R.id.container, homeFragment).commit();
 
         BadgeDrawable badgeDrawable = bottomNavigationView.getOrCreateBadge(R.id.ic_notifications);
         badgeDrawable.setVisible(true);
@@ -50,6 +51,12 @@ public class NavigatorActivity extends AppCompatActivity {
                         getSupportFragmentManager()
                                 .beginTransaction()
                                 .replace(R.id.container,notificationFragment)
+                                .commit();
+                        return true;
+                    case R.id.ic_person:
+                        getSupportFragmentManager()
+                                .beginTransaction()
+                                .replace(R.id.container,profileFragment)
                                 .commit();
                         return true;
                 }

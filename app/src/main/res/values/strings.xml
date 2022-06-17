@@ -5,4 +5,24 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
 
+
+
+
+
+    <string name="court">Court</string>
+    <string name="back">Back</string>
+    <string name="booking">Booking</string>
+    <string name="todo">TODO</string>
+    <string name="tennis_lakeview_villa">Tennis Lakeview Villa</string>
+    <string name="long_th_nh_m_qu_n_9_th_nh_ph_h_ch_minh">Long Thạnh Mỹ, Quận 9, Thành Phố Hồ Chí Minh</string>
+    <string name="c_ch_xa_16_ph_t">Cách xa 16 phút</string>
+    <string name="description">Description:</string>
+    <string name="open_mo_we_and_fr_from_8am_to_6pm_75k_1h_n_tu_and_th_from_8am_to_6pm_70k_1h_n_sa_and_su_from_7am_to_6pm_100k_1h_ncontract_num_0986950563_service">Open: Mo, We and Fr from 8am to 6pm ( 75k/1h ) \n Tu and Th from 8am to 6pm ( 70k/1h )\n Sa and Su from 7am to 6pm ( 100k/1h )\nContract Num: 0986950563 ( Service )</string>
+    <string name="review_court">Review Court</string>
+    <string name="nguyenthanhtrung420">nguyenthanhtrung420</string>
+    <string name="s_n_kh_n_ng_nh_ng_n_ngon">Sân khá nắng nhưng đồ ăn ngon</string>
+    <string name="_19_02_2021">19/02/2021</string>
+    <string name="hoangson59">hoangson59</string>
+    <string name="m_c_d_kh_ng_bi_t_nh_tennis_nh_ng_m_s_n_nh_n_p">Mặc dù không biết đánh tennis nhưng mà sân nhìn đẹp</string>
+    <string name="_19_02_2020">19/02/2020</string>
 </resources>
