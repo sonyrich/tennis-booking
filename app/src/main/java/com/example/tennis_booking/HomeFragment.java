@@ -126,7 +126,7 @@ public class HomeFragment extends Fragment implements HomeAdapter.itemClickListe
 
     @Override
     public void onItemClick(int position) {
-        Intent intent = new Intent(getContext(), CourtDetailActivity.class);
+        Intent intent = new Intent(getContext(), DateBookingActivity.class);
         startActivity(intent);
     }
 }
