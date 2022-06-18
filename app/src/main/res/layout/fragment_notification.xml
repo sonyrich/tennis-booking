@@ -372,11 +372,5 @@
             </LinearLayout>
         </ScrollView>
 
-        <Space
-            android:layout_width="match_parent"
-            android:layout_height="20dp"
-            tools:layout_editor_absoluteX="11dp"
-            tools:layout_editor_absoluteY="115dp" />
-
     </androidx.constraintlayout.widget.ConstraintLayout>
 </FrameLayout>
