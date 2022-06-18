@@ -20,7 +20,7 @@ public class MessagesActivity extends AppCompatActivity {
         tv.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(MessagesActivity.this, HomeActivity.class);
+                Intent intent = new Intent(MessagesActivity.this, HomeFragment.class);
                 finish();
             }
         });
