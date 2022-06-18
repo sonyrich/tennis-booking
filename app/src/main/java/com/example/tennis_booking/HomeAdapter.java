@@ -7,6 +7,7 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.AdapterView;
 import android.widget.ImageView;
+import android.widget.RatingBar;
 import android.widget.TextView;
 
 import androidx.annotation.NonNull;
@@ -33,6 +34,7 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.MyHolder>{
     @Override
     public void onBindViewHolder(@NonNull MyHolder holder, int position) {
         holder.imgCourt.setImageDrawable(CourtModelList.get(position).getImgCourt());
+        holder.courtRatingBar.setRating(CourtModelList.get(position).getRatingBar());
         holder.tvCourtName.setText(CourtModelList.get(position).getCourtName());
         holder.tvCourDistance.setText(CourtModelList.get(position).getCourtDistance());
         holder.tvCourPrice.setText(CourtModelList.get(position).getCourtPrice());
@@ -45,15 +47,18 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.MyHolder>{
 
     public class MyHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
         ImageView imgCourt;
+        RatingBar courtRatingBar;
         TextView tvCourtName;
         TextView tvCourDistance;
         TextView tvCourPrice;
+
         itemClickListener clickListener;
 
         public MyHolder(@NonNull View itemView, itemClickListener clickListener) {
             super(itemView);
             Context context = itemView.getContext();
             imgCourt = itemView.findViewById(R.id.imgCourt);
+            courtRatingBar = itemView.findViewById(R.id.cardRatingBar);
             tvCourtName = itemView.findViewById(R.id.tvCourtName);
             tvCourDistance = itemView.findViewById(R.id.tvCourtDistance);
             tvCourPrice = itemView.findViewById(R.id.tvCourtPrice);
