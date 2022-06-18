@@ -17,7 +17,7 @@
         <androidx.appcompat.widget.Toolbar
             android:id="@+id/toolbar"
             android:layout_width="match_parent"
-            android:layout_height="70dp"
+            android:layout_height="50dp"
             app:popupTheme="@style/AppTheme.PopupOverlay"
             app:theme="@style/AppTheme.Toolbar">
 
@@ -53,7 +53,7 @@
     <RelativeLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginTop="-16dp"
+        android:layout_marginTop="15dp"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
 
         <ScrollView
@@ -69,10 +69,11 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginHorizontal="10dp"
-                    android:layout_marginTop="25dp"
-                    app:cardCornerRadius="8dp"
+                    android:padding="16dp"
+                    app:cardCornerRadius="4dp"
                     app:cardUseCompatPadding="true"
-                    app:contentPadding="16dp">
+                    app:contentPaddingLeft="10dp"
+                    app:contentPaddingRight="10dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -81,80 +82,123 @@
                         android:layout_marginBottom="16dp"
                         android:orientation="vertical">
 
-                        <com.google.android.material.textfield.TextInputLayout
+                        <TextView
                             android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="3dp"
+                            android:drawablePadding="3dp"
+                            android:focusable="false"
+                            android:fontFamily="@font/calibri"
+                            android:maxLines="1"
+                            android:text="You are booking "
+                            android:textStyle="bold"
+                            android:textColor="#7C7C7C"
+                            android:textSize="20sp" />
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginBottom="8dp"
-                            android:textColorHint="#FF8A99AF">
+                            android:orientation="horizontal">
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:drawableStart="@drawable/ic_swap_horiz_white_24dp"
-                                android:drawablePadding="0dp"
+                                android:layout_marginRight="3dp"
+                                android:drawablePadding="3dp"
                                 android:focusable="false"
-                                android:fontFamily="@font/print_clearly"
-                                android:hint="Name"
-                                android:inputType="text"
+                                android:fontFamily="@font/calibri"
+                                android:maxLines="1"
+                                android:text="Court: "
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:drawablePadding="3dp"
+                                android:focusable="false"
+                                android:fontFamily="@font/calibri"
                                 android:maxLines="1"
                                 android:text="Tennis Lakeview Villa"
-                                android:textColor="@color/colorPrimary"
-                                android:textSize="28sp"
-                                android:textStyle="bold" />
-                        </com.google.android.material.textfield.TextInputLayout>
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
 
-                        <com.google.android.material.textfield.TextInputLayout
-                            android:layout_width="match_parent"
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="15dp"
-                            android:layout_marginBottom="20dp"
-                            android:textColorHint="#FF8A99AF">
+                            android:orientation="horizontal">
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:drawableStart="@drawable/ic_location_on_light_blue_24dp"
-                                android:drawablePadding="16dp"
+                                android:layout_marginRight="3dp"
+                                android:drawablePadding="3dp"
                                 android:focusable="false"
                                 android:fontFamily="@font/calibri"
-                                android:hint="Location"
-                                android:inputType="text"
                                 android:maxLines="1"
-                                android:text="Long Thạnh Mỹ, Quận 9, Tp.Hồ Chí Minh"
-                                android:textColor="@android:color/black"
-                                android:textSize="16sp" />
-                        </com.google.android.material.textfield.TextInputLayout>
-
-                        <com.google.android.material.textfield.TextInputLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_marginBottom="8dp"
-                            android:textColorHint="#FF8A99AF">
+                                android:text="Location: "
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
 
                             <TextView
-                                android:id="@+id/ed_calendar"
                                 android:layout_width="match_parent"
                                 android:layout_height="match_parent"
-                                android:drawableStart="@drawable/ic_date_range_light_blue_24dp"
-                                android:drawablePadding="16dp"
+                                android:drawablePadding="3dp"
                                 android:focusable="false"
                                 android:fontFamily="@font/calibri"
-                                android:hint="Select Date"
-                                android:inputType="date"
                                 android:maxLines="1"
-                                android:text="Thursday, June 6, 2022"
-                                android:textColor="@android:color/black"
-                                android:textSize="16sp" />
-                        </com.google.android.material.textfield.TextInputLayout>
+                                android:text="Long Thạnh Mỹ, Quận 9, ..."
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+
+                        </LinearLayout>
+
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginHorizontal="10dp"
+                android:padding="16dp"
+                app:cardCornerRadius="4dp"
+                app:cardUseCompatPadding="true"
+                app:contentPaddingLeft="10dp"
+                app:contentPaddingRight="10dp">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:layout_marginBottom="16dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/ed_calendar"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:drawableStart="@drawable/ic_date_range_light_blue_24dp"
+                    android:drawablePadding="3dp"
+                    android:focusable="false"
+                    android:fontFamily="@font/calibri"
+                    android:maxLines="1"
+                    android:text="Thursday, June 6, 2022"
+                    android:textColor="@android:color/black"
+                    android:textSize="20sp" />
+
+            </LinearLayout>
+
+            </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardView"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="10dp"
-                    android:layout_marginTop="10dp"
                     android:clickable="true"
                     android:focusable="true"
                     android:foreground="?android:attr/selectableItemBackground"

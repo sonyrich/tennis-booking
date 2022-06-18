@@ -1,20 +1,19 @@
 package com.example.tennis_booking;
 
-import android.content.Context;
 import android.graphics.drawable.Drawable;
-import android.os.Parcel;
-import android.os.Parcelable;
-import android.widget.ImageView;
+import android.widget.RatingBar;
 
 public class CourtItem {
 
     public Drawable imgCourt;
+    public Float ratingBar;
     public String courtName;
     public String courtDistance;
     public String courtPrice;
 
-    public CourtItem(Drawable imgCourt, String courtName, String courtDistance, String courtPrice) {
+    public CourtItem(Drawable imgCourt, Float ratingBar, String courtName, String courtDistance, String courtPrice) {
         this.imgCourt = imgCourt;
+        this.ratingBar = ratingBar;
         this.courtName = courtName;
         this.courtDistance = courtDistance;
         this.courtPrice = courtPrice;
@@ -26,6 +25,14 @@ public class CourtItem {
 
     public void setImgCourt(Drawable imgCourt) {
         this.imgCourt = imgCourt;
+    }
+
+    public Float getRatingBar() {
+        return ratingBar;
+    }
+
+    public void setRatingBar(Float ratingBar) {
+        this.ratingBar = ratingBar;
     }
 
     public String getCourtName() {
