@@ -16,7 +16,7 @@ public class NavigatorActivity extends AppCompatActivity {
     HomeFragment homeFragment = new HomeFragment();
     MapsFragment mapsFragment = new MapsFragment();
     NotificationFragment notificationFragment = new NotificationFragment();
-    ProfileFragment profileFragment = new ProfileFragment();
+    BookingsFragment bookingsFragment = new BookingsFragment();
     SettingFragment settingFragment = new SettingFragment();
 
     @Override
@@ -57,7 +57,7 @@ public class NavigatorActivity extends AppCompatActivity {
                     case R.id.ic_history:
                         getSupportFragmentManager()
                                 .beginTransaction()
-                                .replace(R.id.container,profileFragment)
+                                .replace(R.id.container,bookingsFragment)
                                 .commit();
                         return true;
 
