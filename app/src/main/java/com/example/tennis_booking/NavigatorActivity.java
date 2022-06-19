@@ -54,7 +54,7 @@ public class NavigatorActivity extends AppCompatActivity {
                                 .replace(R.id.container,notificationFragment)
                                 .commit();
                         return true;
-                    case R.id.ic_person:
+                    case R.id.ic_history:
                         getSupportFragmentManager()
                                 .beginTransaction()
                                 .replace(R.id.container,profileFragment)
