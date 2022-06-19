@@ -158,7 +158,7 @@
                             android:focusable="false"
                             android:fontFamily="@font/calibri"
                             android:maxLines="1"
-                            android:text="Xem trước"
+                            android:text="Image Sample"
                             android:textColor="@color/black"
                             android:textSize="16sp"
                             android:textStyle="normal" />
@@ -185,7 +185,7 @@
                             android:focusable="false"
                             android:fontFamily="@font/calibri"
                             android:maxLines="1"
-                            android:text="Vị trí"
+                            android:text="Location"
                             android:textColor="@color/black"
                             android:textSize="16sp"
                             android:textStyle="normal" />
@@ -229,7 +229,7 @@
                             android:focusable="false"
                             android:fontFamily="@font/calibri"
                             android:maxLines="1"
-                            android:text="Thông tin"
+                            android:text="Details"
                             android:textColor="@color/black"
                             android:textSize="16sp"
                             android:textStyle="normal" />
@@ -254,7 +254,7 @@
                             android:focusable="false"
                             android:fontFamily="@font/calibri"
                             android:maxLines="1"
-                            android:text="Đánh giá: "
+                            android:text="Ratings: "
                             android:textColor="@color/black"
                             android:textSize="16sp"
                             android:textStyle="normal" />
