@@ -41,19 +41,12 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                                <androidx.cardview.widget.CardView
-                                    android:layout_width="match_parent"
-                                    android:layout_height="wrap_content"
-                                    app:cardCornerRadius="50dp">
-
                                     <ImageView
                                         android:layout_width="match_parent"
                                         android:layout_height="260dp"
                                         android:layout_marginTop="0dp"
                                         android:scaleType="centerCrop"
-                                        android:src="@drawable/tennis_court" />
-
-                                </androidx.cardview.widget.CardView>
+                                        android:src="@drawable/tennis_courts" />
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
@@ -164,9 +157,10 @@
                             android:textSize="16sp"
                             android:textStyle="normal" />
 
-                        <RelativeLayout
+                        <androidx.cardview.widget.CardView
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content">
+                            android:layout_height="wrap_content"
+                            app:cardCornerRadius="20dp">
 
                             <androidx.viewpager.widget.ViewPager
                                 android:id="@+id/viewPagerMain"
@@ -177,7 +171,7 @@
                                 android:contentDescription="@string/title_activity_maps"
                                 android:scaleType="centerCrop" />
 
-                        </RelativeLayout>
+                        </androidx.cardview.widget.CardView>
 
                         <TextView
                             android:layout_width="match_parent"
@@ -474,7 +468,7 @@
         android:layout_height="wrap_content"
         android:drawablePadding="16dp"
         android:focusable="false"
-        android:fontFamily="@font/calibri"
+        android:fontFamily="@font/gotham"
         android:maxLines="1"
         android:text="Overview"
         android:textAlignment="center"

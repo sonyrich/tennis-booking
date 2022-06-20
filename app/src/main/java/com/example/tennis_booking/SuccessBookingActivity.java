@@ -7,19 +7,19 @@ import android.widget.Button;
 
 import androidx.appcompat.app.AppCompatActivity;
 
-public class CourtSelectActivity extends AppCompatActivity {
+public class SuccessBookingActivity extends AppCompatActivity {
 
-    Button btn;
+    Button ntn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_court_select);
+        setContentView(R.layout.activity_success_booking);
 
-        btn = (Button) findViewById(R.id.booking_btn);
-        btn.setOnClickListener(new View.OnClickListener() {
+        ntn = (Button) findViewById(R.id.backtohome_btn);
+        ntn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(CourtSelectActivity.this, SuccessBookingActivity.class);
+                Intent intent = new Intent(SuccessBookingActivity.this, NavigatorActivity.class);
                 startActivity(intent);
             }
         });

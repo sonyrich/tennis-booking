@@ -48,9 +48,10 @@
         android:layout_marginStart="25dp"
         android:layout_marginTop="15dp"
         android:text="Trending search"
-        android:textSize="15dp"
+        android:fontFamily="@font/calibri"
         android:textColor="@color/black"
-        android:textFontWeight="300"/>
+        android:textFontWeight="300"
+        android:textSize="20dp" />
 
     <androidx.recyclerview.widget.RecyclerView
         android:id="@+id/rvSearch"
