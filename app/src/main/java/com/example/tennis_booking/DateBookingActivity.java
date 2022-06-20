@@ -9,6 +9,7 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.DatePicker;
 import android.widget.EditText;
+import android.widget.ImageView;
 import android.widget.TextView;
 
 import androidx.annotation.RequiresApi;
@@ -22,6 +23,7 @@ public class DateBookingActivity extends AppCompatActivity /*implements DatePick
 
     Button booking_btn;
     ViewPager mViewPager;
+    Button img;
 
     int[] images = {R.drawable.tennis_courts, R.drawable.tennis_courts_2, R.drawable.tennis_courts_3, R.drawable.tennis_courts_4,
             R.drawable.tennis_courts_5, R.drawable.tennis_courts_6, R.drawable.tennis_courts_7, R.drawable.tennis_courts_8};
@@ -40,6 +42,16 @@ public class DateBookingActivity extends AppCompatActivity /*implements DatePick
                 startActivity(intent);
             }
         });
+
+        img = (Button) findViewById(R.id.message_btn);
+        img.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DateBookingActivity.this, MessagesActivity.class);
+                startActivity(intent);
+            }
+        });
+
         mViewPager = (ViewPager)findViewById(R.id.viewPagerMain);
         mViewPagerAdapter = new ViewPagerAdapter(DateBookingActivity.this, images);
         mViewPager.setAdapter(mViewPagerAdapter);

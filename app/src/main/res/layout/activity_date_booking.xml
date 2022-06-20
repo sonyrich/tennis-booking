@@ -41,9 +41,10 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                                <RelativeLayout
+                                <androidx.cardview.widget.CardView
                                     android:layout_width="match_parent"
-                                    android:layout_height="wrap_content">
+                                    android:layout_height="wrap_content"
+                                    app:cardCornerRadius="50dp">
 
                                     <ImageView
                                         android:layout_width="match_parent"
@@ -52,7 +53,7 @@
                                         android:scaleType="centerCrop"
                                         android:src="@drawable/tennis_court" />
 
-                                </RelativeLayout>
+                                </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
@@ -173,6 +174,7 @@
                                 android:layout_height="260dp"
                                 android:layout_marginTop="5dp"
                                 android:background="@drawable/custom_viewpaper"
+                                android:contentDescription="@string/title_activity_maps"
                                 android:scaleType="centerCrop" />
 
                         </RelativeLayout>
@@ -192,14 +194,15 @@
 
                         <RelativeLayout
                             android:layout_width="match_parent"
-                            android:layout_height="match_parent">
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="5dp">
 
                             <fragment
+                                android:layout_width="match_parent"
+                                android:layout_height="400dp"
                                 android:id="@+id/google_maps"
                                 android:name="com.google.android.gms.maps.SupportMapFragment"
-                                android:layout_width="match_parent"
-                                android:layout_height="130dp"
-                                android:background="@drawable/custom_viewpaper" />
+                                tools:layout="@layout/activity_court_select" />
                         </RelativeLayout>
                     </LinearLayout>
 
@@ -281,7 +284,7 @@
                                     android:layout_width="30dp"
                                     android:layout_height="30dp"
                                     android:scaleType="centerCrop"
-                                    tools:srcCompat="@tools:sample/avatars" />
+                                    tools:srcCompat="@drawable/tennis_courts_10" />
 
                             </androidx.cardview.widget.CardView>
 
@@ -358,7 +361,7 @@
                                     android:layout_width="30dp"
                                     android:layout_height="30dp"
                                     android:scaleType="centerCrop"
-                                    tools:srcCompat="@tools:sample/avatars" />
+                                    tools:srcCompat="@drawable/tennis_courts_7" />
 
                             </androidx.cardview.widget.CardView>
 
@@ -416,14 +419,20 @@
 
                 </androidx.cardview.widget.CardView>
 
-                <Button
-                    android:id="@+id/booking_btn"
+                <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:layout_marginHorizontal="20dp"
                     android:layout_marginTop="20dp"
-                    android:layout_marginBottom="36dp"
+                    android:layout_marginBottom="20dp"
+                    android:orientation="horizontal"
+                    android:weightSum="4">
+                <Button
+                    android:id="@+id/booking_btn"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_weight="3"
+                    android:layout_marginLeft="10dp"
                     android:background="@drawable/buttonshape"
                     android:fontFamily="@font/calibri"
                     android:text="Continue"
@@ -431,6 +440,26 @@
                     android:textColor="#ffffff"
                     android:textSize="18sp"
                     android:textStyle="bold" />
+
+                    <Button
+                        android:id="@+id/message_btn"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginRight="10dp"
+                        android:layout_marginLeft="5dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/buttonshape"
+                        android:fontFamily="@font/calibri"
+                        android:drawableLeft="@drawable/topic"
+                        android:paddingLeft="20dp"
+                        android:text="Message"
+                        android:textAllCaps="false"
+                        android:textColor="#ffffff"
+                        android:textSize="18sp"
+                        android:textStyle="bold" />
+
+                </LinearLayout>
             </LinearLayout>
 
 

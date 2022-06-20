@@ -30,6 +30,8 @@
             android:layout_marginStart="25dp"
             android:layout_marginTop="15dp"
             android:layout_marginEnd="25dp"
+            android:paddingRight="20dp"
+            android:drawableRight="@drawable/search"
             android:background="@drawable/transparent_search"
             android:ems="10"
             android:hint="Search Course Name, Code,..."
@@ -156,6 +158,8 @@
                             android:layout_marginStart="15dp"
                             android:layout_marginTop="128dp"
                             android:text="Cancel Course"
+                            android:textColor="@color/white"
+                            android:backgroundTint="#E4EC5353"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/txtPaidStatus" />
 
@@ -166,6 +170,8 @@
                             android:layout_marginTop="128dp"
                             android:layout_marginEnd="15dp"
                             android:text="Payment"
+                            android:textColor="@color/white"
+                            android:backgroundTint="@color/colorPrimary"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/txtPaidStatus" />
 
@@ -274,6 +280,8 @@
                             android:layout_marginStart="15dp"
                             android:layout_marginTop="128dp"
                             android:text="Cancel Course"
+                            android:textColor="@color/white"
+                            android:backgroundTint="#E4EC5353"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/txtPaidStatus1" />
 
@@ -284,6 +292,8 @@
                             android:layout_marginTop="128dp"
                             android:layout_marginEnd="15dp"
                             android:text="Payment"
+                            android:textColor="@color/white"
+                            android:backgroundTint="@color/colorPrimary"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/txtPaidStatus1" />
 
@@ -392,6 +402,8 @@
                             android:layout_marginStart="15dp"
                             android:layout_marginTop="128dp"
                             android:text="Cancel Course"
+                            android:textColor="@color/white"
+                            android:backgroundTint="#E4EC5353"
                             app:layout_constraintStart_toStartOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/txtPaidStatus2" />
 
@@ -401,7 +413,9 @@
                             android:layout_height="40dp"
                             android:layout_marginTop="128dp"
                             android:layout_marginEnd="15dp"
+                            android:backgroundTint="@color/colorPrimary"
                             android:text="Payment"
+                            android:textColor="@color/white"
                             app:layout_constraintEnd_toEndOf="parent"
                             app:layout_constraintTop_toBottomOf="@+id/txtPaidStatus2" />
 

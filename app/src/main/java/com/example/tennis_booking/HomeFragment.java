@@ -113,16 +113,6 @@ public class HomeFragment extends Fragment implements HomeAdapter.itemClickListe
             }
         });
 
-        //Xử lí nhấn message
-        img = (ImageView) rootView.findViewById(R.id.imgMessage);
-        img.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(getContext(), MessagesActivity.class);
-                startActivity(intent);
-            }
-        });
-
         return rootView;
     }
 
