@@ -9,75 +9,132 @@
         android:id="@+id/tvLogin"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:fontFamily="sans-serif"
+        android:layout_marginTop="20dp"
+        android:fontFamily="@font/gotham"
         android:gravity="center"
-        android:text="Log In"
+        android:text="Welcome"
         android:textAlignment="center"
-        android:textSize="50sp"
-        android:layout_marginTop="50dp"
         android:textColor="@color/black"
-        android:textStyle="bold"
         android:textFontWeight="500"
+        android:textSize="50sp"
+        android:textStyle="bold"
         tools:layout_editor_absoluteX="140dp"
         tools:layout_editor_absoluteY="292dp" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="150dp"
+        android:src="@drawable/logo_text"/>
 
     <EditText
         android:id="@+id/edtEmail"
         android:layout_width="360dp"
         android:layout_height="55dp"
-        android:ems="10"
-        android:hint="Email"
         android:layout_gravity="center"
         android:layout_marginTop="30dp"
-        android:paddingLeft="20dp"
         android:background="@drawable/transparent_text_background"
-        android:inputType="textEmailAddress" />
+        android:ems="10"
+        android:hint="Email"
+        android:inputType="textEmailAddress"
+        android:paddingLeft="20dp" />
 
 
     <EditText
         android:id="@+id/edtPassword"
         android:layout_width="360dp"
         android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/transparent_text_background"
         android:ems="10"
         android:hint="Password"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:paddingLeft="20dp"
-        android:background="@drawable/transparent_text_background"
-        android:inputType="textPassword" />
-
-    <Button
-        android:id="@+id/btnLogIn"
-        android:layout_width="360dp"
-        android:layout_height="55dp"
-        android:background="@drawable/custom_button"
-        android:layout_gravity="center"
-        android:layout_marginTop="20dp"
-        android:textSize="20dp"
-        android:textColor="@color/white"
-        android:textAllCaps="false"
-        android:text="Log in"
-        />
+        android:inputType="textPassword"
+        android:paddingLeft="20dp" />
 
     <TextView
         android:id="@+id/tvFgPassword"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:textSize="20dp"
-        android:layout_gravity="center"
+        android:layout_marginRight="24dp"
+        android:layout_gravity="right"
+        android:layout_marginTop="10dp"
+        android:text="Forgot your password?"
         android:textColor="@color/green_main"
-        android:text="Forgot your password?" />
+        android:textSize="15dp" />
+
+    <Button
+        android:id="@+id/btnLogIn"
+        android:layout_width="360dp"
+        android:layout_height="55dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/custom_button"
+        android:text="Log in"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="20dp" />
 
     <TextView
-        android:id="@+id/tvSignUp"
+        android:id="@+id/tvFgOr"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        android:textSize="20dp"
         android:layout_gravity="center"
+        android:layout_marginTop="180dp"
+        android:text="Or continue with"
         android:textColor="@color/green_main"
-        android:text="Sign up" />
+        android:textSize="20dp" />
+
+    <LinearLayout
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="3">
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="1.25"
+            android:paddingLeft="70dp"
+            android:src="@drawable/facebook_circle"/>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_weight="0.5"
+            android:src="@drawable/google_circle"/>
+
+        <ImageView
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:paddingRight="70dp"
+            android:layout_weight="1.25"
+            android:src="@drawable/twitter_circle"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="20dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:weightSum="2">
+
+        <TextView
+            android:id="@+id/tvSignUp1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="55dp"
+            android:text="Don't have an account?. "
+            android:textColor="#6A6A6A"
+            android:textSize="20dp" />
+
+        <TextView
+            android:id="@+id/tvSignUp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Sign up"
+            android:textColor="@color/green_main"
+            android:textSize="20dp" />
+    </LinearLayout>
 
 
 </LinearLayout>

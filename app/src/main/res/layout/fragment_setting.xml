@@ -19,7 +19,7 @@
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="560dp"
+        android:layout_height="match_parent"
         android:layout_marginTop="80dp">
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -372,20 +372,34 @@
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/settingLogout"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/custom_setting_text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/setting11">
+
+                <Button
+                    android:id="@+id/btnLogout"
+                    android:layout_width="match_parent"
+                    android:layout_height="55dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginHorizontal="10dp"
+                    android:background="@drawable/custom_button"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:gravity="center"
+                    android:text="Logout"
+                    android:textColor="@color/white"
+                    android:textSize="20sp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
 
         </androidx.constraintlayout.widget.ConstraintLayout>
 
     </ScrollView>
-
-    <Button
-        android:id="@+id/btnLogout"
-        android:layout_width="380dp"
-        android:layout_height="55dp"
-        android:layout_marginTop="700dp"
-        android:layout_gravity="center_horizontal"
-        android:background="@drawable/custom_button"
-        android:backgroundTint="#A8CC2626"
-        android:text="Logout"
-        android:textSize="22dp" />
 
 </FrameLayout>
