@@ -37,11 +37,12 @@
         <entry key="..\:/prm391/projects/tennis-booking/app/src/main/res/drawable/custom_color_background.xml" value="0.141" />
         <entry key="..\:/prm391/projects/tennis-booking/app/src/main/res/drawable/custom_setting_text.xml" value="0.1" />
         <entry key="..\:/prm391/projects/tennis-booking/app/src/main/res/drawable/custom_viewpaper.xml" value="0.14" />
+        <entry key="..\:/prm391/projects/tennis-booking/app/src/main/res/drawable/space_background.xml" value="0.141" />
         <entry key="..\:/prm391/projects/tennis-booking/app/src/main/res/layout/activity_court_select.xml" value="0.2" />
         <entry key="..\:/prm391/projects/tennis-booking/app/src/main/res/layout/activity_date_booking.xml" value="0.1634349030470914" />
         <entry key="..\:/prm391/projects/tennis-booking/app/src/main/res/layout/activity_login.xml" value="0.16666666666666666" />
         <entry key="..\:/prm391/projects/tennis-booking/app/src/main/res/layout/activity_messages.xml" value="0.2" />
-        <entry key="..\:/prm391/projects/tennis-booking/app/src/main/res/layout/activity_profile.xml" value="0.16666666666666666" />
+        <entry key="..\:/prm391/projects/tennis-booking/app/src/main/res/layout/activity_profile.xml" value="0.264" />
         <entry key="..\:/prm391/projects/tennis-booking/app/src/main/res/layout/activity_search.xml" value="0.16666666666666666" />
         <entry key="..\:/prm391/projects/tennis-booking/app/src/main/res/layout/activity_signup.xml" value="0.16666666666666666" />
         <entry key="..\:/prm391/projects/tennis-booking/app/src/main/res/layout/activity_success_booking.xml" value="0.176" />
