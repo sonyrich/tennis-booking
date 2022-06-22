@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/mn_2_vs"
+        android:title="Court for 2 vs 2"/>
+    <item android:id="@+id/mn_1_vs"
+        android:title="Court for 1 vs 1"/>
+</menu>

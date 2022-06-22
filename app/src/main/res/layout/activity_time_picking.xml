@@ -151,7 +151,18 @@
                                 android:focusable="false"
                                 android:fontFamily="@font/calibri"
                                 android:maxLines="1"
-                                android:text="Siêu to khổng lồ"
+                                android:text="Court for 2vs2"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:drawablePadding="3dp"
+                                android:focusable="false"
+                                android:fontFamily="@font/calibri"
+                                android:maxLines="1"
+                                android:text=" - Court A"
                                 android:textColor="@color/black"
                                 android:textSize="20sp" />
 

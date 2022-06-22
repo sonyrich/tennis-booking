@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/ic_momo"
+        android:title="Momo"/>
+    <item android:id="@+id/ic_zalopay"
+        android:title="Zalopay"/>
+    <item android:id="@+id/ic_mocagrab"
+        android:title="Moca|Grab"/>
+    <item android:id="@+id/ic_visa"
+        android:title="Visa card"/>
+    <item android:id="@+id/ic_debitcard"
+        android:title="Debit card"/>
+    <item android:id="@+id/ic_cash"
+        android:title="Cash"/>
+</menu>

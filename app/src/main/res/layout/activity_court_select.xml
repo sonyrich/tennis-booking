@@ -37,13 +37,6 @@
                     android:textColor="@color/colorPrimary"
                     android:textSize="20sp" />
 
-                <ImageView
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_alignParentTop="true"
-                    android:layout_alignParentEnd="true"
-                    android:src="@drawable/ic_filter" />
-
             </RelativeLayout>
 
         </androidx.appcompat.widget.Toolbar>
@@ -170,28 +163,29 @@
 
 
                     <LinearLayout
+                        android:id="@+id/llayout_1"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="horizontal"
                         android:weightSum="3">
 
                         <TextView
+                            android:id="@+id/tv_stype"
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
                             android:layout_weight="2"
-                            android:text="Sân siêu to khổng lồ"
-                            android:textSize="20dp"
+                            android:fontFamily="@font/calibri"
+                            android:text="Court for 2vs2"
                             android:textColor="@color/black"
-                            android:textStyle="bold"
-                            android:fontFamily="@font/calibri"/>
+                            android:textSize="20dp"
+                            android:textStyle="bold" />
 
                         <ImageView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
-                            android:layout_weight="1"
                             android:layout_marginRight="5dp"
-                            android:src="@drawable/ic_baseline_arrow_forward_ios_24"
-                            />
+                            android:layout_weight="1"
+                            android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
                     </LinearLayout>
 
 
@@ -230,7 +224,7 @@
                             android:layout_width="match_parent"
                             android:layout_height="180dp"
                             android:layout_marginTop="5dp"
-                            android:src="@drawable/kichthuocsantennistieuchuan"/>
+                            android:src="@drawable/kichthuocsantennistieuchuan" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -267,7 +261,7 @@
                             android:paddingLeft="20dp"
                             android:text="+ Chiều dài sân là 23,77 m và chiều rộng là 8,23 m với trận đánh đơn"
                             android:textColor="#7C7C7C"
-                            android:textSize="16sp"/>
+                            android:textSize="16sp" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -279,7 +273,7 @@
                             android:paddingLeft="20dp"
                             android:text="+ Chiều dài sân là 23,77 m x 10,97 m chiều rộng cho trận đánh đôi."
                             android:textColor="#7C7C7C"
-                            android:textSize="16sp"/>
+                            android:textSize="16sp" />
 
                         <TextView
                             android:layout_width="match_parent"
@@ -291,7 +285,190 @@
                             android:paddingLeft="10dp"
                             android:text="Lưới được căng ngang theo chiều rộng sân, song song với đường biên, chia đều 2 bên. Chiều cao lưới 914 mm ở giữa và 1,07 m ở 2 cột lưới."
                             android:textColor="#7C7C7C"
-                            android:textSize="16sp"/>
+                            android:textSize="16sp" />
+
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginHorizontal="10dp"
+                    android:padding="16dp"
+                    app:cardCornerRadius="4dp"
+                    app:cardUseCompatPadding="true"
+                    app:contentPaddingLeft="10dp"
+                    app:contentPaddingRight="10dp">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:layout_marginBottom="16dp"
+                            android:orientation="horizontal"
+                            android:weightSum="100">
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="33.3"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="16dp"
+                                    android:layout_height="16dp"
+                                    android:layout_marginEnd="4dp"
+                                    android:src="@drawable/booked_img" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/calibri"
+                                    android:text="Booked"
+                                    android:textAlignment="center"
+                                    android:textColor="#b2b2b2" />
+
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="33.3"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="16dp"
+                                    android:layout_height="16dp"
+                                    android:layout_marginEnd="4dp"
+                                    android:src="@drawable/available_img" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/calibri"
+                                    android:text="Available"
+                                    android:textAlignment="center"
+                                    android:textColor="#b2b2b2" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="33.3"
+                                android:gravity="center">
+
+                                <ImageView
+                                    android:layout_width="16dp"
+                                    android:layout_height="16dp"
+                                    android:layout_marginEnd="4dp"
+                                    android:src="@drawable/your_seat_img" />
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/calibri"
+                                    android:text="Selected"
+                                    android:textAlignment="center"
+                                    android:textColor="#b2b2b2" />
+                            </LinearLayout>
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:orientation="vertical"
+                            android:layout_marginBottom="10dp"
+                            android:weightSum="3">
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="36dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="40dp"
+                                    android:fontFamily="@font/print_clearly"
+                                    android:text="A"
+                                    android:textAlignment="center"
+                                    android:textColor="#c3c3c3"
+                                    android:textSize="28sp"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/court1"
+                                    android:layout_width="200dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginVertical="5dp"
+                                    android:background="@drawable/not_book" />
+
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="36dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginRight="40dp"
+                                    android:fontFamily="@font/print_clearly"
+                                    android:text="B"
+                                    android:textAlignment="center"
+                                    android:textColor="#c3c3c3"
+                                    android:textSize="28sp"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:id="@+id/court2"
+                                    android:layout_width="200dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginVertical="5dp"
+                                    android:background="@drawable/not_book" />
+                            </LinearLayout>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_weight="1"
+                                android:gravity="center"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="36dp"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:fontFamily="@font/print_clearly"
+                                    android:layout_marginRight="40dp"
+                                    android:text="C"
+                                    android:textAlignment="center"
+                                    android:textColor="#c3c3c3"
+                                    android:textSize="28sp"
+                                    android:textStyle="bold" />
+
+                                <ImageView
+                                    android:layout_width="200dp"
+                                    android:layout_height="100dp"
+                                    android:layout_marginVertical="5dp"
+                                    android:background="@drawable/booked" />
+                            </LinearLayout>
+                        </LinearLayout>
 
                     </LinearLayout>
 
@@ -329,7 +506,7 @@
         android:text="Booking"
         android:textAlignment="center"
         android:textColor="@android:color/black"
-        android:textSize="40dp"
+        android:textSize="30dp"
         app:layout_anchor="@+id/appBarLayout3"
         app:layout_anchorGravity="center" />
 
