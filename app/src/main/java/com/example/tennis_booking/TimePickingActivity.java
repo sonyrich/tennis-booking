@@ -29,7 +29,7 @@ public class TimePickingActivity extends AppCompatActivity implements DatePicker
         cardView.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), CourtSelectActivity.class);
+                Intent intent = new Intent(getApplicationContext(), PaySectionActivity.class);
                 startActivity(intent);
             }
         });

@@ -44,6 +44,9 @@
             android:name=".SearchActivity"
             android:exported="false" />
         <activity
+            android:name=".PaySectionActivity"
+            android:exported="false" />
+        <activity
             android:name=".SuccessBookingActivity"
             android:exported="false" />
         <activity
