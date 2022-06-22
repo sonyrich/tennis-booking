@@ -9,14 +9,18 @@ public class CourtItem {
     public Float ratingBar;
     public String courtName;
     public String courtDistance;
+    public String courtDiscountPrice;
     public String courtPrice;
+    public String ratingPoint;
 
-    public CourtItem(Drawable imgCourt, Float ratingBar, String courtName, String courtDistance, String courtPrice) {
+    public CourtItem(Drawable imgCourt, Float ratingBar, String courtName, String courtDistance,String courtDiscountPrice, String courtPrice, String ratingPoint) {
         this.imgCourt = imgCourt;
         this.ratingBar = ratingBar;
         this.courtName = courtName;
         this.courtDistance = courtDistance;
+        this.courtDiscountPrice = courtDiscountPrice;
         this.courtPrice = courtPrice;
+        this.ratingPoint = ratingPoint;
     }
 
     public Drawable getImgCourt() {
@@ -47,6 +51,14 @@ public class CourtItem {
         return courtDistance;
     }
 
+    public String getCourtDiscountPrice() {
+        return courtDiscountPrice;
+    }
+
+    public void setCourtDiscountPrice(String courtDiscountPrice) {
+        this.courtDiscountPrice = courtDiscountPrice;
+    }
+
     public void setCourtDistance(String courtDistance) {
         this.courtDistance = courtDistance;
     }
@@ -57,5 +69,13 @@ public class CourtItem {
 
     public void setCourtPrice(String courtPrice) {
         this.courtPrice = courtPrice;
+    }
+
+    public String getRatingPoint() {
+        return ratingPoint;
+    }
+
+    public void setRatingPoint(String ratingPoint) {
+        this.ratingPoint = ratingPoint;
     }
 }

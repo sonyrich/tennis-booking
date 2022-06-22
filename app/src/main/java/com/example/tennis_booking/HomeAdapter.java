@@ -2,6 +2,7 @@ package com.example.tennis_booking;
 
 import android.content.Context;
 import android.content.Intent;
+import android.graphics.Paint;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -38,6 +39,8 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.MyHolder>{
         holder.tvCourtName.setText(CourtModelList.get(position).getCourtName());
         holder.tvCourDistance.setText(CourtModelList.get(position).getCourtDistance());
         holder.tvCourPrice.setText(CourtModelList.get(position).getCourtPrice());
+        holder.tvCourtDiscountPrice.setText(CourtModelList.get(position).getCourtDiscountPrice());
+        holder.ratingPoint.setText(CourtModelList.get(position).getRatingPoint());
     }
 
     @Override
@@ -51,6 +54,8 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.MyHolder>{
         TextView tvCourtName;
         TextView tvCourDistance;
         TextView tvCourPrice;
+        TextView tvCourtDiscountPrice;
+        TextView ratingPoint;
 
         itemClickListener clickListener;
 
@@ -62,6 +67,10 @@ public class HomeAdapter extends RecyclerView.Adapter<HomeAdapter.MyHolder>{
             tvCourtName = itemView.findViewById(R.id.tvCourtName);
             tvCourDistance = itemView.findViewById(R.id.tvCourtDistance);
             tvCourPrice = itemView.findViewById(R.id.tvCourtPrice);
+            tvCourtDiscountPrice = itemView.findViewById(R.id.tvCourtDiscountPrice);
+            ratingPoint = itemView.findViewById(R.id.tvRatingPoint);
+
+            tvCourtDiscountPrice.setPaintFlags(tvCourtDiscountPrice.getPaintFlags() | Paint.STRIKE_THRU_TEXT_FLAG);
             this.clickListener = clickListener;
 
             itemView.setOnClickListener(this);

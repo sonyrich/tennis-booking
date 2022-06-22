@@ -19,7 +19,7 @@ import java.text.DateFormat;
 public class TimePickingActivity extends AppCompatActivity implements DatePickerDialog.OnDateSetListener{
 
     CardView cardView;
-    TextView ed_calendar;
+    TextView ed_calendar, tv_back_time_picking;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -40,6 +40,15 @@ public class TimePickingActivity extends AppCompatActivity implements DatePicker
             public void onClick(View v) {
                 DialogFragment datePicker = new DatePickerFragment();
                 datePicker.show(getSupportFragmentManager(), "date picker");
+            }
+        });
+
+        tv_back_time_picking = (TextView) findViewById(R.id.tv_back_time_picking);
+        tv_back_time_picking.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(TimePickingActivity.this, DateBookingActivity.class);
+                startActivity(intent);
             }
         });
     }

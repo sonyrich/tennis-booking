@@ -26,7 +26,7 @@
 
         <ScrollView
             android:id="@+id/scrvNotification"
-            android:layout_width="380dp"
+            android:layout_width="match_parent"
             android:layout_height="620dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
@@ -46,6 +46,7 @@
                         android:id="@+id/txtNotiHeader"
                         android:layout_width="321dp"
                         android:layout_height="30dp"
+                        android:layout_marginStart="5dp"
                         android:text="Future plan!"
                         android:textColor="@color/black"
                         android:textSize="20sp"
@@ -55,6 +56,7 @@
                         android:id="@+id/txtNotiStatus"
                         android:layout_width="wrap_content"
                         android:layout_height="30dp"
+                        android:layout_marginStart="5dp"
                         android:text="Just now" />
 
                 </LinearLayout>
@@ -63,11 +65,13 @@
                     android:id="@+id/txtNotiContent"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
                     android:text="Seem like you have no appointment in future. You can book a course in calender to take a course first!"
                     android:textColor="@color/black" />
 
                 <Space
                     android:layout_width="match_parent"
+                    android:layout_marginStart="5dp"
                     android:layout_height="20dp" />
 
                 <View
@@ -86,6 +90,7 @@
                         android:layout_width="321dp"
                         android:layout_height="30dp"
                         android:layout_weight="1"
+                        android:layout_marginStart="5dp"
                         android:text="Your request has been approve!"
                         android:textColor="@color/black"
                         android:textSize="20sp"
@@ -104,6 +109,7 @@
                     android:id="@+id/txtNotiContent2"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
                     android:text="Let's go to the course and enjoy the game!!"
                     android:textColor="@color/black" />
 
@@ -127,6 +133,7 @@
                         android:layout_width="321dp"
                         android:layout_height="30dp"
                         android:layout_weight="1"
+                        android:layout_marginStart="5dp"
                         android:text="It's weekend!"
                         android:textColor="@color/black"
                         android:textSize="20sp"
@@ -145,6 +152,7 @@
                     android:id="@+id/txtNotiContent3"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
                     android:text="Let's break a sweat! We have offers just for you!"
                     android:textColor="@color/black" />
 
@@ -168,6 +176,7 @@
                         android:layout_width="321dp"
                         android:layout_height="30dp"
                         android:layout_weight="1"
+                        android:layout_marginStart="5dp"
                         android:text="Sale off!"
                         android:textColor="@color/black"
                         android:textSize="20sp"
@@ -186,6 +195,7 @@
                     android:id="@+id/txtNotiContent4"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
                     android:text="Tennis Vina is on hot sale! Book now to get 40% off."
                     android:textColor="@color/black" />
 
@@ -209,6 +219,7 @@
                         android:layout_width="310dp"
                         android:layout_height="30dp"
                         android:layout_weight="1"
+                        android:layout_marginStart="5dp"
                         android:text="Reminder"
                         android:textColor="@color/black"
                         android:textSize="20sp"
@@ -227,6 +238,7 @@
                     android:id="@+id/txtNotiContent5"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
                     android:text="1 more hour until your booking on Tennis LakeView Villa. Let's get ready!"
                     android:textColor="@color/black" />
 
@@ -250,6 +262,7 @@
                         android:layout_width="310dp"
                         android:layout_height="30dp"
                         android:layout_weight="1"
+                        android:layout_marginStart="5dp"
                         android:text="Someone reply your comment"
                         android:textColor="@color/black"
                         android:textSize="20sp"
@@ -268,6 +281,7 @@
                     android:id="@+id/txtNotiContent6"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
                     android:text="Nguyen Dien Hoang Son has reply on your comment Tennis LakeView Villa"
                     android:textColor="@color/black" />
 
@@ -290,6 +304,7 @@
                         android:layout_width="321dp"
                         android:layout_height="30dp"
                         android:text="Future plan!"
+                        android:layout_marginStart="5dp"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -306,6 +321,7 @@
 
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
                     android:text="Seem like you have no appointment in future. You can book a course in calender to take a course first!"
                     android:textColor="@color/black" />
 
@@ -327,6 +343,7 @@
                         android:id="@+id/txtNotiHeader1"
                         android:layout_width="321dp"
                         android:layout_height="30dp"
+                        android:layout_marginStart="5dp"
                         android:text="Future plan!"
                         android:textColor="@color/black"
                         android:textSize="20sp"
@@ -344,6 +361,7 @@
                     android:id="@+id/txtNotiContent1"
                     android:layout_width="match_parent"
                     android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
                     android:text="Seem like you have no appointment in future. You can book a course in calender to take a course first!"
                     android:textColor="@color/black" />
 

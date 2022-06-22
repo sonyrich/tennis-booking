@@ -2,7 +2,7 @@
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/courtCard"
-    android:layout_width="110dp"
+    android:layout_width="130dp"
     android:layout_height="190dp"
     android:layout_margin="2dp"
     app:cardUseCompatPadding="true"
@@ -14,7 +14,7 @@
 
         <ImageView
             android:id="@+id/imgCourt"
-            android:layout_width="110dp"
+            android:layout_width="130dp"
             android:layout_height="90dp"
             android:scaleType="fitXY"
             android:src="@drawable/tennis_courts" />
@@ -50,10 +50,32 @@
             android:layout_below="@+id/tvCourtDistance"
             android:layout_marginStart="5dp"
             android:layout_marginTop="4dp"
-            android:numStars="5"
+            android:numStars="1"
             android:progressTint="#FFEB3B"
             android:rating="4"
             android:stepSize="0.1" />
+
+        <TextView
+            android:id="@+id/tvRatingPoint"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/tvCourtDistance"
+            android:layout_marginLeft="21dp"
+            android:layout_marginTop="6dp"
+            android:text="5.0"
+            android:textColor="#595454"
+            android:textSize="10dp" />
+
+        <TextView
+            android:id="@+id/tvCourtDiscountPrice"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="6dp"
+            android:layout_marginTop="155dp"
+            android:layout_toEndOf="@id/tvCourtPrice"
+            android:text="50.000đ/h"
+            android:textColor="#C3595454"
+            android:textSize="10dp" />
 
         <TextView
             android:id="@+id/tvCourtPrice"
@@ -61,7 +83,8 @@
             android:layout_height="wrap_content"
             android:layout_below="@+id/cardRatingBar"
             android:layout_marginStart="5dp"
-            android:layout_marginTop="4dp"
+            android:layout_marginTop="2dp"
+            android:textStyle="bold"
             android:text="50.000đ/h"
             android:textColor="#595454"
             android:textSize="12dp" />

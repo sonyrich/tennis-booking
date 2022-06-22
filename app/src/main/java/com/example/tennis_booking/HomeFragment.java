@@ -61,12 +61,12 @@ public class HomeFragment extends Fragment implements HomeAdapter.itemClickListe
         Drawable tennis11 = ResourcesCompat.getDrawable(res, R.drawable.tennis_courts_11, null);
         Drawable tennis12 = ResourcesCompat.getDrawable(res, R.drawable.tennis_courts_12, null);
 
-        CourtItem courtItem1 = new CourtItem( tennis1, (float) 5,"Tennis Lakeview", "11.2km", "đ50.000/h");
-        CourtItem courtItem2 = new CourtItem( tennis2, (float) 3.3,"Tennis The Estern", "9.2km", "đ55.000/h");
-        CourtItem courtItem3 = new CourtItem( tennis3, (float) 3.3,"Tennis Villa Park", "5.8km", "đ40.000/h");
-        CourtItem courtItem4 = new CourtItem( tennis4, (float) 3.3,"Tennis Stratford", "6.2km", "đ45.000/h");
-        CourtItem courtItem5 = new CourtItem( tennis5, (float) 3.3,"Tennis Oakland", "6.6km", "đ50.000/h");
-        CourtItem courtItem6 = new CourtItem( tennis6, (float) 3.3,"Tennis Nova Sport", "2.3km", "đ53.000/h");
+        CourtItem courtItem1 = new CourtItem( tennis1, (float) 5.0, "Tennis LakeView", "4.5km", "đ65.000/h", "đ50.000/h", "5/5");
+        CourtItem courtItem2 = new CourtItem( tennis2, (float) 3.3,"Tennis The Estern", "9.2km", "đ55.000/h", "đ50.000/h", "4.8/5");
+        CourtItem courtItem3 = new CourtItem( tennis3, (float) 3.3,"Tennis Villa Park", "5.8km", "đ40.000/h", "đ50.000/h", "4.7/5");
+        CourtItem courtItem4 = new CourtItem( tennis4, (float) 3.3,"Tennis Stratford", "6.2km", "đ45.000/h", "đ50.000/h", "4.6/5");
+        CourtItem courtItem5 = new CourtItem( tennis5, (float) 3.3,"Tennis Oakland", "6.6km", "đ50.000/h", "đ50.000/h", "4.9/5");
+        CourtItem courtItem6 = new CourtItem( tennis6, (float) 3.3,"Tennis Nova Sport", "2.3km", "đ53.000/h", "đ50.000/h", "5/5");
 
         courtData.add(courtItem1);
         courtData.add(courtItem2);
@@ -75,12 +75,12 @@ public class HomeFragment extends Fragment implements HomeAdapter.itemClickListe
         courtData.add(courtItem5);
         courtData.add(courtItem6);
 
-        CourtItem courtItem7 = new CourtItem( tennis7, (float) 3.3,"Tennis Quận 9", "3.2km", "đ55.000/h");
-        CourtItem courtItem8 = new CourtItem( tennis8, (float) 3.3,"Tennis Lan Anh", "2.8km", "đ40.000/h");
-        CourtItem courtItem9 = new CourtItem( tennis9, (float) 3.3,"Tennis Đồng khởi", "1.3km", "đ45.000/h");
-        CourtItem courtItem10 = new CourtItem( tennis10, (float) 3.3,"Tennis New Star", "2.4km", "đ50.000/h");
-        CourtItem courtItem11 = new CourtItem( tennis11, (float) 3.3,"Tennis Chúa hề", "3.8km", "đ53.000/h");
-        CourtItem courtItem12 = new CourtItem( tennis12, (float) 3.3,"Tennis The boss", "1.9km", "đ50.000/h");
+        CourtItem courtItem7 = new CourtItem( tennis7, (float) 3.3,"Tennis Quận 9", "3.2km", "đ55.000/h", "đ50.000/h", "4.2/5");
+        CourtItem courtItem8 = new CourtItem( tennis8, (float) 3.3,"Tennis Lan Anh", "2.8km", "đ40.000/h", "đ50.000/h", "4.3/5");
+        CourtItem courtItem9 = new CourtItem( tennis9, (float) 3.3,"Tennis Đồng khởi", "1.3km", "đ45.000/h", "đ50.000/h", "4.1/5");
+        CourtItem courtItem10 = new CourtItem( tennis10, (float) 3.3,"Tennis New Star", "2.4km", "đ50.000/h", "đ50.000/h", "4.5/5");
+        CourtItem courtItem11 = new CourtItem( tennis11, (float) 3.3,"Tennis Chúa hề", "3.8km", "đ53.000/h", "đ50.000/h", "4.2/5");
+        CourtItem courtItem12 = new CourtItem( tennis12, (float) 3.3,"Tennis The boss", "1.9km", "đ50.000/h", "đ50.000/h", "4.6/5");
 
         courtData1.add(courtItem7);
         courtData1.add(courtItem8);
