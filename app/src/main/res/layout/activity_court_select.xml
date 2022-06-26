@@ -161,6 +161,24 @@
                     app:cardUseCompatPadding="true"
                     app:contentPadding="8dp">
 
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_marginBottom="5dp"
+                        android:layout_marginRight="3dp"
+                        android:drawablePadding="3dp"
+                        android:focusable="false"
+                        android:fontFamily="@font/calibri"
+                        android:maxLines="1"
+                        android:text="Select court type: "
+                        android:textStyle="bold"
+                        android:textColor="#7C7C7C"
+                        android:textSize="20sp" />
 
                     <LinearLayout
                         android:id="@+id/llayout_1"
@@ -186,6 +204,7 @@
                             android:layout_marginRight="5dp"
                             android:layout_weight="1"
                             android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
+                    </LinearLayout>
                     </LinearLayout>
 
 
@@ -305,6 +324,20 @@
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginRight="3dp"
+                            android:drawablePadding="3dp"
+                            android:focusable="false"
+                            android:fontFamily="@font/calibri"
+                            android:maxLines="1"
+                            android:text="Select court available: "
+                            android:textStyle="bold"
+                            android:textColor="#7C7C7C"
+                            android:textSize="20sp" />
 
                         <LinearLayout
                             android:layout_width="match_parent"
