@@ -41,6 +41,12 @@
             android:value="@string/map_key" />
 
         <activity
+            android:name=".ListCourse2"
+            android:exported="false" />
+        <activity
+            android:name=".CreateCourse2"
+            android:exported="false" />
+        <activity
             android:name=".SearchActivity"
             android:exported="false" />
         <activity

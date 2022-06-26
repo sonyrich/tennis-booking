@@ -10,12 +10,14 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.Button;
+import android.widget.TextView;
 
 
 public class SettingFragment extends Fragment {
 
     private Button btn;
     private ConstraintLayout cl;
+    private TextView tv_courtmgr;
 
     public SettingFragment() {
         // Required empty public constructor
@@ -30,6 +32,15 @@ public class SettingFragment extends Fragment {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getContext(), LoginActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        tv_courtmgr = (TextView) rootView.findViewById(R.id.tv_courtmgr);
+        tv_courtmgr.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), ListCourse2.class);
                 startActivity(intent);
             }
         });

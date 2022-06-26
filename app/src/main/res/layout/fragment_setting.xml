@@ -137,7 +137,7 @@
                 app:layout_constraintTop_toBottomOf="@+id/setting3">
 
                 <TextView
-                    android:id="@+id/tvSetting4"
+                    android:id="@+id/tv_courtmgr"
                     android:layout_width="250dp"
                     android:layout_height="30dp"
                     android:layout_marginStart="20dp"
