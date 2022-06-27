@@ -62,11 +62,11 @@ public class HomeFragment extends Fragment implements HomeAdapter.itemClickListe
         Drawable tennis12 = ResourcesCompat.getDrawable(res, R.drawable.tennis_courts_12, null);
 
         CourtItem courtItem1 = new CourtItem( tennis1, (float) 5.0, "Tennis LakeView", "4.5km", "đ65.000/h", "đ50.000/h", "5/5");
-        CourtItem courtItem2 = new CourtItem( tennis2, (float) 3.3,"Tennis The Estern", "9.2km", "đ55.000/h", "đ50.000/h", "4.8/5");
-        CourtItem courtItem3 = new CourtItem( tennis3, (float) 3.3,"Tennis Villa Park", "5.8km", "đ40.000/h", "đ50.000/h", "4.7/5");
-        CourtItem courtItem4 = new CourtItem( tennis4, (float) 3.3,"Tennis Stratford", "6.2km", "đ45.000/h", "đ50.000/h", "4.6/5");
-        CourtItem courtItem5 = new CourtItem( tennis5, (float) 3.3,"Tennis Oakland", "6.6km", "đ50.000/h", "đ50.000/h", "4.9/5");
-        CourtItem courtItem6 = new CourtItem( tennis6, (float) 3.3,"Tennis Nova Sport", "2.3km", "đ53.000/h", "đ50.000/h", "5/5");
+        CourtItem courtItem2 = new CourtItem( tennis2, (float) 3.3,"Tennis The Estern", "9.2km", "đ60.000/h", "đ52.000/h", "4.8/5");
+        CourtItem courtItem3 = new CourtItem( tennis3, (float) 3.3,"Tennis Villa Park", "5.8km", "đ63.000/h", "đ51.000/h", "4.7/5");
+        CourtItem courtItem4 = new CourtItem( tennis4, (float) 3.3,"Tennis Stratford", "6.2km", "đ63.000/h", "đ53.000/h", "4.6/5");
+        CourtItem courtItem5 = new CourtItem( tennis5, (float) 3.3,"Tennis Oakland", "6.6km", "đ60.000/h", "đ48.000/h", "4.9/5");
+        CourtItem courtItem6 = new CourtItem( tennis6, (float) 3.3,"Tennis Nova Sport", "2.3km", "đ58.000/h", "đ47.000/h", "5/5");
 
         courtData.add(courtItem1);
         courtData.add(courtItem2);

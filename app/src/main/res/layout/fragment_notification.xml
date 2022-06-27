@@ -19,7 +19,8 @@
             android:text="Notification"
             android:fontFamily="@font/gotham"
             android:textColor="@color/black"
-            android:textSize="35dp"
+            android:textStyle="bold"
+            android:textSize="25dp"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toTopOf="parent" />
@@ -27,7 +28,8 @@
         <ScrollView
             android:id="@+id/scrvNotification"
             android:layout_width="match_parent"
-            android:layout_height="620dp"
+            android:layout_height="match_parent"
+            android:layout_marginTop="80dp"
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
@@ -71,8 +73,8 @@
 
                 <Space
                     android:layout_width="match_parent"
-                    android:layout_marginStart="5dp"
-                    android:layout_height="20dp" />
+                    android:layout_height="20dp"
+                    android:layout_marginStart="5dp" />
 
                 <View
                     android:id="@+id/divider"
@@ -89,8 +91,8 @@
                         android:id="@+id/txtNotiHeader2"
                         android:layout_width="321dp"
                         android:layout_height="30dp"
-                        android:layout_weight="1"
                         android:layout_marginStart="5dp"
+                        android:layout_weight="1"
                         android:text="Your request has been approve!"
                         android:textColor="@color/black"
                         android:textSize="20sp"
@@ -132,8 +134,8 @@
                         android:id="@+id/txtNotiHeader3"
                         android:layout_width="321dp"
                         android:layout_height="30dp"
-                        android:layout_weight="1"
                         android:layout_marginStart="5dp"
+                        android:layout_weight="1"
                         android:text="It's weekend!"
                         android:textColor="@color/black"
                         android:textSize="20sp"
@@ -175,8 +177,8 @@
                         android:id="@+id/txtNotiHeader4"
                         android:layout_width="321dp"
                         android:layout_height="30dp"
-                        android:layout_weight="1"
                         android:layout_marginStart="5dp"
+                        android:layout_weight="1"
                         android:text="Sale off!"
                         android:textColor="@color/black"
                         android:textSize="20sp"
@@ -218,8 +220,8 @@
                         android:id="@+id/txtNotiHeader5"
                         android:layout_width="310dp"
                         android:layout_height="30dp"
-                        android:layout_weight="1"
                         android:layout_marginStart="5dp"
+                        android:layout_weight="1"
                         android:text="Reminder"
                         android:textColor="@color/black"
                         android:textSize="20sp"
@@ -261,8 +263,8 @@
                         android:id="@+id/txtNotiHeader6"
                         android:layout_width="310dp"
                         android:layout_height="30dp"
-                        android:layout_weight="1"
                         android:layout_marginStart="5dp"
+                        android:layout_weight="1"
                         android:text="Someone reply your comment"
                         android:textColor="@color/black"
                         android:textSize="20sp"
@@ -303,8 +305,8 @@
 
                         android:layout_width="321dp"
                         android:layout_height="30dp"
-                        android:text="Future plan!"
                         android:layout_marginStart="5dp"
+                        android:text="Future plan!"
                         android:textColor="@color/black"
                         android:textSize="20sp"
                         android:textStyle="bold" />
@@ -357,6 +359,7 @@
 
                 </LinearLayout>
 
+
                 <TextView
                     android:id="@+id/txtNotiContent1"
                     android:layout_width="match_parent"
@@ -371,6 +374,135 @@
 
                 <View
                     android:id="@+id/divider1"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtNotiHeader10"
+                        android:layout_width="310dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:text="Someone reply your comment"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtNotiStatus10"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:text="Yesterday" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtNotiContent10"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
+                    android:text="Seem like you have no appointment in future. You can book a course in calender to take a course first!"
+                    android:textColor="@color/black" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <View
+                    android:id="@+id/divider10"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtNotiHeader11"
+                        android:layout_width="310dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:text="Reminder"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtNotiStatus11"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:text="Yesterday" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtNotiContent11"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
+                    android:text="1 more hour until your booking on Tennis LakeView Villa. Let's get ready!"
+                    android:textColor="@color/black" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <View
+                    android:id="@+id/divider11"
+                    android:layout_width="match_parent"
+                    android:layout_height="1dp"
+                    android:background="?android:attr/listDivider" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/txtNotiHeader12"
+                        android:layout_width="310dp"
+                        android:layout_height="30dp"
+                        android:layout_marginStart="5dp"
+                        android:layout_weight="1"
+                        android:text="Reminder"
+                        android:textColor="@color/black"
+                        android:textSize="20sp"
+                        android:textStyle="bold" />
+
+                    <TextView
+                        android:id="@+id/txtNotiStatus12"
+                        android:layout_width="wrap_content"
+                        android:layout_height="30dp"
+                        android:layout_weight="1"
+                        android:text="Yesterday" />
+
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/txtNotiContent12"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="5dp"
+                    android:text="1 more hour until your booking on Tennis LakeView Villa. Let's get ready!"
+                    android:textColor="@color/black" />
+
+                <Space
+                    android:layout_width="match_parent"
+                    android:layout_height="20dp" />
+
+                <View
+                    android:id="@+id/divider12"
                     android:layout_width="match_parent"
                     android:layout_height="1dp"
                     android:background="?android:attr/listDivider" />
