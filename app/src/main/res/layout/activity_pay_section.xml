@@ -391,7 +391,7 @@
                             </com.google.android.material.textfield.TextInputLayout>
 
                             <Button
-                                android:layout_width="110dp"
+                                android:layout_width="100dp"
                                 android:layout_height="50dp"
                                 android:layout_marginLeft="5dp"
                                 android:background="@drawable/buttonshape"
