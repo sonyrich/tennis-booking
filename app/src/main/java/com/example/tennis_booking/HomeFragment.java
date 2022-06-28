@@ -32,7 +32,7 @@ public class HomeFragment extends Fragment implements HomeAdapter.itemClickListe
     private HomeAdapter homeAdapter;
     private HomeAdapter homeAdapter1;
 
-    public HomeFragment(){};
+    public HomeFragment(){}
 
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,

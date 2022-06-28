@@ -1,7 +1,6 @@
 package com.example.tennis_booking;
 
 import android.graphics.drawable.Drawable;
-import android.widget.RatingBar;
 
 public class CourtItem {
 
