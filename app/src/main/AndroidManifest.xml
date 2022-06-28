@@ -41,6 +41,9 @@
             android:value="@string/map_key" />
 
         <activity
+            android:name=".CourtSelectDetailActivity"
+            android:exported="false" />
+        <activity
             android:name=".CommentListActivity"
             android:exported="false" />
         <activity
