@@ -153,6 +153,7 @@
                 </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
+                    android:id="@+id/cardviewcourttype"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:layout_marginHorizontal="10dp"
@@ -165,19 +166,19 @@
                         android:layout_height="wrap_content"
                         android:orientation="vertical">
 
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:layout_marginBottom="5dp"
-                        android:layout_marginRight="3dp"
-                        android:drawablePadding="3dp"
-                        android:focusable="false"
-                        android:fontFamily="@font/calibri"
-                        android:maxLines="1"
-                        android:text="Select court type: "
-                        android:textStyle="bold"
-                        android:textColor="#7C7C7C"
-                        android:textSize="20sp" />
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_marginRight="3dp"
+                            android:layout_marginBottom="5dp"
+                            android:drawablePadding="3dp"
+                            android:focusable="false"
+                            android:fontFamily="@font/calibri"
+                            android:maxLines="1"
+                            android:text="Select court: "
+                            android:textColor="#7C7C7C"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
 
                     <LinearLayout
                         android:id="@+id/llayout_1"
@@ -192,7 +193,7 @@
                             android:layout_height="wrap_content"
                             android:layout_weight="2"
                             android:fontFamily="@font/calibri"
-                            android:text="Court for 2vs2"
+                            android:text="Sân A - Đấu Đôi"
                             android:textColor="@color/black"
                             android:textSize="20dp"
                             android:textStyle="bold" />

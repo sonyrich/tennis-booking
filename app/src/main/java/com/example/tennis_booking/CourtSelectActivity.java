@@ -11,6 +11,8 @@ import android.widget.PopupMenu;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.cardview.widget.CardView;
+import androidx.constraintlayout.widget.ConstraintLayout;
 
 public class CourtSelectActivity extends AppCompatActivity {
 
@@ -47,8 +49,8 @@ public class CourtSelectActivity extends AppCompatActivity {
         llayout_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                ShowMenu();
-            }
+                Intent intent = new Intent(CourtSelectActivity.this, CourtSelectDetailActivity.class);
+                startActivity(intent);   }
         });
 
         court1 = (ImageView) findViewById(R.id.court1);
@@ -68,25 +70,5 @@ public class CourtSelectActivity extends AppCompatActivity {
                 court1.setImageDrawable(null);
             }
         });
-    }
-
-    private void ShowMenu(){
-        PopupMenu popupMenu = new PopupMenu(this, llayout_1);
-        popupMenu.getMenuInflater().inflate(R.menu.court_style_menu, popupMenu.getMenu());
-
-        popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
-            @Override
-            public boolean onMenuItemClick(MenuItem item) {
-                switch (item.getItemId()){
-                    case R.id.mn_1_vs: tv_style.setText("Court for 1vs1");
-                        break;
-                    case R.id.mn_2_vs: tv_style.setText("Court for 2vs2");
-                        break;
-                }
-                return false;
-            }
-        });
-
-        popupMenu.show();
     }
 }
