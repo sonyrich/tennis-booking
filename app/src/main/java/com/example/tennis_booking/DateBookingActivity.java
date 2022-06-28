@@ -24,7 +24,7 @@ public class DateBookingActivity extends AppCompatActivity /*implements DatePick
     Button booking_btn;
     ViewPager mViewPager;
     Button img;
-    TextView tvBack;
+    TextView tvBack, tv_seemore;
 
     int[] images = {R.drawable.tennis_courts, R.drawable.tennis_courts_2, R.drawable.tennis_courts_3, R.drawable.tennis_courts_4,
             R.drawable.tennis_courts_5, R.drawable.tennis_courts_6, R.drawable.tennis_courts_7, R.drawable.tennis_courts_8};
@@ -63,6 +63,15 @@ public class DateBookingActivity extends AppCompatActivity /*implements DatePick
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(DateBookingActivity.this, NavigatorActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        tv_seemore = (TextView) findViewById(R.id.tv_seemore);
+        tv_seemore.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(DateBookingActivity.this, CommentListActivity.class);
                 startActivity(intent);
             }
         });
