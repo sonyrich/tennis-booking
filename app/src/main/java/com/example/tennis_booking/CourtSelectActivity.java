@@ -19,21 +19,12 @@ public class CourtSelectActivity extends AppCompatActivity {
     Button btn;
     TextView tv_back_court_select, tv_style;
     LinearLayout llayout_1;
-    ImageView court1, court2;
+    ConstraintLayout layout_1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_court_select);
-
-        btn = (Button) findViewById(R.id.booking_btn);
-        btn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Intent intent = new Intent(CourtSelectActivity.this, TimePickingActivity.class);
-                startActivity(intent);
-            }
-        });
 
         tv_back_court_select = (TextView) findViewById(R.id.tv_back_court_select);
         tv_back_court_select.setOnClickListener(new View.OnClickListener() {
@@ -49,26 +40,39 @@ public class CourtSelectActivity extends AppCompatActivity {
         llayout_1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(CourtSelectActivity.this, CourtSelectDetailActivity.class);
+                ShowMenu();
+//                Intent intent = new Intent(CourtSelectActivity.this, CourtSelectDetailActivity.class);
+//                startActivity(intent);
+            }
+        });
+
+        layout_1 = (ConstraintLayout) findViewById(R.id.layout_1);
+        layout_1.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CourtSelectActivity.this, PaySectionActivity.class);
                 startActivity(intent);   }
         });
+    }
 
-        court1 = (ImageView) findViewById(R.id.court1);
-        court2 = (ImageView) findViewById(R.id.court2);
-        court1.setOnClickListener(new View.OnClickListener() {
+    private void ShowMenu() {
+        PopupMenu popupMenu = new PopupMenu(this, llayout_1);
+        popupMenu.getMenuInflater().inflate(R.menu.court_style_menu, popupMenu.getMenu());
+
+        popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
             @Override
-            public void onClick(View v) {
-                court1.setImageResource(R.drawable.select);
-                court2.setImageDrawable(null);
+            public boolean onMenuItemClick(MenuItem item) {
+                switch (item.getItemId()) {
+                    case R.id.mn_1_vs:
+                        tv_style.setText("Sân đấu đơn");
+                        break;
+                    case R.id.mn_2_vs:
+                        tv_style.setText("Sân đấu đôi");
+                        break;
+                }
+                return false;
             }
         });
-
-        court2.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                court2.setImageResource(R.drawable.select);
-                court1.setImageDrawable(null);
-            }
-        });
+        popupMenu.show();
     }
 }

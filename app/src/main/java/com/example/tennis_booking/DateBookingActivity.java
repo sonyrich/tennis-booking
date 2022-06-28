@@ -29,7 +29,7 @@ public class DateBookingActivity extends AppCompatActivity /*implements DatePick
         booking_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(getApplicationContext(), CourtSelectActivity.class);
+                Intent intent = new Intent(getApplicationContext(), TimePickingActivity.class);
                 startActivity(intent);
             }
         });

@@ -144,7 +144,7 @@
                                 android:focusable="false"
                                 android:fontFamily="@font/calibri"
                                 android:maxLines="1"
-                                android:text="Court for 2vs2"
+                                android:text="Court 2vs2"
                                 android:textColor="@color/black"
                                 android:textSize="20sp" />
 
@@ -155,7 +155,7 @@
                                 android:focusable="false"
                                 android:fontFamily="@font/calibri"
                                 android:maxLines="1"
-                                android:text=" - Court A"
+                                android:text=" . Court A . Big"
                                 android:textColor="@color/black"
                                 android:textSize="20sp" />
 
@@ -206,9 +206,9 @@
                                 android:fontFamily="@font/calibri"
                                 android:maxLines="1"
                                 android:text="Date: "
+                                android:textStyle="bold"
                                 android:textColor="@color/black"
-                                android:textSize="20sp"
-                                android:textStyle="bold" />
+                                android:textSize="20sp" />
 
                             <TextView
                                 android:layout_width="match_parent"
@@ -218,6 +218,17 @@
                                 android:fontFamily="@font/calibri"
                                 android:maxLines="1"
                                 android:text="Thursday, June 6, 2022"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:drawablePadding="3dp"
+                                android:focusable="false"
+                                android:fontFamily="@font/calibri"
+                                android:maxLines="1"
+                                android:text=" . 7AM - 8AM"
                                 android:textColor="@color/black"
                                 android:textSize="20sp" />
 

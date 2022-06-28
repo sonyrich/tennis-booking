@@ -131,6 +131,48 @@
                                 android:focusable="false"
                                 android:fontFamily="@font/calibri"
                                 android:maxLines="1"
+                                android:text="Date: "
+                                android:textStyle="bold"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:drawablePadding="3dp"
+                                android:focusable="false"
+                                android:fontFamily="@font/calibri"
+                                android:maxLines="1"
+                                android:text="Thursday, June 6, 2022"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:drawablePadding="3dp"
+                                android:focusable="false"
+                                android:fontFamily="@font/calibri"
+                                android:maxLines="1"
+                                android:text=" . 7AM - 8AM"
+                                android:textColor="@color/black"
+                                android:textSize="20sp" />
+
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:layout_marginRight="3dp"
+                                android:drawablePadding="3dp"
+                                android:focusable="false"
+                                android:fontFamily="@font/calibri"
+                                android:maxLines="1"
                                 android:text="Location: "
                                 android:textColor="@color/black"
                                 android:textSize="20sp"
@@ -175,7 +217,7 @@
                             android:focusable="false"
                             android:fontFamily="@font/calibri"
                             android:maxLines="1"
-                            android:text="Select court: "
+                            android:text="Select court type: "
                             android:textColor="#7C7C7C"
                             android:textSize="20sp"
                             android:textStyle="bold" />
@@ -214,314 +256,418 @@
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:layout_marginHorizontal="10dp"
+                    android:layout_marginBottom="10dp"
                     android:padding="16dp"
                     app:cardCornerRadius="4dp"
                     app:cardUseCompatPadding="true"
                     app:contentPaddingLeft="10dp"
                     app:contentPaddingRight="10dp">
 
-                    <LinearLayout
+                    <ScrollView
+                        android:id="@+id/scrollView3"
+                        android:layout_marginVertical="10dp"
                         android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:layout_marginBottom="16dp"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:drawablePadding="0dp"
-                            android:focusable="false"
-                            android:fontFamily="@font/calibri"
-                            android:maxLines="1"
-                            android:text="Image Sample"
-                            android:textColor="@color/black"
-                            android:textSize="16sp"
-                            android:textStyle="normal" />
-
-                        <ImageView
-                            android:layout_width="match_parent"
-                            android:layout_height="180dp"
-                            android:layout_marginTop="5dp"
-                            android:src="@drawable/kichthuocsantennistieuchuan" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="10dp"
-                            android:drawablePadding="0dp"
-                            android:focusable="false"
-                            android:fontFamily="@font/calibri"
-                            android:maxLines="1"
-                            android:text="Description"
-                            android:textColor="@color/black"
-                            android:textSize="16sp"
-                            android:textStyle="normal" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="40dp"
-                            android:drawablePadding="3dp"
-                            android:focusable="false"
-                            android:fontFamily="@font/calibri"
-                            android:maxLines="10"
-                            android:paddingLeft="10dp"
-                            android:text="Sân tennis là một khu vực bề mặt phẳng, hình chữ nhật có kích thước:"
-                            android:textColor="#7C7C7C"
-                            android:textSize="16sp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="40dp"
-                            android:drawablePadding="3dp"
-                            android:focusable="false"
-                            android:fontFamily="@font/calibri"
-                            android:maxLines="10"
-                            android:paddingLeft="20dp"
-                            android:text="+ Chiều dài sân là 23,77 m và chiều rộng là 8,23 m với trận đánh đơn"
-                            android:textColor="#7C7C7C"
-                            android:textSize="16sp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="40dp"
-                            android:drawablePadding="3dp"
-                            android:focusable="false"
-                            android:fontFamily="@font/calibri"
-                            android:maxLines="10"
-                            android:paddingLeft="20dp"
-                            android:text="+ Chiều dài sân là 23,77 m x 10,97 m chiều rộng cho trận đánh đôi."
-                            android:textColor="#7C7C7C"
-                            android:textSize="16sp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="60dp"
-                            android:drawablePadding="3dp"
-                            android:focusable="false"
-                            android:fontFamily="@font/calibri"
-                            android:maxLines="10"
-                            android:paddingLeft="10dp"
-                            android:text="Lưới được căng ngang theo chiều rộng sân, song song với đường biên, chia đều 2 bên. Chiều cao lưới 914 mm ở giữa và 1,07 m ở 2 cột lưới."
-                            android:textColor="#7C7C7C"
-                            android:textSize="16sp" />
-
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginHorizontal="10dp"
-                    android:padding="16dp"
-                    app:cardCornerRadius="4dp"
-                    app:cardUseCompatPadding="true"
-                    app:contentPaddingLeft="10dp"
-                    app:contentPaddingRight="10dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="10dp"
-                            android:layout_marginRight="3dp"
-                            android:drawablePadding="3dp"
-                            android:focusable="false"
-                            android:fontFamily="@font/calibri"
-                            android:maxLines="1"
-                            android:text="Select court available: "
-                            android:textStyle="bold"
-                            android:textColor="#7C7C7C"
-                            android:textSize="20sp" />
+                        android:layout_height="wrap_content">
 
                         <LinearLayout
                             android:layout_width="match_parent"
                             android:layout_height="wrap_content"
-                            android:layout_marginTop="8dp"
-                            android:layout_marginBottom="16dp"
-                            android:orientation="horizontal"
-                            android:weightSum="100">
+                            android:orientation="vertical">
 
                             <LinearLayout
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="33.3"
-                                android:gravity="center">
+                                android:layout_width="fill_parent"
+                                android:layout_height="fill_parent"
+                                android:orientation="horizontal">
 
-                                <ImageView
-                                    android:layout_width="16dp"
-                                    android:layout_height="16dp"
-                                    android:layout_marginEnd="4dp"
-                                    android:src="@drawable/booked_img" />
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="0dp"
+                                    android:layout_height="200dp"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="1"
+                                    app:cardCornerRadius="10dp">
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="@font/calibri"
-                                    android:text="Booked"
-                                    android:textAlignment="center"
-                                    android:textColor="#b2b2b2" />
+                                    <androidx.constraintlayout.widget.ConstraintLayout
+                                        android:id="@+id/layout_1"
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
 
+                                        <ImageView
+                                            android:id="@+id/imgCardCourtSelect1"
+                                            android:layout_width="196dp"
+                                            android:layout_height="130dp"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintHorizontal_bias="0.0"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent"
+                                            app:srcCompat="@drawable/tennis_court" />
+
+                                        <TextView
+                                            android:id="@+id/txtCardCourseSelect1"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="4dp"
+                                            android:paddingStart="5dp"
+                                            android:text="Sân A - Đấu Đôi"
+                                            android:textColor="@color/black"
+                                            android:textSize="18sp"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toBottomOf="@+id/imgCardCourtSelect1" />
+
+                                        <TextView
+                                            android:id="@+id/txtCardCourseSize1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingStart="5dp"
+                                            android:text="Sân cỡ to"
+                                            android:textColor="@color/black"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintHorizontal_bias="0.0"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toBottomOf="@+id/txtCardCourseSelect1" />
+
+                                        <TextView
+                                            android:id="@+id/txtCardCoursePrizeRange1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingEnd="5dp"
+                                            android:text="150.000₫-200.000₫/h"
+                                            android:textColor="@color/black"
+                                            android:textStyle="bold"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintHorizontal_bias="1.0"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toBottomOf="@+id/txtCardCourseSize1" />
+                                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="0dp"
+                                    android:layout_height="200dp"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="1"
+                                    app:cardCornerRadius="10dp">
+
+                                    <androidx.constraintlayout.widget.ConstraintLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <ImageView
+                                            android:id="@+id/imgCardCourtSelect2"
+                                            android:layout_width="196dp"
+                                            android:layout_height="130dp"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintHorizontal_bias="0.0"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent"
+                                            app:srcCompat="@drawable/tennis_court" />
+
+                                        <TextView
+                                            android:id="@+id/txtCardCourseSelect2"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="4dp"
+                                            android:paddingStart="5dp"
+                                            android:text="Sân B - Đấu Đôi"
+                                            android:textColor="@color/black"
+                                            android:textSize="18sp"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toBottomOf="@+id/imgCardCourtSelect2" />
+
+                                        <TextView
+                                            android:id="@+id/txtCardCourseSize2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingStart="5dp"
+                                            android:text="Sân cỡ to"
+                                            android:textColor="@color/black"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintHorizontal_bias="0.0"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toBottomOf="@+id/txtCardCourseSelect2" />
+
+                                        <TextView
+                                            android:id="@+id/txtCardCoursePrizeRange2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingEnd="5dp"
+                                            android:text="150.000₫-200.000₫/h"
+                                            android:textColor="@color/black"
+                                            android:textStyle="bold"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintHorizontal_bias="1.0"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toBottomOf="@+id/txtCardCourseSize2" />
+                                    </androidx.constraintlayout.widget.ConstraintLayout>
+                                </androidx.cardview.widget.CardView>
 
                             </LinearLayout>
 
                             <LinearLayout
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="33.3"
-                                android:gravity="center">
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
 
-                                <ImageView
-                                    android:layout_width="16dp"
-                                    android:layout_height="16dp"
-                                    android:layout_marginEnd="4dp"
-                                    android:src="@drawable/available_img" />
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="0dp"
+                                    android:layout_height="200dp"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="1"
+                                    app:cardCornerRadius="10dp">
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="@font/calibri"
-                                    android:text="Available"
-                                    android:textAlignment="center"
-                                    android:textColor="#b2b2b2" />
+                                    <androidx.constraintlayout.widget.ConstraintLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <ImageView
+                                            android:id="@+id/imgCardCourtSelect3"
+                                            android:layout_width="196dp"
+                                            android:layout_height="130dp"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintHorizontal_bias="0.0"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent"
+                                            app:srcCompat="@drawable/tennis_court" />
+
+                                        <TextView
+                                            android:id="@+id/txtCardCourseSelect3"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="4dp"
+                                            android:paddingStart="5dp"
+                                            android:text="Sân C - Đấu Đôi"
+                                            android:textColor="@color/black"
+                                            android:textSize="18sp"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toBottomOf="@+id/imgCardCourtSelect3" />
+
+                                        <TextView
+                                            android:id="@+id/txtCardCourseSize3"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingStart="5dp"
+                                            android:text="Sân cỡ vừa"
+                                            android:textColor="@color/black"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintHorizontal_bias="0.0"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toBottomOf="@+id/txtCardCourseSelect3" />
+
+                                        <TextView
+                                            android:id="@+id/txtCardCoursePrizeRange3"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingEnd="5dp"
+                                            android:text="100.000₫-150.000₫/h"
+                                            android:textColor="@color/black"
+                                            android:textStyle="bold"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintHorizontal_bias="1.0"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toBottomOf="@+id/txtCardCourseSize3" />
+                                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="0dp"
+                                    android:layout_height="200dp"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="1"
+                                    app:cardCornerRadius="10dp">
+
+                                    <androidx.constraintlayout.widget.ConstraintLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <ImageView
+                                            android:id="@+id/imgCardCourtSelect4"
+                                            android:layout_width="196dp"
+                                            android:layout_height="130dp"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintHorizontal_bias="0.0"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent"
+                                            app:srcCompat="@drawable/tennis_court" />
+
+                                        <TextView
+                                            android:id="@+id/txtCardCourseSelect4"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="4dp"
+                                            android:paddingStart="5dp"
+                                            android:text="Sân D - Đấu Đôi"
+                                            android:textColor="@color/black"
+                                            android:textSize="18sp"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toBottomOf="@+id/imgCardCourtSelect4" />
+
+                                        <TextView
+                                            android:id="@+id/txtCardCourseSize4"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingStart="5dp"
+                                            android:text="Sân cỡ vừa"
+                                            android:textColor="@color/black"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintHorizontal_bias="0.0"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toBottomOf="@+id/txtCardCourseSelect4" />
+
+                                        <TextView
+                                            android:id="@+id/txtCardCoursePrizeRange4"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingEnd="5dp"
+                                            android:text="100.000₫-150.000₫/h"
+                                            android:textColor="@color/black"
+                                            android:textStyle="bold"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintHorizontal_bias="1.0"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toBottomOf="@+id/txtCardCourseSize4" />
+                                    </androidx.constraintlayout.widget.ConstraintLayout>
+                                </androidx.cardview.widget.CardView>
+
                             </LinearLayout>
 
                             <LinearLayout
-                                android:layout_width="0dp"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="33.3"
-                                android:gravity="center">
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="horizontal">
 
-                                <ImageView
-                                    android:layout_width="16dp"
-                                    android:layout_height="16dp"
-                                    android:layout_marginEnd="4dp"
-                                    android:src="@drawable/your_seat_img" />
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="0dp"
+                                    android:layout_height="200dp"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="1"
+                                    app:cardCornerRadius="10dp">
 
-                                <TextView
-                                    android:layout_width="wrap_content"
-                                    android:layout_height="wrap_content"
-                                    android:fontFamily="@font/calibri"
-                                    android:text="Selected"
-                                    android:textAlignment="center"
-                                    android:textColor="#b2b2b2" />
+                                    <androidx.constraintlayout.widget.ConstraintLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <ImageView
+                                            android:id="@+id/imgCardCourtSelect5"
+                                            android:layout_width="196dp"
+                                            android:layout_height="130dp"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintHorizontal_bias="0.0"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent"
+                                            app:srcCompat="@drawable/tennis_court" />
+
+                                        <TextView
+                                            android:id="@+id/txtCardCourseSelect5"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="4dp"
+                                            android:paddingStart="5dp"
+                                            android:text="Sân E - Đấu Đơn"
+                                            android:textColor="@color/black"
+                                            android:textSize="18sp"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toBottomOf="@+id/imgCardCourtSelect5" />
+
+                                        <TextView
+                                            android:id="@+id/txtCardCourseSize5"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingStart="5dp"
+                                            android:text="Sân cỡ nhỏ"
+                                            android:textColor="@color/black"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintHorizontal_bias="0.0"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toBottomOf="@+id/txtCardCourseSelect5" />
+
+                                        <TextView
+                                            android:id="@+id/txtCardCoursePrizeRange5"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingEnd="5dp"
+                                            android:text="50.000₫-100.000₫/h"
+                                            android:textColor="@color/black"
+                                            android:textStyle="bold"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintHorizontal_bias="1.0"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toBottomOf="@+id/txtCardCourseSize5" />
+                                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                                </androidx.cardview.widget.CardView>
+
+                                <androidx.cardview.widget.CardView
+                                    android:layout_width="0dp"
+                                    android:layout_height="200dp"
+                                    android:layout_margin="10dp"
+                                    android:layout_weight="1"
+                                    app:cardCornerRadius="10dp">
+
+                                    <androidx.constraintlayout.widget.ConstraintLayout
+                                        android:layout_width="match_parent"
+                                        android:layout_height="match_parent">
+
+                                        <ImageView
+                                            android:id="@+id/imgCardCourtSelect6"
+                                            android:layout_width="196dp"
+                                            android:layout_height="130dp"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintHorizontal_bias="0.0"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toTopOf="parent"
+                                            app:srcCompat="@drawable/tennis_court" />
+
+                                        <TextView
+                                            android:id="@+id/txtCardCourseSelect6"
+                                            android:layout_width="match_parent"
+                                            android:layout_height="wrap_content"
+                                            android:layout_marginTop="4dp"
+                                            android:paddingStart="5dp"
+                                            android:text="Sân G - Đấu Đơn"
+                                            android:textColor="@color/black"
+                                            android:textSize="18sp"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toBottomOf="@+id/imgCardCourtSelect6" />
+
+                                        <TextView
+                                            android:id="@+id/txtCardCourseSize6"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingStart="5dp"
+                                            android:text="Sân cỡ vừa"
+                                            android:textColor="@color/black"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintHorizontal_bias="0.0"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toBottomOf="@+id/txtCardCourseSelect6" />
+
+                                        <TextView
+                                            android:id="@+id/txtCardCoursePrizeRange6"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingEnd="5dp"
+                                            android:text="50.000₫-100.000₫/h"
+                                            android:textColor="@color/black"
+                                            android:textStyle="bold"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintHorizontal_bias="1.0"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toBottomOf="@+id/txtCardCourseSize6" />
+                                    </androidx.constraintlayout.widget.ConstraintLayout>
+                                </androidx.cardview.widget.CardView>
+
                             </LinearLayout>
-
                         </LinearLayout>
-
-                        <LinearLayout
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:orientation="vertical"
-                            android:layout_marginBottom="10dp"
-                            android:weightSum="3">
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:gravity="center"
-                                android:orientation="horizontal">
-
-                                <TextView
-                                    android:layout_width="36dp"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:layout_marginRight="40dp"
-                                    android:fontFamily="@font/print_clearly"
-                                    android:text="A"
-                                    android:textAlignment="center"
-                                    android:textColor="#c3c3c3"
-                                    android:textSize="28sp"
-                                    android:textStyle="bold" />
-
-                                <ImageView
-                                    android:id="@+id/court1"
-                                    android:layout_width="200dp"
-                                    android:layout_height="100dp"
-                                    android:layout_marginVertical="5dp"
-                                    android:background="@drawable/not_book" />
-
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:gravity="center"
-                                android:orientation="horizontal">
-
-                                <TextView
-                                    android:layout_width="36dp"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:layout_marginRight="40dp"
-                                    android:fontFamily="@font/print_clearly"
-                                    android:text="B"
-                                    android:textAlignment="center"
-                                    android:textColor="#c3c3c3"
-                                    android:textSize="28sp"
-                                    android:textStyle="bold" />
-
-                                <ImageView
-                                    android:id="@+id/court2"
-                                    android:layout_width="200dp"
-                                    android:layout_height="100dp"
-                                    android:layout_marginVertical="5dp"
-                                    android:background="@drawable/not_book" />
-                            </LinearLayout>
-
-                            <LinearLayout
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_weight="1"
-                                android:gravity="center"
-                                android:orientation="horizontal">
-
-                                <TextView
-                                    android:layout_width="36dp"
-                                    android:layout_height="wrap_content"
-                                    android:layout_gravity="center"
-                                    android:fontFamily="@font/print_clearly"
-                                    android:layout_marginRight="40dp"
-                                    android:text="C"
-                                    android:textAlignment="center"
-                                    android:textColor="#c3c3c3"
-                                    android:textSize="28sp"
-                                    android:textStyle="bold" />
-
-                                <ImageView
-                                    android:layout_width="200dp"
-                                    android:layout_height="100dp"
-                                    android:layout_marginVertical="5dp"
-                                    android:background="@drawable/booked" />
-                            </LinearLayout>
-                        </LinearLayout>
-
-                    </LinearLayout>
+                    </ScrollView>
 
                 </androidx.cardview.widget.CardView>
-
-                <Button
-                    android:id="@+id/booking_btn"
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_gravity="center"
-                    android:layout_marginHorizontal="10dp"
-                    android:layout_marginTop="25dp"
-                    android:layout_marginBottom="36dp"
-                    android:background="@drawable/buttonshape"
-                    android:fontFamily="@font/calibri"
-                    android:text="Countinue"
-                    android:textAllCaps="false"
-                    android:textColor="#ffffff"
-                    android:textSize="18sp"
-                    android:textStyle="bold" />
 
             </LinearLayout>
 
