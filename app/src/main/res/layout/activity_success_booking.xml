@@ -59,7 +59,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:fontFamily="@font/gotham"
-            android:text="150.000đ"
+            android:text="200.000đ"
             android:textSize="40dp"
             android:textAlignment="center"
             android:textColor="@color/black"

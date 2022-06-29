@@ -143,7 +143,7 @@
                                 android:focusable="false"
                                 android:fontFamily="@font/calibri"
                                 android:maxLines="1"
-                                android:text="Thursday, June 6, 2022"
+                                android:text="Monday, June 5, 2022"
                                 android:textColor="@color/black"
                                 android:textSize="20sp" />
 
@@ -194,63 +194,20 @@
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
-                <androidx.cardview.widget.CardView
-                    android:id="@+id/cardviewcourttype"
+                <TextView
                     android:layout_width="match_parent"
-                    android:layout_height="wrap_content"
-                    android:layout_marginHorizontal="10dp"
-                    app:cardCornerRadius="4dp"
-                    app:cardUseCompatPadding="true"
-                    app:contentPadding="8dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="vertical">
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginRight="3dp"
-                            android:layout_marginBottom="5dp"
-                            android:drawablePadding="3dp"
-                            android:focusable="false"
-                            android:fontFamily="@font/calibri"
-                            android:maxLines="1"
-                            android:text="Select court type: "
-                            android:textColor="#7C7C7C"
-                            android:textSize="20sp"
-                            android:textStyle="bold" />
-
-                    <LinearLayout
-                        android:id="@+id/llayout_1"
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:orientation="horizontal"
-                        android:weightSum="3">
-
-                        <TextView
-                            android:id="@+id/tv_stype"
-                            android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            android:layout_weight="2"
-                            android:fontFamily="@font/calibri"
-                            android:text="Sân A - Đấu Đôi"
-                            android:textColor="@color/black"
-                            android:textSize="20dp"
-                            android:textStyle="bold" />
-
-                        <ImageView
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:layout_marginRight="5dp"
-                            android:layout_weight="1"
-                            android:src="@drawable/ic_baseline_arrow_forward_ios_24" />
-                    </LinearLayout>
-                    </LinearLayout>
-
-
-                </androidx.cardview.widget.CardView>
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="5dp"
+                    android:drawablePadding="3dp"
+                    android:focusable="false"
+                    android:fontFamily="@font/calibri"
+                    android:maxLines="1"
+                    android:text="Select court: "
+                    android:textStyle="bold"
+                    android:textColor="#7C7C7C"
+                    android:textSize="20sp" />
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
@@ -331,7 +288,8 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:paddingEnd="5dp"
-                                            android:text="150.000₫-200.000₫/h"
+                                            android:textSize="10sp"
+                                            android:text="200.000₫/h"
                                             android:textColor="@color/black"
                                             android:textStyle="bold"
                                             app:layout_constraintEnd_toEndOf="parent"
@@ -393,7 +351,8 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:paddingEnd="5dp"
-                                            android:text="150.000₫-200.000₫/h"
+                                            android:textSize="10sp"
+                                            android:text="200.000₫/h"
                                             android:textColor="@color/black"
                                             android:textStyle="bold"
                                             app:layout_constraintEnd_toEndOf="parent"
@@ -461,7 +420,8 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:paddingEnd="5dp"
-                                            android:text="100.000₫-150.000₫/h"
+                                            android:textSize="10sp"
+                                            android:text="150.000₫/h"
                                             android:textColor="@color/black"
                                             android:textStyle="bold"
                                             app:layout_constraintEnd_toEndOf="parent"
@@ -523,7 +483,8 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:paddingEnd="5dp"
-                                            android:text="100.000₫-150.000₫/h"
+                                            android:textSize="10sp"
+                                            android:text="150.000₫/h"
                                             android:textColor="@color/black"
                                             android:textStyle="bold"
                                             app:layout_constraintEnd_toEndOf="parent"
@@ -567,9 +528,9 @@
                                             android:layout_height="wrap_content"
                                             android:layout_marginTop="4dp"
                                             android:paddingStart="5dp"
+                                            android:textSize="18sp"
                                             android:text="Sân E - Đấu Đơn"
                                             android:textColor="@color/black"
-                                            android:textSize="18sp"
                                             app:layout_constraintEnd_toEndOf="parent"
                                             app:layout_constraintStart_toStartOf="parent"
                                             app:layout_constraintTop_toBottomOf="@+id/imgCardCourtSelect5" />
@@ -591,7 +552,8 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:paddingEnd="5dp"
-                                            android:text="50.000₫-100.000₫/h"
+                                            android:textSize="10sp"
+                                            android:text="100.000₫/h"
                                             android:textColor="@color/black"
                                             android:textStyle="bold"
                                             app:layout_constraintEnd_toEndOf="parent"
@@ -653,7 +615,8 @@
                                             android:layout_width="wrap_content"
                                             android:layout_height="wrap_content"
                                             android:paddingEnd="5dp"
-                                            android:text="50.000₫-100.000₫/h"
+                                            android:textSize="10sp"
+                                            android:text="100.000₫/h"
                                             android:textColor="@color/black"
                                             android:textStyle="bold"
                                             app:layout_constraintEnd_toEndOf="parent"

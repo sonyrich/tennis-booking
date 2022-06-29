@@ -205,7 +205,7 @@
                     android:focusable="false"
                     android:fontFamily="@font/calibri"
                     android:maxLines="1"
-                    android:text="Thursday, June 6, 2022"
+                    android:text="Monday, June 5, 2022"
                     android:textColor="@android:color/black"
                     android:textSize="20sp" />
 
@@ -220,6 +220,20 @@
                 </LinearLayout>
 
             </androidx.cardview.widget.CardView>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginLeft="23dp"
+                    android:layout_marginTop="10dp"
+                    android:drawablePadding="3dp"
+                    android:focusable="false"
+                    android:fontFamily="@font/calibri"
+                    android:maxLines="1"
+                    android:text="Select time: "
+                    android:textStyle="bold"
+                    android:textColor="#7C7C7C"
+                    android:textSize="20sp" />
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardView"
@@ -249,19 +263,36 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/calibri"
+                                android:textSize="18sp"
+                                android:text="Monday"
+                                android:textColor="#4b4b4b"
+                                android:textStyle="bold"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="3dp"
+                                android:orientation="horizontal">
+
+                            <TextView
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:fontFamily="@font/calibri"
                                 android:text="7:00AM - 8:00AM"
+                                android:textSize="16sp"
                                 android:textColor="#000000"
-                                android:textStyle="bold" />
+                                android:textStyle="bold"/>
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
-                                android:layout_marginTop="4dp"
-                                android:layout_marginBottom="4dp"
                                 android:fontFamily="@font/calibri"
-                                android:text="Monday"
-                                android:textColor="#4b4b4b"
-                                android:textStyle="bold" />
+                                android:text="  -  1 Hour"
+                                android:textSize="18sp"
+                                android:textAlignment="textStart"
+                                android:textColor="#b3b3b3" />
+
+                            </LinearLayout>
 
                             <TextView
                                 android:layout_width="match_parent"
@@ -279,25 +310,11 @@
                             android:gravity="center"
                             android:orientation="vertical">
 
-                            <TextView
-                                android:layout_width="match_parent"
+                            <ImageView
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/calibri"
-                                android:text="300.000đ"
-                                android:textAlignment="textEnd"
-                                android:textColor="#f5a622"
-                                android:textSize="24sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="4dp"
-                                android:layout_marginBottom="4dp"
-                                android:fontFamily="@font/calibri"
-                                android:text="1 Hour"
-                                android:textAlignment="textEnd"
-                                android:textColor="#b3b3b3" />
+                                android:layout_gravity="right"
+                                android:src="@drawable/ic_baseline_arrow_forward_ios_24"/>
                         </LinearLayout>
                     </LinearLayout>
 
@@ -330,19 +347,36 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/calibri"
-                                android:text="8:00AM - 9:00AM"
-                                android:textColor="#000000"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="4dp"
-                                android:layout_marginBottom="4dp"
-                                android:fontFamily="@font/calibri"
+                                android:textSize="18sp"
                                 android:text="Monday"
                                 android:textColor="#4b4b4b"
-                                android:textStyle="bold" />
+                                android:textStyle="bold"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="3dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/calibri"
+                                    android:text="8:00AM - 9:00AM"
+                                    android:textSize="16sp"
+                                    android:textColor="#000000"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/calibri"
+                                    android:text="  -  1 Hour"
+                                    android:textSize="18sp"
+                                    android:textAlignment="textStart"
+                                    android:textColor="#b3b3b3" />
+
+                            </LinearLayout>
 
                             <TextView
                                 android:layout_width="match_parent"
@@ -360,25 +394,11 @@
                             android:gravity="center"
                             android:orientation="vertical">
 
-                            <TextView
-                                android:layout_width="match_parent"
+                            <ImageView
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/calibri"
-                                android:text="450.000đ"
-                                android:textAlignment="textEnd"
-                                android:textColor="#f5a622"
-                                android:textSize="24sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="4dp"
-                                android:layout_marginBottom="4dp"
-                                android:fontFamily="@font/calibri"
-                                android:text="1 Hour"
-                                android:textAlignment="textEnd"
-                                android:textColor="#b3b3b3" />
+                                android:layout_gravity="right"
+                                android:src="@drawable/ic_baseline_arrow_forward_ios_24"/>
                         </LinearLayout>
                     </LinearLayout>
 
@@ -411,26 +431,43 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/calibri"
-                                android:text="4:00PM - 5:00PM"
-                                android:textColor="#000000"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="4dp"
-                                android:layout_marginBottom="4dp"
-                                android:fontFamily="@font/calibri"
+                                android:textSize="18sp"
                                 android:text="Monday"
                                 android:textColor="#4b4b4b"
-                                android:textStyle="bold" />
+                                android:textStyle="bold"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="3dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/calibri"
+                                    android:text="1:00PM - 2:00PM"
+                                    android:textSize="16sp"
+                                    android:textColor="#000000"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/calibri"
+                                    android:text="  -  1 Hour"
+                                    android:textSize="18sp"
+                                    android:textAlignment="textStart"
+                                    android:textColor="#b3b3b3" />
+
+                            </LinearLayout>
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/calibri"
-                                android:text="Half Full "
-                                android:textColor="#F8A42D" />
+                                android:text="On Half"
+                                android:textColor="#E68E22" />
 
                         </LinearLayout>
 
@@ -441,25 +478,11 @@
                             android:gravity="center"
                             android:orientation="vertical">
 
-                            <TextView
-                                android:layout_width="match_parent"
+                            <ImageView
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/calibri"
-                                android:text="250.000đ"
-                                android:textAlignment="textEnd"
-                                android:textColor="#f5a622"
-                                android:textSize="24sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="4dp"
-                                android:layout_marginBottom="4dp"
-                                android:fontFamily="@font/calibri"
-                                android:text="1 Hour"
-                                android:textAlignment="textEnd"
-                                android:textColor="#b3b3b3" />
+                                android:layout_gravity="right"
+                                android:src="@drawable/ic_baseline_arrow_forward_ios_24"/>
                         </LinearLayout>
                     </LinearLayout>
 
@@ -492,26 +515,43 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/calibri"
-                                android:text="9:00AM - 10:00AM"
-                                android:textColor="#000000"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="4dp"
-                                android:layout_marginBottom="4dp"
-                                android:fontFamily="@font/calibri"
+                                android:textSize="18sp"
                                 android:text="Monday"
                                 android:textColor="#4b4b4b"
-                                android:textStyle="bold" />
+                                android:textStyle="bold"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="3dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/calibri"
+                                    android:text="2:00PM - 3:00PM"
+                                    android:textSize="16sp"
+                                    android:textColor="#000000"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/calibri"
+                                    android:text="  -  1 Hour"
+                                    android:textSize="18sp"
+                                    android:textAlignment="textStart"
+                                    android:textColor="#b3b3b3" />
+
+                            </LinearLayout>
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/calibri"
                                 android:text="Full"
-                                android:textColor="#CA1E1E" />
+                                android:textColor="#E62229" />
 
                         </LinearLayout>
 
@@ -522,25 +562,11 @@
                             android:gravity="center"
                             android:orientation="vertical">
 
-                            <TextView
-                                android:layout_width="match_parent"
+                            <ImageView
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/calibri"
-                                android:text="300.000đ"
-                                android:textAlignment="textEnd"
-                                android:textColor="#f5a622"
-                                android:textSize="24sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="4dp"
-                                android:layout_marginBottom="4dp"
-                                android:fontFamily="@font/calibri"
-                                android:text="1 Hour"
-                                android:textAlignment="textEnd"
-                                android:textColor="#b3b3b3" />
+                                android:layout_gravity="right"
+                                android:src="@drawable/ic_baseline_arrow_forward_ios_24"/>
                         </LinearLayout>
                     </LinearLayout>
 
@@ -573,26 +599,43 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/calibri"
-                                android:text="2:00PM - 3:00PM"
-                                android:textColor="#000000"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="4dp"
-                                android:layout_marginBottom="4dp"
-                                android:fontFamily="@font/calibri"
+                                android:textSize="18sp"
                                 android:text="Monday"
                                 android:textColor="#4b4b4b"
-                                android:textStyle="bold" />
+                                android:textStyle="bold"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="3dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/calibri"
+                                    android:text="3:00PM - 4:00PM"
+                                    android:textSize="16sp"
+                                    android:textColor="#000000"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/calibri"
+                                    android:text="  -  1 Hour"
+                                    android:textSize="18sp"
+                                    android:textAlignment="textStart"
+                                    android:textColor="#b3b3b3" />
+
+                            </LinearLayout>
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/calibri"
                                 android:text="Full"
-                                android:textColor="#CA1E1E" />
+                                android:textColor="#E62229" />
 
                         </LinearLayout>
 
@@ -603,27 +646,12 @@
                             android:gravity="center"
                             android:orientation="vertical">
 
-                            <TextView
-                                android:layout_width="match_parent"
+                            <ImageView
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/calibri"
-                                android:text="320.000đ"
-                                android:textAlignment="textEnd"
-                                android:textColor="#f5a622"
-                                android:textSize="24sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="4dp"
-                                android:layout_marginBottom="4dp"
-                                android:fontFamily="@font/calibri"
-                                android:text="1 Hour"
-                                android:textAlignment="textEnd"
-                                android:textColor="#b3b3b3" />
+                                android:layout_gravity="right"
+                                android:src="@drawable/ic_baseline_arrow_forward_ios_24"/>
                         </LinearLayout>
-
                     </LinearLayout>
 
                 </androidx.cardview.widget.CardView>
@@ -655,26 +683,43 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/calibri"
-                                android:text="5:00PM - 6:00PM"
-                                android:textColor="#000000"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="4dp"
-                                android:layout_marginBottom="4dp"
-                                android:fontFamily="@font/calibri"
+                                android:textSize="18sp"
                                 android:text="Monday"
                                 android:textColor="#4b4b4b"
-                                android:textStyle="bold" />
+                                android:textStyle="bold"/>
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginVertical="3dp"
+                                android:orientation="horizontal">
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/calibri"
+                                    android:text="4:00PM - 5:00PM"
+                                    android:textSize="16sp"
+                                    android:textColor="#000000"
+                                    android:textStyle="bold"/>
+
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:fontFamily="@font/calibri"
+                                    android:text="  -  1 Hour"
+                                    android:textSize="18sp"
+                                    android:textAlignment="textStart"
+                                    android:textColor="#b3b3b3" />
+
+                            </LinearLayout>
 
                             <TextView
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/calibri"
                                 android:text="Full"
-                                android:textColor="#CA1E1E" />
+                                android:textColor="#E62229" />
 
                         </LinearLayout>
 
@@ -685,25 +730,11 @@
                             android:gravity="center"
                             android:orientation="vertical">
 
-                            <TextView
-                                android:layout_width="match_parent"
+                            <ImageView
+                                android:layout_width="wrap_content"
                                 android:layout_height="wrap_content"
-                                android:fontFamily="@font/calibri"
-                                android:text="400.000đ"
-                                android:textAlignment="textEnd"
-                                android:textColor="#f5a622"
-                                android:textSize="24sp"
-                                android:textStyle="bold" />
-
-                            <TextView
-                                android:layout_width="match_parent"
-                                android:layout_height="wrap_content"
-                                android:layout_marginTop="4dp"
-                                android:layout_marginBottom="4dp"
-                                android:fontFamily="@font/calibri"
-                                android:text="1 Hour"
-                                android:textAlignment="textEnd"
-                                android:textColor="#b3b3b3" />
+                                android:layout_gravity="right"
+                                android:src="@drawable/ic_baseline_arrow_forward_ios_24"/>
                         </LinearLayout>
                     </LinearLayout>
 

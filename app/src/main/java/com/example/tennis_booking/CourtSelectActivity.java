@@ -17,8 +17,7 @@ import androidx.constraintlayout.widget.ConstraintLayout;
 public class CourtSelectActivity extends AppCompatActivity {
 
     Button btn;
-    TextView tv_back_court_select, tv_style;
-    LinearLayout llayout_1;
+    TextView tv_back_court_select;
     ConstraintLayout layout_1;
 
     @Override
@@ -35,17 +34,6 @@ public class CourtSelectActivity extends AppCompatActivity {
             }
         });
 
-        llayout_1 = (LinearLayout) findViewById(R.id.llayout_1);
-        tv_style = (TextView) findViewById(R.id.tv_stype);
-        llayout_1.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                ShowMenu();
-//                Intent intent = new Intent(CourtSelectActivity.this, CourtSelectDetailActivity.class);
-//                startActivity(intent);
-            }
-        });
-
         layout_1 = (ConstraintLayout) findViewById(R.id.layout_1);
         layout_1.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -53,26 +41,5 @@ public class CourtSelectActivity extends AppCompatActivity {
                 Intent intent = new Intent(CourtSelectActivity.this, PaySectionActivity.class);
                 startActivity(intent);   }
         });
-    }
-
-    private void ShowMenu() {
-        PopupMenu popupMenu = new PopupMenu(this, llayout_1);
-        popupMenu.getMenuInflater().inflate(R.menu.court_style_menu, popupMenu.getMenu());
-
-        popupMenu.setOnMenuItemClickListener(new PopupMenu.OnMenuItemClickListener() {
-            @Override
-            public boolean onMenuItemClick(MenuItem item) {
-                switch (item.getItemId()) {
-                    case R.id.mn_1_vs:
-                        tv_style.setText("Sân đấu đơn");
-                        break;
-                    case R.id.mn_2_vs:
-                        tv_style.setText("Sân đấu đôi");
-                        break;
-                }
-                return false;
-            }
-        });
-        popupMenu.show();
     }
 }

@@ -41,12 +41,14 @@
                 android:layout_height="wrap_content"
                 android:orientation="vertical">
 
-                                    <ImageView
-                                        android:layout_width="match_parent"
-                                        android:layout_height="260dp"
-                                        android:layout_marginTop="0dp"
-                                        android:scaleType="centerCrop"
-                                        android:src="@drawable/tennis_courts" />
+                <androidx.viewpager.widget.ViewPager
+                    android:id="@+id/viewPagerMain"
+                    android:layout_width="match_parent"
+                    android:layout_height="260dp"
+                    android:layout_marginTop="5dp"
+                    android:background="@drawable/custom_viewpaper"
+                    android:contentDescription="@string/title_activity_maps"
+                    android:scaleType="centerCrop" />
 
                 <androidx.cardview.widget.CardView
                     android:layout_width="match_parent"
@@ -153,31 +155,26 @@
                             android:focusable="false"
                             android:fontFamily="@font/calibri"
                             android:maxLines="1"
-                            android:text="Image"
+                            android:text="Details"
                             android:textColor="@color/black"
                             android:textSize="16sp"
                             android:textStyle="normal" />
 
-                        <androidx.cardview.widget.CardView
+                        <TextView
                             android:layout_width="match_parent"
-                            android:layout_height="wrap_content"
-                            app:cardCornerRadius="20dp">
-
-                            <androidx.viewpager.widget.ViewPager
-                                android:id="@+id/viewPagerMain"
-                                android:layout_width="match_parent"
-                                android:layout_height="260dp"
-                                android:layout_marginTop="5dp"
-                                android:background="@drawable/custom_viewpaper"
-                                android:contentDescription="@string/title_activity_maps"
-                                android:scaleType="centerCrop" />
-
-                        </androidx.cardview.widget.CardView>
+                            android:layout_height="150dp"
+                            android:drawablePadding="3dp"
+                            android:focusable="false"
+                            android:fontFamily="@font/calibri"
+                            android:maxLines="10"
+                            android:paddingLeft="10dp"
+                            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
+                            android:textColor="#7C7C7C"
+                            android:textSize="16sp" />
 
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_marginTop="10dp"
                             android:drawablePadding="0dp"
                             android:focusable="false"
                             android:fontFamily="@font/calibri"
@@ -216,31 +213,6 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:drawablePadding="0dp"
-                            android:focusable="false"
-                            android:fontFamily="@font/calibri"
-                            android:maxLines="1"
-                            android:text="Details"
-                            android:textColor="@color/black"
-                            android:textSize="16sp"
-                            android:textStyle="normal" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="150dp"
-                            android:drawablePadding="3dp"
-                            android:focusable="false"
-                            android:fontFamily="@font/calibri"
-                            android:maxLines="10"
-                            android:paddingLeft="10dp"
-                            android:text="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum."
-                            android:textColor="#7C7C7C"
-                            android:textSize="16sp" />
-
-                        <TextView
-                            android:layout_width="match_parent"
-                            android:layout_height="match_parent"
-                            android:layout_marginTop="10dp"
                             android:drawablePadding="0dp"
                             android:focusable="false"
                             android:fontFamily="@font/calibri"
@@ -417,7 +389,7 @@
                             android:id="@+id/tv_seemore"
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:layout_marginTop="10dp"
+                            android:layout_marginTop="5dp"
                             android:drawablePadding="0dp"
                             android:focusable="false"
                             android:fontFamily="@font/calibri"

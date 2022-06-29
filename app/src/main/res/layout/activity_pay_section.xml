@@ -132,7 +132,7 @@
                                 android:focusable="false"
                                 android:fontFamily="@font/calibri"
                                 android:maxLines="1"
-                                android:text="Court style: "
+                                android:text="Court name: "
                                 android:textColor="@color/black"
                                 android:textSize="20sp"
                                 android:textStyle="bold" />
@@ -144,7 +144,7 @@
                                 android:focusable="false"
                                 android:fontFamily="@font/calibri"
                                 android:maxLines="1"
-                                android:text="Court 2vs2"
+                                android:text="Đấu đôi"
                                 android:textColor="@color/black"
                                 android:textSize="20sp" />
 
@@ -206,9 +206,9 @@
                                 android:fontFamily="@font/calibri"
                                 android:maxLines="1"
                                 android:text="Date: "
-                                android:textStyle="bold"
                                 android:textColor="@color/black"
-                                android:textSize="20sp" />
+                                android:textSize="20sp"
+                                android:textStyle="bold" />
 
                             <TextView
                                 android:layout_width="match_parent"
@@ -299,7 +299,7 @@
                                 android:layout_width="match_parent"
                                 android:layout_height="wrap_content"
                                 android:fontFamily="@font/calibri"
-                                android:text="300.000đ"
+                                android:text="200.000đ"
                                 android:textAlignment="textEnd"
                                 android:textColor="#f5a622"
                                 android:textSize="24sp"
@@ -357,64 +357,6 @@
             </LinearLayout>
 
             </androidx.cardview.widget.CardView>
-
-                <androidx.cardview.widget.CardView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:layout_marginHorizontal="10dp"
-                    android:padding="16dp"
-                    app:cardCornerRadius="4dp"
-                    app:cardUseCompatPadding="true"
-                    app:contentPaddingLeft="10dp"
-                    app:contentPaddingRight="10dp">
-
-                    <LinearLayout
-                        android:layout_width="match_parent"
-                        android:layout_height="wrap_content"
-                        android:layout_marginTop="16dp"
-                        android:layout_marginBottom="16dp"
-                        android:orientation="vertical">
-
-                        <LinearLayout
-                            android:layout_width="wrap_content"
-                            android:layout_height="wrap_content"
-                            android:orientation="horizontal">
-
-                            <com.google.android.material.textfield.TextInputLayout
-                                android:layout_width="260dp"
-                                android:layout_height="50dp"
-                                android:layout_marginBottom="8dp"
-                                android:textColorHint="#FF8A99AF">
-
-                                <EditText
-                                    android:layout_width="match_parent"
-                                    android:layout_height="match_parent"
-                                    android:drawablePadding="16dp"
-                                    android:focusable="false"
-                                    android:fontFamily="@font/calibri"
-                                    android:hint="Coupon"
-                                    android:inputType="text"
-                                    android:maxLines="1"
-                                    android:text="Ad25gf09hk5"
-                                    android:textColor="@android:color/black"
-                                    android:textSize="16sp" />
-                            </com.google.android.material.textfield.TextInputLayout>
-
-                            <Button
-                                android:layout_width="100dp"
-                                android:layout_height="50dp"
-                                android:layout_marginLeft="5dp"
-                                android:background="@drawable/buttonshape"
-                                android:fontFamily="@font/calibri"
-                                android:text="Add coupon"
-                                android:textAllCaps="false"
-                                android:textColor="#ffffff"
-                                android:textSize="18sp"
-                                android:textStyle="bold" />
-                        </LinearLayout>
-                    </LinearLayout>
-
-                </androidx.cardview.widget.CardView>
 
                 <androidx.cardview.widget.CardView
                     android:id="@+id/cardView101"
@@ -522,40 +464,7 @@
                     android:focusable="false"
                     android:fontFamily="@font/calibri"
                     android:maxLines="1"
-                    android:text="300.000đ"
-                    android:textColor="#7C7C7C"
-                    android:textSize="16sp"
-                    android:textStyle="normal" />
-
-            </LinearLayout>
-
-            <LinearLayout
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="15dp"
-                android:layout_marginTop="10dp"
-                android:orientation="horizontal">
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:drawablePadding="3dp"
-                    android:focusable="false"
-                    android:fontFamily="@font/calibri"
-                    android:maxLines="1"
-                    android:text="Black friday promotion: "
-                    android:textColor="#7C7C7C"
-                    android:textSize="16sp"
-                    android:textStyle="bold" />
-
-                <TextView
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:drawablePadding="3dp"
-                    android:focusable="false"
-                    android:fontFamily="@font/calibri"
-                    android:maxLines="1"
-                    android:text="-150.000đ"
+                    android:text="200.000đ"
                     android:textColor="#7C7C7C"
                     android:textSize="16sp"
                     android:textStyle="normal" />
@@ -596,7 +505,7 @@
                     android:focusable="false"
                     android:fontFamily="@font/calibri"
                     android:maxLines="1"
-                    android:text="150.000đ"
+                    android:text="200.000đ"
                     android:textColor="@color/black"
                     android:textSize="21sp"
                     android:textStyle="normal" />
