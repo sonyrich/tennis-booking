@@ -137,12 +137,12 @@
                 app:layout_constraintTop_toBottomOf="@+id/setting3">
 
                 <TextView
-                    android:id="@+id/tvSetting4"
+                    android:id="@+id/tv_courtmgr"
                     android:layout_width="250dp"
                     android:layout_height="30dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="22dp"
-                    android:text="Notification Settings"
+                    android:text="Court Management"
                     android:fontFamily="@font/gotham"
                     android:textColor="@color/black"
                     android:textSize="20sp"
@@ -170,11 +170,11 @@
 
                 <TextView
                     android:id="@+id/tvSetting5"
-                    android:layout_width="150dp"
+                    android:layout_width="250dp"
                     android:layout_height="30dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="22dp"
-                    android:text="Help Centre"
+                    android:text="Notification Settings"
                     android:fontFamily="@font/gotham"
                     android:textColor="@color/black"
                     android:textSize="20sp"
@@ -202,14 +202,14 @@
 
                 <TextView
                     android:id="@+id/tvSetting6"
-                    android:layout_width="200dp"
+                    android:layout_width="150dp"
                     android:layout_height="30dp"
                     android:layout_marginStart="20dp"
+                    android:layout_marginTop="22dp"
+                    android:text="Help Centre"
                     android:fontFamily="@font/gotham"
-                    android:text="FAQs"
                     android:textColor="@color/black"
                     android:textSize="20sp"
-                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -237,11 +237,11 @@
                     android:layout_width="200dp"
                     android:layout_height="30dp"
                     android:layout_marginStart="20dp"
-                    android:layout_marginTop="22dp"
-                    android:text="App's Policies"
                     android:fontFamily="@font/gotham"
+                    android:text="FAQs"
                     android:textColor="@color/black"
                     android:textSize="20sp"
+                    app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
@@ -270,7 +270,7 @@
                     android:layout_height="30dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="22dp"
-                    android:text="Rating Our Product"
+                    android:text="App's Policies"
                     android:fontFamily="@font/gotham"
                     android:textColor="@color/black"
                     android:textSize="20sp"
@@ -302,7 +302,7 @@
                     android:layout_height="30dp"
                     android:layout_marginStart="20dp"
                     android:layout_marginTop="22dp"
-                    android:text="About us"
+                    android:text="Rating Our Product"
                     android:fontFamily="@font/gotham"
                     android:textColor="@color/black"
                     android:textSize="20sp"
@@ -330,6 +330,38 @@
 
                 <TextView
                     android:id="@+id/tvSetting10"
+                    android:layout_width="200dp"
+                    android:layout_height="30dp"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="22dp"
+                    android:text="About us"
+                    android:fontFamily="@font/gotham"
+                    android:textColor="@color/black"
+                    android:textSize="20sp"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="25dp"
+                    android:layout_marginEnd="10dp"
+                    android:src="@drawable/ic_baseline_arrow_forward_ios_24"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintTop_toTopOf="parent" />
+
+            </androidx.constraintlayout.widget.ConstraintLayout>
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:id="@+id/setting11"
+                android:layout_width="match_parent"
+                android:layout_height="70dp"
+                android:background="@drawable/custom_setting_text"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/setting10">
+
+                <TextView
+                    android:id="@+id/tvSetting11"
                     android:layout_width="290dp"
                     android:layout_height="30dp"
                     android:layout_marginStart="20dp"
@@ -358,7 +390,7 @@
                 android:layout_height="70dp"
                 android:background="@drawable/custom_setting_text"
                 app:layout_constraintStart_toStartOf="parent"
-                app:layout_constraintTop_toBottomOf="@+id/setting10">
+                app:layout_constraintTop_toBottomOf="@+id/setting11">
 
                 <Button
                     android:id="@+id/btnLogout"
@@ -379,9 +411,6 @@
                     app:layout_constraintTop_toTopOf="parent" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
-
         </androidx.constraintlayout.widget.ConstraintLayout>
-
     </ScrollView>
-
 </FrameLayout>

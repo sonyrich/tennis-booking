@@ -36,6 +36,15 @@ public class SettingFragment extends Fragment {
             }
         });
 
+        tv_courtmgr = (TextView) rootView.findViewById(R.id.tv_courtmgr);
+        tv_courtmgr.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), ListCourse2.class);
+                startActivity(intent);
+            }
+        });
+
         cl = (ConstraintLayout) rootView.findViewById(R.id.setting1);
         cl.setOnClickListener(new View.OnClickListener() {
             @Override
