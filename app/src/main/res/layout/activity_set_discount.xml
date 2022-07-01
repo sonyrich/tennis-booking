@@ -112,15 +112,16 @@
             android:id="@+id/txtDiscount"
             android:layout_width="176dp"
             android:layout_height="43dp"
-            android:layout_marginStart="110dp"
             android:layout_marginTop="30dp"
-            android:gravity="center"
+            android:fontFamily="@font/gotham"
+            android:gravity="center_horizontal"
+            android:text="DISCOUNT"
+            android:textColor="@color/black"
             android:textSize="35sp"
             android:textStyle="bold"
-            android:textColor="@color/black"
+            app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toTopOf="parent"
-            android:text="DISCOUNT" />
+            app:layout_constraintTop_toTopOf="parent" />
 
         <TextView
             android:id="@+id/txtHome4"
@@ -143,7 +144,7 @@
             android:layout_marginStart="65dp"
             android:layout_marginTop="30dp"
             android:gravity="center"
-            android:text="week 1, May, 2022"
+            android:text="Week 1, May, 2022"
             app:layout_constraintStart_toStartOf="parent"
             app:layout_constraintTop_toBottomOf="@+id/txtDiscount" />
 
@@ -241,7 +242,7 @@
 
         <Spinner
             android:id="@+id/spinner5"
-            android:layout_width="80dp"
+            android:layout_width="100dp"
             android:layout_height="40dp"
             android:layout_marginStart="20dp"
             android:layout_marginTop="12dp"
@@ -250,7 +251,7 @@
 
         <Spinner
             android:id="@+id/spinner6"
-            android:layout_width="80dp"
+            android:layout_width="100dp"
             android:layout_height="40dp"
             android:layout_marginStart="10dp"
             app:layout_constraintBottom_toBottomOf="@+id/textView22"
@@ -259,7 +260,7 @@
 
         <Spinner
             android:id="@+id/spinner7"
-            android:layout_width="80dp"
+            android:layout_width="100dp"
             android:layout_height="40dp"
             android:layout_marginStart="20dp"
             android:layout_marginTop="12dp"
@@ -268,7 +269,7 @@
 
         <Spinner
             android:id="@+id/spinner8"
-            android:layout_width="80dp"
+            android:layout_width="100dp"
             android:layout_height="40dp"
             android:layout_marginStart="10dp"
             app:layout_constraintBottom_toBottomOf="@+id/textView23"
@@ -277,7 +278,7 @@
 
         <Spinner
             android:id="@+id/spinner9"
-            android:layout_width="80dp"
+            android:layout_width="100dp"
             android:layout_height="40dp"
             android:layout_marginStart="20dp"
             android:layout_marginTop="12dp"
@@ -286,7 +287,7 @@
 
         <Spinner
             android:id="@+id/spinner10"
-            android:layout_width="80dp"
+            android:layout_width="100dp"
             android:layout_height="40dp"
             android:layout_marginStart="10dp"
             app:layout_constraintBottom_toBottomOf="@+id/textView24"
@@ -295,7 +296,7 @@
 
         <Spinner
             android:id="@+id/spinner11"
-            android:layout_width="80dp"
+            android:layout_width="100dp"
             android:layout_height="40dp"
             android:layout_marginStart="20dp"
             android:layout_marginTop="12dp"
@@ -304,7 +305,7 @@
 
         <Spinner
             android:id="@+id/spinner12"
-            android:layout_width="80dp"
+            android:layout_width="100dp"
             android:layout_height="40dp"
             android:layout_marginStart="10dp"
             app:layout_constraintBottom_toBottomOf="@+id/textView25"
@@ -313,7 +314,7 @@
 
         <Spinner
             android:id="@+id/spinner13"
-            android:layout_width="80dp"
+            android:layout_width="100dp"
             android:layout_height="40dp"
             android:layout_marginStart="20dp"
             android:layout_marginTop="12dp"
@@ -322,7 +323,7 @@
 
         <Spinner
             android:id="@+id/spinner14"
-            android:layout_width="80dp"
+            android:layout_width="100dp"
             android:layout_height="40dp"
             android:layout_marginStart="10dp"
             app:layout_constraintBottom_toBottomOf="@+id/textView26"
@@ -331,7 +332,7 @@
 
         <Spinner
             android:id="@+id/spinner15"
-            android:layout_width="80dp"
+            android:layout_width="100dp"
             android:layout_height="40dp"
             android:layout_marginStart="20dp"
             android:layout_marginTop="12dp"
@@ -340,7 +341,7 @@
 
         <Spinner
             android:id="@+id/spinner16"
-            android:layout_width="80dp"
+            android:layout_width="100dp"
             android:layout_height="40dp"
             android:layout_marginStart="10dp"
             app:layout_constraintBottom_toBottomOf="@+id/textView27"
@@ -349,7 +350,7 @@
 
         <Spinner
             android:id="@+id/spinner17"
-            android:layout_width="80dp"
+            android:layout_width="100dp"
             android:layout_height="40dp"
             android:layout_marginStart="20dp"
             android:layout_marginTop="12dp"
@@ -358,7 +359,7 @@
 
         <Spinner
             android:id="@+id/spinner18"
-            android:layout_width="80dp"
+            android:layout_width="100dp"
             android:layout_height="40dp"
             android:layout_marginStart="10dp"
             app:layout_constraintBottom_toBottomOf="@+id/textView28"
