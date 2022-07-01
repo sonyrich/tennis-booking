@@ -29,8 +29,7 @@ public class ListCourse2 extends AppCompatActivity {
         txtHome.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ListCourse2.this, HomeFragment.class);
-                startActivity(intent);
+                finish();
             }
         });
 
