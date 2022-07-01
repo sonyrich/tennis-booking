@@ -41,6 +41,12 @@
             android:value="@string/map_key" />
 
         <activity
+            android:name=".UpdateCourse"
+            android:exported="false" />
+        <activity
+            android:name=".SetDiscount"
+            android:exported="false" />
+        <activity
             android:name=".CourtSelectDetailActivity"
             android:exported="false" />
         <activity

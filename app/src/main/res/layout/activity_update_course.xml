@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:fillViewport="true"
+    tools:ignore="SpeakableTextPresentCheck"
+    tools:layout_editor_absoluteX="1dp"
+    tools:layout_editor_absoluteY="1dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:context=".UpdateCourse">
+
+
+        <TextView
+            android:id="@+id/txtBack2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="64dp"
+            android:text="Back"
+            android:textColor="#4CAF50"
+            android:textSize="20sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/txtUpdate"
+
+            style="@style/TextAppearance.AppCompat.Large"
+            android:layout_width="152dp"
+            android:layout_height="42dp"
+            android:layout_marginStart="56dp"
+            android:layout_marginTop="48dp"
+            android:layout_marginEnd="56dp"
+
+            android:layout_weight="0.56"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textSize="34sp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toStartOf="@+id/txtHome3"
+            app:layout_constraintHorizontal_bias="0.25"
+            app:layout_constraintStart_toEndOf="@+id/txtBack2"
+            app:layout_constraintTop_toTopOf="parent"
+            android:text="UPDATE" />
+
+        <TextView
+            android:id="@+id/txtHome3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="64dp"
+            android:layout_marginEnd="32dp"
+            android:text="Home"
+            android:textColor="#4CAF50"
+            android:textSize="20sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <EditText
+            android:id="@+id/etName"
+            android:layout_width="308dp"
+            android:layout_height="52dp"
+            android:layout_marginStart="48dp"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:foregroundGravity="center"
+            android:gravity="center"
+            android:inputType="textPersonName"
+            android:text="Tennis Lakeview Villa"
+            android:textSize="24sp"
+            android:textStyle="bold"
+            app:guidelineUseRtl="true"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/txtUpdate" />
+
+        <EditText
+            android:id="@+id/etAddress"
+            android:layout_width="384dp"
+            android:layout_height="48dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="20dp"
+            android:ems="10"
+            android:hint="Address"
+            android:inputType="textPersonName"
+            android:text="Long Thạnh Mỹ, Quận 9, Thành Phố Hồ Chí Minh"
+            android:textSize="12sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etName" />
+
+        <Button
+            android:id="@+id/btnUpdate"
+            style="@style/Widget.AppCompat.Button.Colored"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="160dp"
+            android:layout_marginTop="36dp"
+            android:text="UPDATE"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageCourse3" />
+
+        <ImageView
+            android:id="@+id/imageCourse1"
+            android:layout_width="206dp"
+            android:layout_height="109dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="14dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView"
+            app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="144dp"
+            android:layout_height="37dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="Single course"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/etAddress" />
+
+        <EditText
+            android:id="@+id/etCourse1"
+            android:layout_width="156dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:hint="ten san"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/imageCourse1"
+            app:layout_constraintTop_toTopOf="@+id/imageCourse1" />
+
+        <ImageView
+            android:id="@+id/imageCourse2"
+            android:layout_width="206dp"
+            android:layout_height="109dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="14dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageCourse1"
+            app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="183dp"
+            android:layout_height="43dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="12dp"
+            android:gravity="center"
+            android:text="Dual course"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageCourse2" />
+
+        <ImageView
+            android:id="@+id/imageCourse3"
+            android:layout_width="206dp"
+            android:layout_height="109dp"
+            android:layout_marginStart="11dp"
+            android:layout_marginTop="14dp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView2"
+            app:srcCompat="@android:drawable/ic_menu_gallery" />
+
+        <EditText
+            android:id="@+id/etCourse2"
+            android:layout_width="156dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:hint="ten san"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/imageCourse2"
+            app:layout_constraintTop_toTopOf="@+id/imageCourse2" />
+
+        <EditText
+            android:id="@+id/etCourse3"
+            android:layout_width="156dp"
+            android:layout_height="57dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="32dp"
+            android:ems="10"
+            android:hint="ten san"
+            android:inputType="textPersonName"
+            android:text=""
+            android:textSize="14sp"
+            app:layout_constraintStart_toEndOf="@+id/imageCourse3"
+            app:layout_constraintTop_toTopOf="@+id/imageCourse3" />
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

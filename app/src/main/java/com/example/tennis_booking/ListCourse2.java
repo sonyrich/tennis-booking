@@ -12,7 +12,7 @@ import android.widget.TextView;
 public class ListCourse2 extends AppCompatActivity {
     ImageView imageCourse;
     TextView txtName;
-    Button btnRevenues;
+    Button btnDiscount;
     TextView txtHome;
     TextView txtCreate;
     @Override
@@ -24,19 +24,27 @@ public class ListCourse2 extends AppCompatActivity {
         txtName = (TextView) findViewById(R.id.txtName);
         txtHome = (TextView) findViewById(R.id.txtHome2);
         txtCreate = (TextView) findViewById(R.id.txtCreate);
-        btnRevenues = (Button) findViewById(R.id.btnRevenues);
+        btnDiscount = (Button) findViewById(R.id.btnDiscount);
+
+        txtHome.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ListCourse2.this, HomeFragment.class);
+                startActivity(intent);
+            }
+        });
 
         imageCourse.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ListCourse2.this, CreateCourse2.class);
+                Intent intent = new Intent(ListCourse2.this, UpdateCourse.class);
                 startActivity(intent);
             }
         });
         txtName.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ListCourse2.this, CreateCourse2.class);
+                Intent intent = new Intent(ListCourse2.this, UpdateCourse.class);
                 startActivity(intent);
             }
         });
@@ -47,10 +55,11 @@ public class ListCourse2 extends AppCompatActivity {
                 startActivity(intent);
             }
         });
-        btnRevenues.setOnClickListener(new View.OnClickListener() {
+        btnDiscount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
+                Intent intent = new Intent(ListCourse2.this, SetDiscount.class);
+                startActivity(intent);
             }
         });
 
