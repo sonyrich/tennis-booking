@@ -16,12 +16,14 @@
         <entry key="..\:/Data/ON SHOOL DATA/HCI201/tennis-booking/app/src/main/res/layout/activity_pay_section.xml" value="0.36666666666666664" />
         <entry key="..\:/Data/ON SHOOL DATA/HCI201/tennis-booking/app/src/main/res/layout/activity_profile.xml" value="0.36666666666666664" />
         <entry key="..\:/Data/ON SHOOL DATA/HCI201/tennis-booking/app/src/main/res/layout/activity_search.xml" value="0.3009833262077811" />
+        <entry key="..\:/Data/ON SHOOL DATA/HCI201/tennis-booking/app/src/main/res/layout/activity_set_discount.xml" value="0.26481481481481484" />
         <entry key="..\:/Data/ON SHOOL DATA/HCI201/tennis-booking/app/src/main/res/layout/card1.xml" value="0.3009833262077811" />
         <entry key="..\:/Data/ON SHOOL DATA/HCI201/tennis-booking/app/src/main/res/layout/fragment_bookings.xml" value="0.33" />
         <entry key="..\:/Data/ON SHOOL DATA/HCI201/tennis-booking/app/src/main/res/layout/fragment_home.xml" value="0.33" />
         <entry key="..\:/Data/ON SHOOL DATA/HCI201/tennis-booking/app/src/main/res/layout/fragment_maps.xml" value="0.3009833262077811" />
         <entry key="..\:/Data/ON SHOOL DATA/HCI201/tennis-booking/app/src/main/res/layout/fragment_notification.xml" value="0.33" />
         <entry key="..\:/Data/ON SHOOL DATA/HCI201/tennis-booking/app/src/main/res/layout/fragment_setting.xml" value="0.25" />
+        <entry key="..\:/Data/ON SHOOL DATA/HCI201/tennis-booking/app/src/main/res/layout/list_course.xml" value="0.33" />
         <entry key="..\:/Data/ON SHOOL DATA/HCI201/tennis-booking/app/src/main/res/menu/payment_method_menu.xml" value="0.36666666666666664" />
         <entry key="..\:/Data/ON SHOOL DATA/HCI201/tennis-booking/app/src/main/res/mipmap-anydpi-v26/ic_arrow_forward.xml" value="0.281" />
         <entry key="..\:/Tools/AndroidStudioProject/tennis-booking/app/src/main/res/layout/activity_messages.xml" value="0.33" />
@@ -47,27 +49,23 @@
         <entry key="..\:/prm391/projects/tennis-booking/app/src/main/res/drawable/select.xml" value="0.204" />
         <entry key="..\:/prm391/projects/tennis-booking/app/src/main/res/drawable/space_background.xml" value="0.141" />
         <entry key="..\:/prm391/projects/tennis-booking/app/src/main/res/layout/activity_comment_list.xml" value="0.16666666666666666" />
-        <entry key="..\:/prm391/projects/tennis-booking/app/src/main/res/layout/activity_court_select.xml" value="0.176" />
-        <entry key="..\:/prm391/projects/tennis-booking/app/src/main/res/layout/activity_court_select_detail.xml" value="0.176" />
+        <entry key="..\:/prm391/projects/tennis-booking/app/src/main/res/layout/activity_court_select.xml" value="0.2" />
+        <entry key="..\:/prm391/projects/tennis-booking/app/src/main/res/layout/activity_court_select_detail.xml" value="0.16666666666666666" />
         <entry key="..\:/prm391/projects/tennis-booking/app/src/main/res/layout/activity_date_booking.xml" value="0.2967848309975268" />
         <entry key="..\:/prm391/projects/tennis-booking/app/src/main/res/layout/activity_login.xml" value="0.16666666666666666" />
         <entry key="..\:/prm391/projects/tennis-booking/app/src/main/res/layout/activity_messages.xml" value="0.2" />
         <entry key="..\:/prm391/projects/tennis-booking/app/src/main/res/layout/activity_pay_section.xml" value="0.264" />
         <entry key="..\:/prm391/projects/tennis-booking/app/src/main/res/layout/activity_profile.xml" value="0.264" />
         <entry key="..\:/prm391/projects/tennis-booking/app/src/main/res/layout/activity_search.xml" value="0.16666666666666666" />
-        <entry key="..\:/prm391/projects/tennis-booking/app/src/main/res/layout/activity_set_discount.xml" value="0.2694063926940639" />
         <entry key="..\:/prm391/projects/tennis-booking/app/src/main/res/layout/activity_signup.xml" value="0.16666666666666666" />
         <entry key="..\:/prm391/projects/tennis-booking/app/src/main/res/layout/activity_success_booking.xml" value="0.176" />
         <entry key="..\:/prm391/projects/tennis-booking/app/src/main/res/layout/activity_time_picking.xml" value="0.264" />
-        <entry key="..\:/prm391/projects/tennis-booking/app/src/main/res/layout/activity_update_course.xml" value="0.4" />
         <entry key="..\:/prm391/projects/tennis-booking/app/src/main/res/layout/card1.xml" value="0.16666666666666666" />
-        <entry key="..\:/prm391/projects/tennis-booking/app/src/main/res/layout/create_course.xml" value="0.16666666666666666" />
         <entry key="..\:/prm391/projects/tennis-booking/app/src/main/res/layout/fragment_bookings.xml" value="0.176" />
         <entry key="..\:/prm391/projects/tennis-booking/app/src/main/res/layout/fragment_home.xml" value="0.19791666666666666" />
         <entry key="..\:/prm391/projects/tennis-booking/app/src/main/res/layout/fragment_maps.xml" value="0.16666666666666666" />
         <entry key="..\:/prm391/projects/tennis-booking/app/src/main/res/layout/fragment_notification.xml" value="0.16666666666666666" />
         <entry key="..\:/prm391/projects/tennis-booking/app/src/main/res/layout/fragment_setting.xml" value="0.264" />
-        <entry key="..\:/prm391/projects/tennis-booking/app/src/main/res/layout/list_course.xml" value="0.2222222222222222" />
         <entry key="..\:/prm391/projects/tennis-booking/app/src/main/res/layout/trend_search.xml" value="0.16666666666666666" />
         <entry key="..\:/prm391/projects/tennis-booking/app/src/main/res/menu/court_style_menu.xml" value="0.1648148148148148" />
         <entry key="..\:/prm391/projects/tennis-booking/app/src/main/res/menu/nav_menu.xml" value="0.16666666666666666" />
