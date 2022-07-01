@@ -238,7 +238,7 @@
 
                                 <androidx.cardview.widget.CardView
                                     android:layout_width="0dp"
-                                    android:layout_height="200dp"
+                                    android:layout_height="210dp"
                                     android:layout_margin="10dp"
                                     android:layout_weight="1"
                                     app:cardCornerRadius="10dp">
@@ -296,13 +296,27 @@
                                             app:layout_constraintHorizontal_bias="1.0"
                                             app:layout_constraintStart_toStartOf="parent"
                                             app:layout_constraintTop_toBottomOf="@+id/txtCardCourseSize1" />
+
+                                        <TextView
+                                            android:id="@+id/txtCardDiscount1"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingEnd="5dp"
+                                            android:textSize="10sp"
+                                            android:text="-100.000đ"
+                                            android:textColor="#AEAEAE"
+                                            android:textStyle="bold"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintHorizontal_bias="1.0"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toBottomOf="@+id/txtCardCoursePrizeRange1" />
                                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                                 </androidx.cardview.widget.CardView>
 
                                 <androidx.cardview.widget.CardView
                                     android:layout_width="0dp"
-                                    android:layout_height="200dp"
+                                    android:layout_height="210dp"
                                     android:layout_margin="10dp"
                                     android:layout_weight="1"
                                     app:cardCornerRadius="10dp">
@@ -359,6 +373,20 @@
                                             app:layout_constraintHorizontal_bias="1.0"
                                             app:layout_constraintStart_toStartOf="parent"
                                             app:layout_constraintTop_toBottomOf="@+id/txtCardCourseSize2" />
+
+                                        <TextView
+                                            android:id="@+id/txtCardDiscount2"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingEnd="5dp"
+                                            android:textSize="10sp"
+                                            android:text="-100.000đ"
+                                            android:textColor="#AEAEAE"
+                                            android:textStyle="bold"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintHorizontal_bias="1.0"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toBottomOf="@+id/txtCardCoursePrizeRange2" />
                                     </androidx.constraintlayout.widget.ConstraintLayout>
                                 </androidx.cardview.widget.CardView>
 
@@ -371,7 +399,7 @@
 
                                 <androidx.cardview.widget.CardView
                                     android:layout_width="0dp"
-                                    android:layout_height="200dp"
+                                    android:layout_height="210dp"
                                     android:layout_margin="10dp"
                                     android:layout_weight="1"
                                     app:cardCornerRadius="10dp">
@@ -428,13 +456,27 @@
                                             app:layout_constraintHorizontal_bias="1.0"
                                             app:layout_constraintStart_toStartOf="parent"
                                             app:layout_constraintTop_toBottomOf="@+id/txtCardCourseSize3" />
+
+                                        <TextView
+                                            android:id="@+id/txtCardDiscount3"
+                                            android:layout_width="wrap_content"
+                                            android:layout_height="wrap_content"
+                                            android:paddingEnd="5dp"
+                                            android:textSize="10sp"
+                                            android:text="-50.000đ"
+                                            android:textColor="#AEAEAE"
+                                            android:textStyle="bold"
+                                            app:layout_constraintEnd_toEndOf="parent"
+                                            app:layout_constraintHorizontal_bias="1.0"
+                                            app:layout_constraintStart_toStartOf="parent"
+                                            app:layout_constraintTop_toBottomOf="@+id/txtCardCoursePrizeRange3" />
                                     </androidx.constraintlayout.widget.ConstraintLayout>
 
                                 </androidx.cardview.widget.CardView>
 
                                 <androidx.cardview.widget.CardView
                                     android:layout_width="0dp"
-                                    android:layout_height="200dp"
+                                    android:layout_height="210dp"
                                     android:layout_margin="10dp"
                                     android:layout_weight="1"
                                     app:cardCornerRadius="10dp">
@@ -503,7 +545,7 @@
 
                                 <androidx.cardview.widget.CardView
                                     android:layout_width="0dp"
-                                    android:layout_height="200dp"
+                                    android:layout_height="210dp"
                                     android:layout_margin="10dp"
                                     android:layout_weight="1"
                                     app:cardCornerRadius="10dp">
@@ -566,7 +608,7 @@
 
                                 <androidx.cardview.widget.CardView
                                     android:layout_width="0dp"
-                                    android:layout_height="200dp"
+                                    android:layout_height="210dp"
                                     android:layout_margin="10dp"
                                     android:layout_weight="1"
                                     app:cardCornerRadius="10dp">

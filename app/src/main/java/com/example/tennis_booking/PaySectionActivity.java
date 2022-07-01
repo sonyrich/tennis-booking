@@ -38,7 +38,7 @@ public class PaySectionActivity extends AppCompatActivity {
         booking_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent intent = new Intent(PaySectionActivity.this, SuccessBookingActivity.class);
+                Intent intent = new Intent(PaySectionActivity.this, MOCKMomoActivity.class);
                 startActivity(intent);
             }
         });

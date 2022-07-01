@@ -41,6 +41,9 @@
             android:value="@string/map_key" />
 
         <activity
+            android:name=".MOCKMomoActivity"
+            android:exported="false" />
+        <activity
             android:name=".UpdateCourse"
             android:exported="false" />
         <activity
