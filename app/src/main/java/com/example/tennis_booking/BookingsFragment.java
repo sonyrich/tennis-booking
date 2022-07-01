@@ -1,12 +1,15 @@
 package com.example.tennis_booking;
 
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
+import androidx.fragment.app.FragmentTransaction;
 
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.widget.ImageView;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -55,10 +58,25 @@ public class BookingsFragment extends Fragment {
         }
     }
 
+    private ImageView iclocation;
+
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container,
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
-        return inflater.inflate(R.layout.fragment_bookings, container, false);
+        View rootview = inflater.inflate(R.layout.fragment_bookings, container, false);
+
+        iclocation = (ImageView) rootview.findViewById(R.id.iclocation);
+        iclocation.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                MapsFragment nextFrag= new MapsFragment();
+                getActivity().getSupportFragmentManager().beginTransaction()
+                        .replace(R.id.mapfragment, nextFrag, "findThisFragment")
+                        .addToBackStack(null)
+                        .commit();
+            }
+        });
+        return rootview;
     }
 }
