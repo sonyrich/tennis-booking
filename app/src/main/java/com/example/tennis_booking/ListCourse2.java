@@ -57,7 +57,7 @@ public class ListCourse2 extends AppCompatActivity {
         btnDiscount.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(ListCourse2.this, SetDiscount.class);
+                Intent intent = new Intent(ListCourse2.this, CouponDetailActivity.class);
                 startActivity(intent);
             }
         });

@@ -13,8 +13,12 @@ import androidx.recyclerview.widget.RecyclerView;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+import android.view.animation.Animation;
+import android.view.animation.AnimationUtils;
 import android.widget.EditText;
 import android.widget.ImageView;
+import android.widget.TextView;
+import android.widget.ViewFlipper;
 
 import java.util.ArrayList;
 
@@ -23,7 +27,9 @@ public class HomeFragment extends Fragment implements HomeAdapter.itemClickListe
     private RecyclerView rv;
     private RecyclerView rv1;
     private EditText edt;
-    private ImageView img;
+    Animation slidein, slideout;
+    private ViewFlipper viewlipper;
+    private TextView tv_couponmgr;
 
     private ArrayList<CourtItem> courtData = new ArrayList<>();
     private ArrayList<CourtItem> courtData1 = new ArrayList<>();
@@ -39,6 +45,14 @@ public class HomeFragment extends Fragment implements HomeAdapter.itemClickListe
                              Bundle savedInstanceState) {
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_home, container, false);
+
+        viewlipper = (ViewFlipper) rootView.findViewById(R.id.viewlipper);
+        slidein = AnimationUtils.loadAnimation(rootView.getContext(), R.anim.slide_in_right);
+        slideout = AnimationUtils.loadAnimation(rootView.getContext(), R.anim.slide_out_right);
+        viewlipper.setInAnimation(slidein);
+        viewlipper.setOutAnimation(slideout);
+        viewlipper.setFlipInterval(10000);
+        viewlipper.setAutoStart(true);
 
         ArrayList<CourtItem> CourtModelList = new ArrayList<>();
 
@@ -109,6 +123,15 @@ public class HomeFragment extends Fragment implements HomeAdapter.itemClickListe
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(getContext(), SearchActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        tv_couponmgr = (TextView) rootView.findViewById(R.id.tv_couponmgr);
+        tv_couponmgr.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(getContext(), CouponListActivity.class);
                 startActivity(intent);
             }
         });

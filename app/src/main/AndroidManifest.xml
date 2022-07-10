@@ -47,10 +47,10 @@
             android:name=".UpdateCourse"
             android:exported="false" />
         <activity
-            android:name=".SetDiscount"
+            android:name=".CouponDetailActivity"
             android:exported="false" />
         <activity
-            android:name=".CourtSelectDetailActivity"
+            android:name=".CouponListActivity"
             android:exported="false" />
         <activity
             android:name=".CommentListActivity"

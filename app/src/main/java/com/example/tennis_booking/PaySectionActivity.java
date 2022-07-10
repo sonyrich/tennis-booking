@@ -11,13 +11,21 @@ import android.widget.PopupMenu;
 import android.widget.TextView;
 
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 
-public class PaySectionActivity extends AppCompatActivity {
+import java.util.ArrayList;
 
-    TextView tv_paymethod;
-    LinearLayout llayout_paymethod;
-    ImageView iv_paymethod;
-    Button booking_btn;
+public class PaySectionActivity extends AppCompatActivity implements HomeAdapter.itemClickListener{
+
+    private TextView tv_paymethod;
+    private LinearLayout llayout_paymethod;
+    private ImageView iv_paymethod;
+    private Button booking_btn;
+    private RecyclerView rvCoupon;
+    private LinearLayoutManager linearLayoutManager;
+    private CouponAdapter couponAdapter;
+    private ArrayList<CouponItem> couponData = new ArrayList<>();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,6 +50,29 @@ public class PaySectionActivity extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        CouponItem couponItem = new CouponItem("BLACKFRIDAYC#JAVA", "Black Friday giảm 50%", "Exp: 10/7/2022");
+        CouponItem couponItem1 = new CouponItem("FIRSTTIMEBOOKA6D3", "Giảm 20% lần đầu đặt sân", "Exp: 10/7/2022");
+        CouponItem couponItem2 = new CouponItem("MOMOFLUTTERE5G1", "Momo giảm 20k sân nhỏ", "Exp: 10/7/2022");
+        CouponItem couponItem3 = new CouponItem("ZALOPAYDART9VOS", "ZaloPay giảm 50k sân lớn", "Exp: 10/7/2022");
+        CouponItem couponItem4 = new CouponItem("GIAMCHOCO1A0ME", "Giảm 1k cho có giảm", "Exp: 10/7/2022");
+        CouponItem couponItem5 = new CouponItem("BANLANHAT2GT1", "Giảm 90% cho em bé", "Exp: 10/7/2022");
+
+        couponData.add(couponItem);
+        couponData.add(couponItem1);
+        couponData.add(couponItem2);
+        couponData.add(couponItem3);
+        couponData.add(couponItem4);
+        couponData.add(couponItem5);
+
+        rvCoupon = (RecyclerView) findViewById(R.id.rvCoupon);
+
+        linearLayoutManager = new LinearLayoutManager(this, LinearLayoutManager.HORIZONTAL, false);
+
+        couponAdapter = new CouponAdapter(couponData, this::onItemClick);
+
+        rvCoupon.setLayoutManager(linearLayoutManager);
+        rvCoupon.setAdapter(couponAdapter);
     }
 
     private void ShowMenu(){
@@ -76,5 +107,11 @@ public class PaySectionActivity extends AppCompatActivity {
         });
 
         popupMenu.show();
+    }
+
+    @Override
+    public void onItemClick(int position) {
+        Intent intent = new Intent(this, DateBookingActivity.class);
+        startActivity(intent);
     }
 }
