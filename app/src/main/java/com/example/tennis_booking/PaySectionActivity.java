@@ -51,12 +51,12 @@ public class PaySectionActivity extends AppCompatActivity implements HomeAdapter
             }
         });
 
-        CouponItem couponItem = new CouponItem("BLACKFRIDAYC#JAVA", "Black Friday giảm 50%", "Exp: 10/7/2022");
-        CouponItem couponItem1 = new CouponItem("FIRSTTIMEBOOKA6D3", "Giảm 20% lần đầu đặt sân", "Exp: 10/7/2022");
-        CouponItem couponItem2 = new CouponItem("MOMOFLUTTERE5G1", "Momo giảm 20k sân nhỏ", "Exp: 10/7/2022");
-        CouponItem couponItem3 = new CouponItem("ZALOPAYDART9VOS", "ZaloPay giảm 50k sân lớn", "Exp: 10/7/2022");
-        CouponItem couponItem4 = new CouponItem("GIAMCHOCO1A0ME", "Giảm 1k cho có giảm", "Exp: 10/7/2022");
-        CouponItem couponItem5 = new CouponItem("BANLANHAT2GT1", "Giảm 90% cho em bé", "Exp: 10/7/2022");
+        CouponItem couponItem = new CouponItem("BLACKFRIDAYC#JAVA", "Black Friday giảm 50%", "Lake View Villa Park","Exp: 10/7/2022");
+        CouponItem couponItem1 = new CouponItem("FIRSTTIMEBOOKA6D3", "Giảm 20% lần đầu đặt sân", "Lake View Villa Park","Exp: 10/7/2022");
+        CouponItem couponItem2 = new CouponItem("MOMOFLUTTERE5G1", "Momo giảm 20k sân nhỏ", "Lake View Villa Park","Exp: 10/7/2022");
+        CouponItem couponItem3 = new CouponItem("ZALOPAYDART9VOS", "ZaloPay giảm 50k sân lớn", "Lake View Villa Park","Exp: 10/7/2022");
+        CouponItem couponItem4 = new CouponItem("GIAMCHOCO1A0ME", "Giảm 1k cho có giảm", "Lake View Villa Park","Exp: 10/7/2022");
+        CouponItem couponItem5 = new CouponItem("BANLANHAT2GT1", "Giảm 90% cho em bé", "Lake View Villa Park","Exp: 10/7/2022");
 
         couponData.add(couponItem);
         couponData.add(couponItem1);

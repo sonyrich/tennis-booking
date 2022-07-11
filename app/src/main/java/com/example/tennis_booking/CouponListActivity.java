@@ -13,7 +13,7 @@ import androidx.recyclerview.widget.RecyclerView;
 import java.util.ArrayList;
 
 public class CouponListActivity extends AppCompatActivity{
-    private LinearLayout llbalck;
+    private LinearLayout llbalck, ll2;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -24,6 +24,15 @@ public class CouponListActivity extends AppCompatActivity{
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(CouponListActivity.this, CouponDetailActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        ll2 = (LinearLayout) findViewById(R.id.ll2);
+        ll2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(CouponListActivity.this, DateBookingActivity.class);
                 startActivity(intent);
             }
         });

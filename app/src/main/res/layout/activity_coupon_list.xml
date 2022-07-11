@@ -70,193 +70,219 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:background="@drawable/custom_background"
                 android:orientation="vertical">
 
-            <LinearLayout
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:layout_marginTop="15dp"
-                android:layout_marginHorizontal="10dp">
-
-                <LinearLayout
-                    android:id="@+id/llbalck"
-                    android:layout_width="340dp"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/coupon_corner_top_bottom_right"
-                    android:paddingLeft="10dp"
-                    android:paddingVertical="5dp"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="BLACKFRIDAYC#JAVA"
-                        android:textColor="#787878"
-                        android:textStyle="normal"
-                        android:fontFamily="@font/calibri"
-                        android:textSize="17sp"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Black Friday giảm 50%"
-                        android:textColor="@color/black"
-                        android:textStyle="bold"
-                        android:fontFamily="@font/gotham"
-                        android:textSize="20sp"/>
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:text="Exp: 10/7/2022"
-                        android:textColor="#787878"
-                        android:textStyle="normal"
-                        android:fontFamily="@font/calibri"
-                        android:textSize="17sp"/>
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/coupon_corner_top_bottom_right"
-                    android:layout_marginVertical="7dp"
-                    android:weightSum="4"
-                    android:orientation="vertical">
-
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="|"
-                        android:textStyle="bold"
-                        android:gravity="center"
-                        android:textSize="10sp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="|"
-                        android:textStyle="bold"
-                        android:gravity="center"
-                        android:textSize="10sp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="|"
-                        android:textStyle="bold"
-                        android:gravity="center"
-                        android:textSize="10sp"/>
-                    <TextView
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_weight="1"
-                        android:text="|"
-                        android:textStyle="bold"
-                        android:gravity="center"
-                        android:textSize="10sp"/>
-
-                </LinearLayout>
-
-                <LinearLayout
-                    android:layout_width="60dp"
-                    android:layout_height="match_parent"
-                    android:background="@drawable/coupon_corner_top_bottom_left">
-
-                    <TextView
-                        android:layout_width="match_parent"
-                        android:layout_height="match_parent"
-                        android:text="Use"
-                        android:textSize="20sp"
-                        android:textStyle="bold"
-                        android:gravity="center"
-                        android:fontFamily="@font/gotham"
-                        android:textColor="@color/colorPrimary"
-                        />
-                </LinearLayout>
-            </LinearLayout>
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginHorizontal="10dp">
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="15dp">
+
+                    <LinearLayout
+                        android:id="@+id/llbalck"
+                        android:layout_width="340dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/coupon_corner_top_bottom_right"
+                        android:orientation="vertical"
+                        android:paddingVertical="5dp"
+                        android:paddingLeft="10dp">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/calibri"
+                            android:text="BLACKFRIDAYC#JAVA"
+                            android:textColor="#787878"
+                            android:textSize="17sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/gotham"
+                            android:text="Black Friday giảm 50%"
+                            android:textColor="@color/black"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/calibri"
+                            android:text="Lake View Villa Park"
+                            android:textColor="#787878"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/calibri"
+                            android:text="Exp: 10/7/2022"
+                            android:textColor="#787878"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:layout_marginVertical="7dp"
+                        android:background="@drawable/coupon_corner_top_bottom_right"
+                        android:orientation="vertical"
+                        android:weightSum="4">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="|"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="|"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="|"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_weight="1"
+                            android:gravity="center"
+                            android:text="|"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:id="@+id/ll2"
+                        android:layout_width="60dp"
+                        android:layout_height="match_parent"
+                        android:background="@drawable/coupon_corner_top_bottom_left">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:fontFamily="@font/gotham"
+                            android:gravity="center"
+                            android:text="Use"
+                            android:textColor="@color/colorPrimary"
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp">
 
                     <LinearLayout
                         android:layout_width="340dp"
                         android:layout_height="match_parent"
                         android:background="@drawable/coupon_corner_top_bottom_right"
-                        android:paddingLeft="10dp"
+                        android:orientation="vertical"
                         android:paddingVertical="5dp"
-                        android:orientation="vertical">
+                        android:paddingLeft="10dp">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/calibri"
                             android:text="FIRSTTIMEBOOKA6D3"
                             android:textColor="#787878"
-                            android:textStyle="normal"
-                            android:fontFamily="@font/calibri"
-                            android:textSize="17sp"/>
+                            android:textSize="17sp"
+                            android:textStyle="normal" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/gotham"
                             android:text="Giảm 20% lần đầu đặt sân"
                             android:textColor="@color/black"
-                            android:textStyle="bold"
-                            android:fontFamily="@font/gotham"
-                            android:textSize="20sp"/>
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/calibri"
+                            android:text="Lake View Villa Park"
+                            android:textColor="#787878"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/calibri"
                             android:text="Exp: 10/7/2022"
                             android:textColor="#787878"
-                            android:textStyle="normal"
-                            android:fontFamily="@font/calibri"
-                            android:textSize="17sp"/>
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:background="@drawable/coupon_corner_top_bottom_right"
                         android:layout_marginVertical="7dp"
-                        android:weightSum="4"
-                        android:orientation="vertical">
+                        android:background="@drawable/coupon_corner_top_bottom_right"
+                        android:orientation="vertical"
+                        android:weightSum="4">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="|"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            android:textSize="10sp"/>
+                            android:text="|"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="|"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            android:textSize="10sp"/>
+                            android:text="|"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="|"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            android:textSize="10sp"/>
+                            android:text="|"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="|"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            android:textSize="10sp"/>
+                            android:text="|"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
 
                     </LinearLayout>
 
@@ -268,97 +294,110 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:text="Use"
-                            android:textSize="20sp"
-                            android:textStyle="bold"
-                            android:gravity="center"
                             android:fontFamily="@font/gotham"
+                            android:gravity="center"
+                            android:text="Use"
                             android:textColor="@color/colorPrimary"
-                            />
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
                     </LinearLayout>
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginHorizontal="10dp">
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp">
 
                     <LinearLayout
                         android:layout_width="340dp"
                         android:layout_height="match_parent"
                         android:background="@drawable/coupon_corner_top_bottom_right"
-                        android:paddingLeft="10dp"
+                        android:orientation="vertical"
                         android:paddingVertical="5dp"
-                        android:orientation="vertical">
+                        android:paddingLeft="10dp">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/calibri"
                             android:text="MOMOFLUTTERE5G1"
                             android:textColor="#787878"
-                            android:textStyle="normal"
-                            android:fontFamily="@font/calibri"
-                            android:textSize="17sp"/>
+                            android:textSize="17sp"
+                            android:textStyle="normal" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/gotham"
                             android:text="Momo giảm 20k sân nhỏ"
                             android:textColor="@color/black"
-                            android:textStyle="bold"
-                            android:fontFamily="@font/gotham"
-                            android:textSize="20sp"/>
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
+
+                        <TextView
+                            android:id="@+id/coupon_court"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/calibri"
+                            android:text="Lake View Villa Park"
+                            android:textColor="#787878"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/calibri"
                             android:text="Exp: 10/7/2022"
                             android:textColor="#787878"
-                            android:textStyle="normal"
-                            android:fontFamily="@font/calibri"
-                            android:textSize="17sp"/>
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:background="@drawable/coupon_corner_top_bottom_right"
                         android:layout_marginVertical="7dp"
-                        android:weightSum="4"
-                        android:orientation="vertical">
+                        android:background="@drawable/coupon_corner_top_bottom_right"
+                        android:orientation="vertical"
+                        android:weightSum="4">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="|"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            android:textSize="10sp"/>
+                            android:text="|"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="|"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            android:textSize="10sp"/>
+                            android:text="|"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="|"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            android:textSize="10sp"/>
+                            android:text="|"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="|"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            android:textSize="10sp"/>
+                            android:text="|"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
 
                     </LinearLayout>
 
@@ -370,97 +409,109 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:text="Use"
-                            android:textSize="20sp"
-                            android:textStyle="bold"
-                            android:gravity="center"
                             android:fontFamily="@font/gotham"
+                            android:gravity="center"
+                            android:text="Use"
                             android:textColor="@color/colorPrimary"
-                            />
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
                     </LinearLayout>
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginHorizontal="10dp">
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp">
 
                     <LinearLayout
                         android:layout_width="340dp"
                         android:layout_height="match_parent"
                         android:background="@drawable/coupon_corner_top_bottom_right"
-                        android:paddingLeft="10dp"
+                        android:orientation="vertical"
                         android:paddingVertical="5dp"
-                        android:orientation="vertical">
+                        android:paddingLeft="10dp">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/calibri"
                             android:text="ZALOPAYDART9VOS"
                             android:textColor="#787878"
-                            android:textStyle="normal"
-                            android:fontFamily="@font/calibri"
-                            android:textSize="17sp"/>
+                            android:textSize="17sp"
+                            android:textStyle="normal" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/gotham"
                             android:text="ZaloPay giảm 50k sân lớn"
                             android:textColor="@color/black"
-                            android:textStyle="bold"
-                            android:fontFamily="@font/gotham"
-                            android:textSize="20sp"/>
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/calibri"
+                            android:text="Lake View Villa Park"
+                            android:textColor="#787878"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/calibri"
                             android:text="Exp: 10/7/2022"
                             android:textColor="#787878"
-                            android:textStyle="normal"
-                            android:fontFamily="@font/calibri"
-                            android:textSize="17sp"/>
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:background="@drawable/coupon_corner_top_bottom_right"
                         android:layout_marginVertical="7dp"
-                        android:weightSum="4"
-                        android:orientation="vertical">
+                        android:background="@drawable/coupon_corner_top_bottom_right"
+                        android:orientation="vertical"
+                        android:weightSum="4">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="|"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            android:textSize="10sp"/>
+                            android:text="|"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="|"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            android:textSize="10sp"/>
+                            android:text="|"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="|"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            android:textSize="10sp"/>
+                            android:text="|"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="|"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            android:textSize="10sp"/>
+                            android:text="|"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
 
                     </LinearLayout>
 
@@ -472,97 +523,109 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:text="Use"
-                            android:textSize="20sp"
-                            android:textStyle="bold"
-                            android:gravity="center"
                             android:fontFamily="@font/gotham"
+                            android:gravity="center"
+                            android:text="Use"
                             android:textColor="@color/colorPrimary"
-                            />
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
                     </LinearLayout>
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginHorizontal="10dp">
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp">
 
                     <LinearLayout
                         android:layout_width="340dp"
                         android:layout_height="match_parent"
                         android:background="@drawable/coupon_corner_top_bottom_right"
-                        android:paddingLeft="10dp"
+                        android:orientation="vertical"
                         android:paddingVertical="5dp"
-                        android:orientation="vertical">
+                        android:paddingLeft="10dp">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/calibri"
                             android:text="GIAMCHOCO1A0ME"
                             android:textColor="#787878"
-                            android:textStyle="normal"
-                            android:fontFamily="@font/calibri"
-                            android:textSize="17sp"/>
+                            android:textSize="17sp"
+                            android:textStyle="normal" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/gotham"
                             android:text="Giảm 1k cho có giảm"
                             android:textColor="@color/black"
-                            android:textStyle="bold"
-                            android:fontFamily="@font/gotham"
-                            android:textSize="20sp"/>
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/calibri"
+                            android:text="Lake View Villa Park"
+                            android:textColor="#787878"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/calibri"
                             android:text="Exp: 10/7/2022"
                             android:textColor="#787878"
-                            android:textStyle="normal"
-                            android:fontFamily="@font/calibri"
-                            android:textSize="17sp"/>
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:background="@drawable/coupon_corner_top_bottom_right"
                         android:layout_marginVertical="7dp"
-                        android:weightSum="4"
-                        android:orientation="vertical">
+                        android:background="@drawable/coupon_corner_top_bottom_right"
+                        android:orientation="vertical"
+                        android:weightSum="4">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="|"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            android:textSize="10sp"/>
+                            android:text="|"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="|"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            android:textSize="10sp"/>
+                            android:text="|"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="|"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            android:textSize="10sp"/>
+                            android:text="|"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="|"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            android:textSize="10sp"/>
+                            android:text="|"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
 
                     </LinearLayout>
 
@@ -574,20 +637,20 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:text="Use"
-                            android:textSize="20sp"
-                            android:textStyle="bold"
-                            android:gravity="center"
                             android:fontFamily="@font/gotham"
+                            android:gravity="center"
+                            android:text="Use"
                             android:textColor="@color/colorPrimary"
-                            />
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
                     </LinearLayout>
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginHorizontal="10dp">
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp">
 
                     <LinearLayout
                         android:layout_width="340dp"
@@ -619,52 +682,64 @@
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:fontFamily="@font/calibri"
+                            android:text="Lake View Villa Park"
+                            android:textColor="#787878"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/calibri"
                             android:text="Exp: 10/7/2022"
                             android:textColor="#787878"
-                            android:textSize="17sp"
+                            android:textSize="15sp"
                             android:textStyle="normal" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:background="@drawable/coupon_corner_top_bottom_right"
                         android:layout_marginVertical="7dp"
-                        android:weightSum="4"
-                        android:orientation="vertical">
+                        android:background="@drawable/coupon_corner_top_bottom_right"
+                        android:orientation="vertical"
+                        android:weightSum="4">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="|"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            android:textSize="10sp"/>
+                            android:text="|"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="|"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            android:textSize="10sp"/>
+                            android:text="|"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="|"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            android:textSize="10sp"/>
+                            android:text="|"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="|"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            android:textSize="10sp"/>
+                            android:text="|"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
 
                     </LinearLayout>
 
@@ -676,97 +751,109 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:text="Use"
-                            android:textSize="20sp"
-                            android:textStyle="bold"
-                            android:gravity="center"
                             android:fontFamily="@font/gotham"
+                            android:gravity="center"
+                            android:text="Use"
                             android:textColor="@color/colorPrimary"
-                            />
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
                     </LinearLayout>
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginHorizontal="10dp">
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp">
 
                     <LinearLayout
                         android:layout_width="340dp"
                         android:layout_height="match_parent"
                         android:background="@drawable/coupon_corner_top_bottom_right"
-                        android:paddingLeft="10dp"
+                        android:orientation="vertical"
                         android:paddingVertical="5dp"
-                        android:orientation="vertical">
+                        android:paddingLeft="10dp">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/calibri"
                             android:text="SUMMERFEVERVI4"
                             android:textColor="#787878"
-                            android:textStyle="normal"
-                            android:fontFamily="@font/calibri"
-                            android:textSize="17sp"/>
+                            android:textSize="17sp"
+                            android:textStyle="normal" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/gotham"
                             android:text="Giảm 10% Summer Fever"
                             android:textColor="@color/black"
-                            android:textStyle="bold"
-                            android:fontFamily="@font/gotham"
-                            android:textSize="20sp"/>
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/calibri"
+                            android:text="Lake View Villa Park"
+                            android:textColor="#787878"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/calibri"
                             android:text="Exp: 10/7/2022"
                             android:textColor="#787878"
-                            android:textStyle="normal"
-                            android:fontFamily="@font/calibri"
-                            android:textSize="17sp"/>
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:background="@drawable/coupon_corner_top_bottom_right"
                         android:layout_marginVertical="7dp"
-                        android:weightSum="4"
-                        android:orientation="vertical">
+                        android:background="@drawable/coupon_corner_top_bottom_right"
+                        android:orientation="vertical"
+                        android:weightSum="4">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="|"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            android:textSize="10sp"/>
+                            android:text="|"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="|"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            android:textSize="10sp"/>
+                            android:text="|"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="|"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            android:textSize="10sp"/>
+                            android:text="|"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="|"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            android:textSize="10sp"/>
+                            android:text="|"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
 
                     </LinearLayout>
 
@@ -778,97 +865,109 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:text="Use"
-                            android:textSize="20sp"
-                            android:textStyle="bold"
-                            android:gravity="center"
                             android:fontFamily="@font/gotham"
+                            android:gravity="center"
+                            android:text="Use"
                             android:textColor="@color/colorPrimary"
-                            />
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
                     </LinearLayout>
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginHorizontal="10dp">
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp">
 
                     <LinearLayout
                         android:layout_width="340dp"
                         android:layout_height="match_parent"
                         android:background="@drawable/coupon_corner_top_bottom_right"
-                        android:paddingLeft="10dp"
+                        android:orientation="vertical"
                         android:paddingVertical="5dp"
-                        android:orientation="vertical">
+                        android:paddingLeft="10dp">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/calibri"
                             android:text="SHOPPE6/6S03VI"
                             android:textColor="#787878"
-                            android:textStyle="normal"
-                            android:fontFamily="@font/calibri"
-                            android:textSize="17sp"/>
+                            android:textSize="17sp"
+                            android:textStyle="normal" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/gotham"
                             android:text="Sale 6/6 Đồng giá 1k"
                             android:textColor="@color/black"
-                            android:textStyle="bold"
-                            android:fontFamily="@font/gotham"
-                            android:textSize="20sp"/>
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/calibri"
+                            android:text="Lake View Villa Park"
+                            android:textColor="#787878"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/calibri"
                             android:text="Exp: 10/7/2022"
                             android:textColor="#787878"
-                            android:textStyle="normal"
-                            android:fontFamily="@font/calibri"
-                            android:textSize="17sp"/>
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:background="@drawable/coupon_corner_top_bottom_right"
                         android:layout_marginVertical="7dp"
-                        android:weightSum="4"
-                        android:orientation="vertical">
+                        android:background="@drawable/coupon_corner_top_bottom_right"
+                        android:orientation="vertical"
+                        android:weightSum="4">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="|"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            android:textSize="10sp"/>
+                            android:text="|"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="|"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            android:textSize="10sp"/>
+                            android:text="|"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="|"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            android:textSize="10sp"/>
+                            android:text="|"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="|"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            android:textSize="10sp"/>
+                            android:text="|"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
 
                     </LinearLayout>
 
@@ -880,97 +979,109 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:text="Use"
-                            android:textSize="20sp"
-                            android:textStyle="bold"
-                            android:gravity="center"
                             android:fontFamily="@font/gotham"
+                            android:gravity="center"
+                            android:text="Use"
                             android:textColor="@color/colorPrimary"
-                            />
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
                     </LinearLayout>
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginHorizontal="10dp">
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp">
 
                     <LinearLayout
                         android:layout_width="340dp"
                         android:layout_height="match_parent"
                         android:background="@drawable/coupon_corner_top_bottom_right"
-                        android:paddingLeft="10dp"
+                        android:orientation="vertical"
                         android:paddingVertical="5dp"
-                        android:orientation="vertical">
+                        android:paddingLeft="10dp">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/calibri"
                             android:text="VISUALSTUDIOCODE"
                             android:textColor="#787878"
-                            android:textStyle="normal"
-                            android:fontFamily="@font/calibri"
-                            android:textSize="17sp"/>
+                            android:textSize="17sp"
+                            android:textStyle="normal" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/gotham"
                             android:text="Giảm 30% Ngày gì đó!?"
                             android:textColor="@color/black"
-                            android:textStyle="bold"
-                            android:fontFamily="@font/gotham"
-                            android:textSize="20sp"/>
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/calibri"
+                            android:text="Lake View Villa Park"
+                            android:textColor="#787878"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/calibri"
                             android:text="Exp: 10/7/2022"
                             android:textColor="#787878"
-                            android:textStyle="normal"
-                            android:fontFamily="@font/calibri"
-                            android:textSize="17sp"/>
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:background="@drawable/coupon_corner_top_bottom_right"
                         android:layout_marginVertical="7dp"
-                        android:weightSum="4"
-                        android:orientation="vertical">
+                        android:background="@drawable/coupon_corner_top_bottom_right"
+                        android:orientation="vertical"
+                        android:weightSum="4">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="|"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            android:textSize="10sp"/>
+                            android:text="|"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="|"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            android:textSize="10sp"/>
+                            android:text="|"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="|"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            android:textSize="10sp"/>
+                            android:text="|"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="|"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            android:textSize="10sp"/>
+                            android:text="|"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
 
                     </LinearLayout>
 
@@ -982,97 +1093,109 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:text="Use"
-                            android:textSize="20sp"
-                            android:textStyle="bold"
-                            android:gravity="center"
                             android:fontFamily="@font/gotham"
+                            android:gravity="center"
+                            android:text="Use"
                             android:textColor="@color/colorPrimary"
-                            />
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
                     </LinearLayout>
                 </LinearLayout>
+
                 <LinearLayout
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_marginTop="10dp"
-                    android:layout_marginHorizontal="10dp">
+                    android:layout_marginHorizontal="10dp"
+                    android:layout_marginTop="10dp">
 
                     <LinearLayout
                         android:layout_width="340dp"
                         android:layout_height="match_parent"
                         android:background="@drawable/coupon_corner_top_bottom_right"
-                        android:paddingLeft="10dp"
+                        android:orientation="vertical"
                         android:paddingVertical="5dp"
-                        android:orientation="vertical">
+                        android:paddingLeft="10dp">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/calibri"
                             android:text="VISUALSTUDIOCODE"
                             android:textColor="#787878"
-                            android:textStyle="normal"
-                            android:fontFamily="@font/calibri"
-                            android:textSize="17sp"/>
+                            android:textSize="17sp"
+                            android:textStyle="normal" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/gotham"
                             android:text="Giảm 30% Ngày gì đó!?"
                             android:textColor="@color/black"
-                            android:textStyle="bold"
-                            android:fontFamily="@font/gotham"
-                            android:textSize="20sp"/>
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
+                            android:fontFamily="@font/calibri"
+                            android:text="Lake View Villa Park"
+                            android:textColor="#787878"
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:fontFamily="@font/calibri"
                             android:text="Exp: 10/7/2022"
                             android:textColor="#787878"
-                            android:textStyle="normal"
-                            android:fontFamily="@font/calibri"
-                            android:textSize="17sp"/>
+                            android:textSize="15sp"
+                            android:textStyle="normal" />
                     </LinearLayout>
 
                     <LinearLayout
                         android:layout_width="wrap_content"
                         android:layout_height="match_parent"
-                        android:background="@drawable/coupon_corner_top_bottom_right"
                         android:layout_marginVertical="7dp"
-                        android:weightSum="4"
-                        android:orientation="vertical">
+                        android:background="@drawable/coupon_corner_top_bottom_right"
+                        android:orientation="vertical"
+                        android:weightSum="4">
 
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="|"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            android:textSize="10sp"/>
+                            android:text="|"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="|"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            android:textSize="10sp"/>
+                            android:text="|"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="|"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            android:textSize="10sp"/>
+                            android:text="|"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
+
                         <TextView
                             android:layout_width="wrap_content"
                             android:layout_height="wrap_content"
                             android:layout_weight="1"
-                            android:text="|"
-                            android:textStyle="bold"
                             android:gravity="center"
-                            android:textSize="10sp"/>
+                            android:text="|"
+                            android:textSize="10sp"
+                            android:textStyle="bold" />
 
                     </LinearLayout>
 
@@ -1084,17 +1207,16 @@
                         <TextView
                             android:layout_width="match_parent"
                             android:layout_height="match_parent"
-                            android:text="Use"
-                            android:textSize="20sp"
-                            android:textStyle="bold"
-                            android:gravity="center"
                             android:fontFamily="@font/gotham"
+                            android:gravity="center"
+                            android:text="Use"
                             android:textColor="@color/colorPrimary"
-                            />
+                            android:textSize="20sp"
+                            android:textStyle="bold" />
                     </LinearLayout>
                 </LinearLayout>
 
-        </LinearLayout>
+            </LinearLayout>
 
         </ScrollView>
 

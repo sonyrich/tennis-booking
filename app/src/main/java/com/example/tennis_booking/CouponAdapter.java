@@ -35,6 +35,7 @@ public class CouponAdapter extends RecyclerView.Adapter<CouponAdapter.MyHolder> 
         holder.coupon_title.setText(couponList.get(position).getCouponTitle());
         holder.coupon_desc.setText(couponList.get(position).getcouponDesc());
         holder.coupon_expired.setText(couponList.get(position).getCouponExp());
+        holder.coupon_court.setText(couponList.get(position).getCouponCourt());
     }
 
     @Override
@@ -46,6 +47,7 @@ public class CouponAdapter extends RecyclerView.Adapter<CouponAdapter.MyHolder> 
         TextView coupon_title;
         TextView coupon_desc;
         TextView coupon_expired;
+        TextView coupon_court;
 
         itemClickListener clickListener;
 
@@ -55,6 +57,7 @@ public class CouponAdapter extends RecyclerView.Adapter<CouponAdapter.MyHolder> 
             coupon_title = itemView.findViewById(R.id.coupon_title);
             coupon_desc = itemView.findViewById(R.id.coupon_desc);
             coupon_expired = itemView.findViewById(R.id.coupon_expired);
+            coupon_court = itemView.findViewById(R.id.coupon_court);
 
             this.clickListener = clickListener;
 

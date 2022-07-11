@@ -433,7 +433,7 @@
                     android:clickable="true"
                     android:focusable="true"
                     android:foreground="?android:attr/selectableItemBackground"
-                    app:cardBackgroundColor="@color/colorPrimary"
+                    app:cardBackgroundColor="#E3E3E3"
                     app:cardCornerRadius="4dp"
                     app:cardUseCompatPadding="true"
                     app:contentPadding="3dp">
