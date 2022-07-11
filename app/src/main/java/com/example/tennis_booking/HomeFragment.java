@@ -46,6 +46,7 @@ public class HomeFragment extends Fragment implements HomeAdapter.itemClickListe
         // Inflate the layout for this fragment
         View rootView = inflater.inflate(R.layout.fragment_home, container, false);
 
+<<<<<<< Updated upstream
         viewlipper = (ViewFlipper) rootView.findViewById(R.id.viewlipper);
         slidein = AnimationUtils.loadAnimation(rootView.getContext(), R.anim.slide_in_right);
         slideout = AnimationUtils.loadAnimation(rootView.getContext(), R.anim.slide_out_right);
@@ -56,6 +57,8 @@ public class HomeFragment extends Fragment implements HomeAdapter.itemClickListe
 
         ArrayList<CourtItem> CourtModelList = new ArrayList<>();
 
+=======
+>>>>>>> Stashed changes
         rv = (RecyclerView) rootView.findViewById(R.id.rvOnDiscount);
         rv1 = (RecyclerView) rootView.findViewById(R.id.rvNearMe);
 
